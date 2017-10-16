@@ -1,1 +1,1 @@
-# MIT
+# gulp-template

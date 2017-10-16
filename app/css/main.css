@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "FreestyleScript";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/FreestyleScript/FreestyleScript.ttf) format("truetype");
+  src: url(../fonts/FreestyleScript/FreestyleScript.eot) format("embedded-opentype");
+  src: url(../fonts/FreestyleScript/FreestyleScript.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/FreestyleScript/FreestyleScript.woff) format("woff"); }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.ttf) format("truetype");
+  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.eot) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.ttf) format("truetype");
+  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.eot) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.woff) format("woff"); }
+
+@font-face {
+  font-family: "OpenSansItalic";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.ttf) format("truetype");
+  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.eot) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.woff) format("woff"); }
+
+@font-face {
+  font-family: "OpenSansSemibold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.ttf) format("truetype");
+  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.eot) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.woff) format("woff"); }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+body {
+  font-size: 16px;
+  font-family: "OpenSansRegular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  position: relative;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-base-color: #5b6ceb;
+  scrollbar-arrow-color: #5b6ceb; }
+  body::-webkit-scrollbar {
+    width: 17px; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #5b6ceb; }
+    body::-webkit-scrollbar-thumb:hover {
+      background-color: #2e43e5; }
+  body::-webkit-scrollbar-track-piece {
+    background-color: transparent; }
+
+p, ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+.button {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 45px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  -webkit-transition: background-color .1s ease;
+  -o-transition: background-color .1s ease;
+  transition: background-color .1s ease; }
+  .button::after {
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    opacity: .18;
+    -webkit-border-bottom-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+    left: 0; }
+  .button:focus, .button:hover {
+    text-decoration: none;
+    color: #fff; }
+  .button:hover::after {
+    opacity: .22; }
+
+.input_wrap {
+  position: relative;
+  display: block; }
+  .input_wrap i {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    font-size: 14px;
+    color: #35be70; }
+
+.hamburger {
+  padding: 0; }
+
+.hamburger--collapse .hamburger-inner {
+  bottom: -4px; }
+
+html.mm-blocking, html.mm-blocking body {
+  overflow: inherit; }
+
+.header {
+  width: 100%; }
+  .header__nav {
+    display: inline-block;
+    position: relative; }
+    .header__nav ul li {
+      list-style: none;
+      display: inline-block; }
+      .header__nav ul li a {
+        margin-right: 15px;
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s; }
+
+.hamburger {
+  display: none; }
+
+.top-section {
+  text-align: center;
+  min-height: 600px;
+  height: 100vh;
+  background: url(../img/header_bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .top-section__title {
+    color: red;
+    position: absolute;
+    top: -webkit-calc(50% - 50px);
+    top: calc(50% - 50px);
+    left: 0;
+    right: 0; }
+    .top-section__title:before {
+      content: "";
+      display: block;
+      background-image: url(../img/sprite.png);
+      background-position: 0px 0px;
+      width: 30px;
+      height: 21px; }
