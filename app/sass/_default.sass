@@ -4,7 +4,7 @@
 
 body
   font-size: 16px
-  font-family: $OpenSansRegular
+  font-family: $ProximaNova-Regular
   background-color: $bgColor
   margin: 0
   position: relative
@@ -12,18 +12,20 @@ body
   overflow-x: hidden
   -webkit-tap-highlight-color: transparent
   //внешний вид скроллбара
-  scrollbar-base-color: $scroll_barr_color
-  scrollbar-arrow-color: $scroll_barr_color
+  // scrollbar-base-color: $scroll_barr_color
+  // scrollbar-arrow-color: $scroll_barr_color
   //внешний вид скроллбара для -webkit- остальное тут https://poselab.com/en/blog/custom-scrollbars-in-webkit/
   &::-webkit-scrollbar
-    width: 17px
+    // width: 17px
   &::-webkit-scrollbar-thumb
-    background-color: $scroll_barr_color
+    // background-color: $scroll_barr_color
     &:hover
-      background-color: darken($scroll_barr_color, 10%)
+      // background-color: darken($scroll_barr_color, 10%)
   &::-webkit-scrollbar-track-piece
     background-color: transparent
-
+a
+  text-decoration: none
+  color: #000
 p,ul
   padding: 0
   margin: 0

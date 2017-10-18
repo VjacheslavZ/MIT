@@ -1,18 +1,28 @@
-$OpenSansRegular: "OpenSansRegular",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
-$FreestyleScript: "FreestyleScript",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
-$OpenSansBold: "OpenSansBold",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
-$OpenSansItalic: "OpenSansItalic",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+$ProximaNova-Bold: "ProximaNova-Bold",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+$ProximaNova-Extrabold: "ProximaNova-Extrabold",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+$ProximaNova-Light: "ProximaNova-Light",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+$ProximaNova-LightIt: "ProximaNova-LightIt",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+$ProximaNova-Regular: "ProximaNova-Regular",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+$ProximaNova-Semibold: "ProximaNova-Semibold",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 
+//$scroll_barr_color: #5b6ceb
+//$text_header_hover-color: #5363db
 $bgColor: #fff
-$scroll_barr_color: #5b6ceb
-
-$text_header_hover-color: #5363db
 
 $text_white_color: #fff
-$text_gray_color: #555
-$text_dark-grey_color: #777
-$text_more-dark-grey_color: #888
-$text_light-grey_color: #999
+$text_black_color: #000
+$text_light-gray_color: #7f7f7f
 
-$text_accent_color: #5363db
-$text_copyright_color: #b7bffc
+$accent_color: #ffec00
+
+//$text_accent_color: #5363db
+//$text_copyright_color: #b7bffc
+
+@mixin hover_link()
+  content: " "
+  position: absolute
+  top: 22px
+  height: 2px
+  width: 0
+  background-color: $accent_color
+  transition: width 0.2s ease-in-out

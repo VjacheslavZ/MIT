@@ -7,11 +7,12 @@
 
 // Секция top-section
 .top-section
-  text-align: center
+  //text-align: center
   min-height: 600px
-  height: 100vh
-  background: url(../img/header_bg.jpg) no-repeat
-  background-size: cover
+  height: calc(100vh - 107px)
+  background: url(../img/top_section-bg.png) no-repeat right
+  //background-size: cover
+  padding: 150px 0 65px 0
   &__title
     color: red
     position: absolute
@@ -21,4 +22,4 @@
     &:before
       content: ""
       display: block
-      @include sprite($mail_to)
+      //@include sprite($mail_to)

@@ -8,40 +8,56 @@
   src: url(../fonts/FreestyleScript/FreestyleScript.woff) format("woff"); }
 
 @font-face {
-  font-family: "OpenSansRegular";
+  font-family: "ProximaNova-Bold";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.ttf) format("truetype");
-  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.eot) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Regular/OpenSans-Regular.woff) format("woff"); }
+  src: url(../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf) format("truetype");
+  src: url(../fonts/ProximaNova-Bold/ProximaNova-Bold.eot) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Bold/ProximaNova-Bold.woff) format("woff"); }
 
 @font-face {
-  font-family: "OpenSansBold";
+  font-family: "ProximaNova-Extrabold";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.ttf) format("truetype");
-  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.eot) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Bold/OpenSans-Bold.woff) format("woff"); }
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.ttf) format("truetype");
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.woff) format("woff"); }
 
 @font-face {
-  font-family: "OpenSansItalic";
+  font-family: "ProximaNova-Light";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.ttf) format("truetype");
-  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.eot) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.eot?#iefix) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Italic/OpenSans-Italic.woff) format("woff"); }
+  src: url(../fonts/ProximaNova-Light/ProximaNova-Light.ttf) format("truetype");
+  src: url(../fonts/ProximaNova-Light/ProximaNova-Light.eot) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Light/ProximaNova-Light.woff) format("woff"); }
 
 @font-face {
-  font-family: "OpenSansSemibold";
+  font-family: "ProximaNova-LightIt";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.ttf) format("truetype");
-  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.eot) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.eot?#iefix) format("embedded-opentype");
-  src: url(../fonts/OpenSans-Semibold/OpenSans-Semibold.woff) format("woff"); }
+  src: url(../fonts/ProximaNova-LightIt/ProximaNova-LightIt.ttf) format("truetype");
+  src: url(../fonts/ProximaNova-LightIt/ProximaNova-LightIt.eot) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-LightIt/ProximaNova-LightIt.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-LightIt/ProximaNova-LightIt.woff) format("woff"); }
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf) format("truetype");
+  src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.eot) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.woff) format("woff");
+  @font-face {}  font-family: "ProximaNova-Semibold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf) format("truetype");
+  src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff) format("woff"); }
 
 .container {
   width: 1170px;
@@ -49,23 +65,19 @@
 
 body {
   font-size: 16px;
-  font-family: "OpenSansRegular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "ProximaNova-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #fff;
   margin: 0;
   position: relative;
   line-height: 1.6;
   overflow-x: hidden;
-  -webkit-tap-highlight-color: transparent;
-  scrollbar-base-color: #5b6ceb;
-  scrollbar-arrow-color: #5b6ceb; }
-  body::-webkit-scrollbar {
-    width: 17px; }
-  body::-webkit-scrollbar-thumb {
-    background-color: #5b6ceb; }
-    body::-webkit-scrollbar-thumb:hover {
-      background-color: #2e43e5; }
+  -webkit-tap-highlight-color: transparent; }
   body::-webkit-scrollbar-track-piece {
     background-color: transparent; }
+
+a {
+  text-decoration: none;
+  color: #000; }
 
 p, ul {
   padding: 0;
@@ -134,31 +146,186 @@ html.mm-blocking, html.mm-blocking body {
   overflow: inherit; }
 
 .header {
-  width: 100%; }
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 0; }
+  .header__logo {
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #000;
+    font-size: 36px;
+    font-weight: 300; }
+    .header__logo a {
+      position: relative;
+      letter-spacing: 9px;
+      color: #000; }
+      .header__logo a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 38px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #ffec00;
+        width: 7px;
+        height: 7px; }
+  .header__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 70px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .header__nav {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    margin-left: 100px; }
     .header__nav ul li {
       list-style: none;
       display: inline-block; }
       .header__nav ul li a {
-        margin-right: 15px;
-        color: #fff;
+        position: relative;
+        font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: #7f7f7f;
         text-decoration: none;
-        -webkit-transition: .5s;
-        -o-transition: .5s;
-        transition: .5s; }
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        font-size: 14px;
+        font-weight: 700; }
+        .header__nav ul li a:before {
+          content: " ";
+          position: absolute;
+          top: 22px;
+          height: 2px;
+          width: 0;
+          background-color: #ffec00;
+          -webkit-transition: width 0.2s ease-in-out;
+          -o-transition: width 0.2s ease-in-out;
+          transition: width 0.2s ease-in-out;
+          left: 0; }
+        .header__nav ul li a:after {
+          content: " ";
+          position: absolute;
+          top: 22px;
+          height: 2px;
+          width: 0;
+          background-color: #ffec00;
+          -webkit-transition: width 0.2s ease-in-out;
+          -o-transition: width 0.2s ease-in-out;
+          transition: width 0.2s ease-in-out;
+          right: 0; }
+        .header__nav ul li a:hover, .header__nav ul li a:focus {
+          -webkit-transition: color .5s;
+          -o-transition: color .5s;
+          transition: color .5s;
+          color: #000; }
+          .header__nav ul li a:hover:before, .header__nav ul li a:focus:before {
+            width: 50%; }
+          .header__nav ul li a:hover:after, .header__nav ul li a:focus:after {
+            width: 50%; }
+      .header__nav ul li + li {
+        margin-left: 60px; }
+  .header__private-office {
+    font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .header__private-office:before {
+      margin-right: 10px;
+      content: "";
+      display: inline-block;
+      background-image: url(../img/sprite.png);
+      background-position: 0px -82px;
+      width: 14px;
+      height: 15px; }
+    .header__private-office a {
+      color: #7f7f7f; }
+  .header___controls {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+  .header__swich-language {
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    border: 1px solid #f4f3f5;
+    padding: 20px;
+    border-bottom: 4px solid #ffec00;
+    left: 8px;
+    top: 40px;
+    z-index: -1; }
+    .header__swich-language:before {
+      position: absolute;
+      top: -13px;
+      left: -webkit-calc(50% - 8px);
+      left: calc(50% - 8px);
+      content: "";
+      display: block;
+      background-image: url(../img/sprite.png);
+      background-position: -14px -82px;
+      width: 16px;
+      height: 13px; }
+    .header__swich-language a {
+      display: block;
+      font-size: 14px;
+      font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #b0b0b0; }
+      .header__swich-language a + a {
+        margin-top: 15px; }
+    .header__swich-language a.active {
+      color: #2a2a2a; }
+  .header___dropdown-language {
+    position: relative;
+    margin-right: 40px; }
+    .header___dropdown-language .fa-angle-right {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+    .header___dropdown-language:hover .header__swich-language {
+      opacity: 1;
+      z-index: 1; }
+    .header___dropdown-language:hover .fa-angle-right {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .header__curent-language {
+    padding: 0 30px 30px 30px;
+    color: #7f7f7f;
+    font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px; }
 
 .hamburger {
+  position: fixed;
+  top: 10px;
+  right: 10px;
   display: none; }
 
 .top-section {
-  text-align: center;
   min-height: 600px;
-  height: 100vh;
-  background: url(../img/header_bg.jpg) no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  height: -webkit-calc(100vh - 107px);
+  height: calc(100vh - 107px);
+  background: url(../img/top_section-bg.png) no-repeat right;
+  padding: 150px 0 65px 0; }
   .top-section__title {
     color: red;
     position: absolute;
@@ -168,8 +335,4 @@ html.mm-blocking, html.mm-blocking body {
     right: 0; }
     .top-section__title:before {
       content: "";
-      display: block;
-      background-image: url(../img/sprite.png);
-      background-position: 0px 0px;
-      width: 30px;
-      height: 21px; }
+      display: block; }
