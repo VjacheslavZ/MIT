@@ -10,6 +10,10 @@
         margin-left: 30px
     &___dropdown-language
       margin-right: 20px
+  //2
+  .for-who__wrap-bg
+    &:before,  &:after
+      display: none
 
 @media only screen and (max-width : 992px)
   /**/
@@ -24,17 +28,36 @@
       display: none
   .top-section
     height: calc(100vh - 0px)
+
+
 @media only screen and (max-width : 768px)
   /**/
+  .top-section
+    background-size: cover
+    background-position: center
   .header__wrap
     flex-direction: column
     padding: 0
+  //2
+  .for-who__item
+    text-align: center
+  .for-who__title
+    text-align: center
+    &:before
+      left: inherit
+  .for-who__wrap .col-lg-3
+    &:before
+      margin: 0 auto
+
 @media only screen and (max-width : 520px)
   /**/
   .top-section
-    padding: 70px 15px 0 15px
+    padding: 0px 15px 0 15px
     &__content
       width: 100%
+      top: calc(50% - 288px)
       position: inherit
     &__title
       font-size: 38px
+    &__description
+      margin: 25px 0 50px 0

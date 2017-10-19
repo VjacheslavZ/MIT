@@ -27,3 +27,37 @@ $accent_color: #ffec00
   width: 0
   background-color: $accent_color
   transition: width 0.2s ease-in-out
+
+@mixin underline_text()
+  &:before
+    content: ""
+    position: absolute
+    bottom: -15px
+    left: 0
+    width: 80px
+    height: 3px
+    background-color: $accent_color
+
+@mixin rhomb()
+  content: ""
+  position: absolute
+  transform: rotate(45deg)
+  top: -124px
+  left: -122px
+  width: 250px
+  height: 250px
+  background-image: repeating-radial-gradient(center center, $text_light-gray_color, $text_light-gray_color 2px, transparent 2px, transparent 100%)
+  background-size: 18px 18px
+  z-index: -1
+
+@mixin circle()
+  content: ""
+  position: absolute
+  bottom: -212px
+  right: -557px
+  border-radius: 50%
+  width: 635px
+  height: 635px
+  background-image: repeating-radial-gradient(center center, $text_light-gray_color, $text_light-gray_color 2px, transparent 2px, transparent 100%)
+  background-size: 18px 18px
+  z-index: -1

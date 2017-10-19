@@ -456,8 +456,12 @@ $(document).ready(function () {
     }).bind("close:finish", function () {
         $(".hamburger").removeClass("is-active")
     })
-});
 
+    //equal height
+    $('.for-who__wrap .for-who__item-title').equalHeights();
+
+
+});
 
 
 
