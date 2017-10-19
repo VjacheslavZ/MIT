@@ -1,45 +1,18 @@
 extends ../base
 block title
-    | Index page
+    | Главная
 
 block main
     main#my-content
         section.top-section
-            .container
-                .row
-                    .top-section__title
-                        h1
-                            span text
-                            |  text
-                        p text desk
+            .top-section__content
+                h1.top-section__title Сообщество IT управленцев
+                p.top-section__description Главная цель сообщества - обучить  IT правленцев которые будут создавать сильные команды и успешные проекты мирового уровня
+                button.button Получить знания
 
-        section.intermediate
-            .container
-                .row
-                    .intermediate_title
-                        h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы
-                    .intermediate_wrap
-                        form#form-file.clearfix
-                            //.file_wrap
-                                input(type='file' name='field')
-                            .row
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='name', type='text', placeholder='Имя')
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='email', type='text', placeholder='Почта')
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='phone', type='text', placeholder='Телефон')
-                                input(type='hidden', name='form_name', value='baseForm')
-                                input(type='hidden', name='form_type', value='normal')
-                                .intermediate_item
-                                    input(type='submit', value='Записаться')
-        section.intermediate
+
+
+        //section.intermediate
             .container
                 .row
                     .intermediate_title

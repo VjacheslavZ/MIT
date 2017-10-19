@@ -26,6 +26,9 @@ body
 a
   text-decoration: none
   color: #000
+  &:hover
+    text-decoration: none
+
 p,ul
   padding: 0
   margin: 0
@@ -35,41 +38,20 @@ li
 .button
   display: inline-block
   border: none
-  color: #fff
+  color: #000
+  background-color: $accent_color
   text-decoration: none
-  padding: 15px 45px
-  font-size: 13px
+  padding: 24px 50px
+  font-size: 14px
   text-transform: uppercase
-  font-weight: 600
-  letter-spacing: 3px
-  border-radius: 2px
+  font-weight: 700
+  border-radius: 30px
   text-align: center
   position: relative
   outline: none
   transition: background-color .1s ease
-  &::after
-    transition: background-color .2s ease
-    position: absolute
-    content: ''
-    height: 4px
-    bottom: 0
-    width: 100%
-    //background-color: darken($accent, 50%)
-    opacity: .18
-    border-bottom-left-radius: 2px
-    border-bottom-right-radius: 2px
-    left: 0
-  &:focus, &:hover
-    text-decoration: none
-    color: #fff
-  &:hover
-    //background-color: lighten($accent, 5%)
-    &::after
-      opacity: .22
-  &:active
-   // background-color: darken($accent, 5%)
-    &::after
-      opacity: .32
+  box-shadow: 0 2px 16px rgba(255, 236, 0, 0.58)
+
 
 
 

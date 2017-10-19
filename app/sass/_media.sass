@@ -1,0 +1,40 @@
+@media only screen and (max-width : 1200px)
+  /**/
+  //header
+  .header
+    &__wrap
+      padding: 0 45px
+    &__nav
+      margin-left: 50px
+      ul li + li
+        margin-left: 30px
+    &___dropdown-language
+      margin-right: 20px
+
+@media only screen and (max-width : 992px)
+  /**/
+  //header
+  .hamburger
+    display: block
+  .header
+    padding: 5px 0
+    &__wrap
+      padding: 0 65px
+    &__nav
+      display: none
+  .top-section
+    height: calc(100vh - 0px)
+@media only screen and (max-width : 768px)
+  /**/
+  .header__wrap
+    flex-direction: column
+    padding: 0
+@media only screen and (max-width : 520px)
+  /**/
+  .top-section
+    padding: 70px 15px 0 15px
+    &__content
+      width: 100%
+      position: inherit
+    &__title
+      font-size: 38px
