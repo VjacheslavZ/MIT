@@ -28,12 +28,15 @@ a
   color: #000
   &:hover
     text-decoration: none
+    color: #000
 
 p,ul
   padding: 0
   margin: 0
 li
   list-style: none
+input
+  outline: none
 
 .button
   display: inline-block
@@ -49,8 +52,46 @@ li
   text-align: center
   position: relative
   outline: none
-  transition: background-color .1s ease
-  box-shadow: 0 2px 16px rgba(255, 236, 0, 0.58)
+  &:hover
+    transition: all .1s ease
+    box-shadow: 0 2px 16px rgba(255, 236, 0, 0.58)
+.button__type_2
+  display: inline-block
+  border: none
+  color: #000
+  background-color: $accent_color
+  text-decoration: none
+  padding: 15px 45px
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: 700
+  border-radius: 30px
+  text-align: center
+  position: relative
+  outline: none
+  word-wrap: normal
+  &:hover
+    transition: all .1s ease
+    box-shadow: 0 2px 16px rgba(255, 236, 0, 0.58)
+
+.button__type_3
+  display: inline-block
+  color: #000
+  background-color: transparent
+  border: 1px solid #f0f0f0
+  text-decoration: none
+  padding: 15px 45px
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: 700
+  border-radius: 30px
+  text-align: center
+  position: relative
+  outline: none
+
+  //&:hover
+    transition: all .1s ease
+    box-shadow: 0 2px 16px rgba(255, 236, 0, 0.58)
 
 
 

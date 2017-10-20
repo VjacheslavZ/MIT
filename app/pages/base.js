@@ -458,7 +458,13 @@ $(document).ready(function () {
     })
 
     //equal height
+
     $('.for-who__wrap .for-who__item-title').equalHeights();
+    $(".our-programs__pogram_wrap").equalHeights();
+    $(".our-programs__name").equalHeights();
+    $(".our-programs__name-course").equalHeights();
+
+
 
 
 });
