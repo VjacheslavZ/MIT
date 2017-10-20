@@ -28,9 +28,9 @@
     line-height: 32px
     margin: 50px 0 87px 0
 
-//section .for-who
+//section .for-who START
 .for-who
-  padding: 70px 0 100px 0
+  padding: 70px 0 75px 0
   &__wrap
     margin-top: 20px
     padding: 150px 0 140px 0
@@ -43,19 +43,30 @@
     &:after
       @include circle()
   &__title
-    font-family: $ProximaNova-Light
-    font-size: 32px
-    font-weight: 300
-    text-transform: uppercase
-    letter-spacing: 7px
-    position: relative
+    //font-family: $ProximaNova-Light
+    //font-size: 32px
+    //font-weight: 300
+    //text-transform: uppercase
+    //letter-spacing: 7px
+    //position: relative
+    @include section-defaulf-title()
     margin: 0 0 90px 0
     @include underline_text()
   &__item
+    padding-top: 5px
     padding-bottom: 75px
+    transition: all .3s
+    border-top: 8px solid transparent
     &:before
       display: block
       min-height: 50px
+    &:hover
+      background: $bgColor
+      border-top: 8px solid $accent_color
+      transform: scale(1.1)
+      position: relative
+      z-index: 1
+      box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09)
   &__item-title
     font-family: $ProximaNova-Bold
     font-size: 19px
@@ -68,6 +79,7 @@
     font-size: 17px
     font-weight: 400
     line-height: 32px
+
 
 //Icons section .for-who
 .for-who__wrap .col-lg-3
@@ -113,6 +125,52 @@
       @include sprite($starters_companies_ic)
   &:before
     min-height: 42px
+
+
+//section after-study START
+.after-study
+  padding: 100px 0 150px 0
+  background: url("../img/after_training_bg.png") no-repeat left 80%
+  &__title
+    @include section-defaulf-title()
+    @include underline_text()
+    margin-bottom: 90px
+  &__bg
+    height: 400px
+  &__advantages-title
+    font-family: $ProximaNova-Bold
+    font-size: 19px
+  &__advantages-list
+    li
+      & + li
+        margin-top: 14px
+    p
+      margin-left: 25px
+      font-size: 17px
+      color: #949494
+      display: inline
+    span
+      font-family: $ProximaNova-Bold
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      border: 1px solid #ebebeb
+      display: inline-block
+      width: 36px
+      height: 36px
+      line-height: 1
+      position: relative
+      text-align: center
+      line-height: 2.2
+      &:after
+        content: ""
+        right: -5px
+        top: 11px
+        width: 10px
+        height: 10px
+        background-color: #ffec00
+        border-radius: 50%
+        position: absolute
 
 
 @import "media"
