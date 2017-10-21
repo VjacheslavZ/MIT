@@ -640,7 +640,8 @@ html.mm-blocking, html.mm-blocking body {
   .our-programs__pogram_wrap {
     margin-top: 60px;
     border: 1px solid #f0f0f0;
-    padding: 60px 40px 40px 40px; }
+    padding: 60px 40px 40px 40px;
+    background: #fff; }
   .our-programs__pogram {
     padding-bottom: 60px;
     border-bottom: 2px solid #f0f0f0;
@@ -825,7 +826,7 @@ html.mm-blocking, html.mm-blocking body {
         position: absolute;
         top: 5px;
         left: 5px;
-        background: #000;
+        background: #6f6f6f;
         -webkit-transition: all .3s;
         -o-transition: all .3s;
         transition: all .3s;
@@ -845,6 +846,8 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-wrap {
     min-height: 230px;
     border-left: 4px solid #c0c0c0; }
+    .course-designer__items-wrap li + li {
+      margin-top: 7px; }
   .course-designer__items-chosed {
     margin-top: 100px;
     padding: 10px 60px 60px 60px;
@@ -892,7 +895,7 @@ html.mm-blocking, html.mm-blocking body {
       font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       text-transform: uppercase; }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
     padding: 0 45px; }
@@ -924,7 +927,27 @@ html.mm-blocking, html.mm-blocking body {
         -ms-flex-direction: column;
             flex-direction: column; }
     .our-programs__contract .button__type_2, .our-programs__notify .button__type_2 {
-      margin-top: 15px; } }
+      margin-top: 15px; }
+  .course-designer {
+    padding: 0 0 50px 0; }
+    .course-designer:before {
+      display: none; }
+    .course-designer__cours-name {
+      margin-left: 30px; }
+      .course-designer__cours-name label {
+        left: -28px;
+        top: 3px; }
+    .course-designer__items-wrap i:before {
+      margin: 0; }
+    .course-designer__items-chosed {
+      padding: 0 0 10px 5px; }
+    .course-designer__items-wrap ul {
+      margin-left: 10px; }
+    .course-designer__form-contacts .intermediate_item input {
+      padding: 16px 0px 16px 26px; }
+    .course-designer__form-contacts .intermediate_item input[type="submit"] {
+      width: 202px;
+      padding: 16px 0px 16px 0; } }
 
 @media only screen and (max-width: 991px) {
   /**/
@@ -942,7 +965,15 @@ html.mm-blocking, html.mm-blocking body {
   .after-study {
     background: none; }
   .our-programs__info + .our-programs__info {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .course-designer__items-wrap span {
+    font-size: 12px; }
+  .course-designer__form-contacts .intermediate_item input {
+    padding: 8px 0 8px 8px;
+    width: 150px; }
+  .course-designer__form-contacts .intermediate_item input[type="submit"] {
+    padding: 8px 0 8px 0px;
+    width: 150px; } }
 
 @media only screen and (max-width: 768px) {
   /**/
@@ -1007,4 +1038,25 @@ html.mm-blocking, html.mm-blocking body {
   .our-programs__pogram {
     padding-bottom: 0; }
   .our-programs__contract {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+  .course-designer__courses-name {
+    margin-bottom: 10px; }
+  .course-designer__items-chosed {
+    margin-top: 25px; }
+  .course-designer__form-contacts {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .course-designer__form-contacts .intermediate_item {
+      margin-top: 25px; } }

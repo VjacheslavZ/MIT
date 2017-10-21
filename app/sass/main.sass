@@ -214,6 +214,7 @@
     margin-top: 60px
     border: 1px solid #f0f0f0
     padding: 60px 40px 40px 40px
+    background: #fff
   &__pogram
     padding-bottom: 60px
     border-bottom: 2px solid #f0f0f0
@@ -282,7 +283,6 @@
     justify-content: space-between
     align-items: center
     margin-top: 55px
-
   &__notify-me
     border-bottom: 2px solid $accent_color
     display: inline-block
@@ -345,7 +345,7 @@
         position: absolute
         top: 5px
         left: 5px
-        background: $text_black_color
+        background: #6f6f6f
         transition: all .3s
         //opacity: 0.5
         border-radius: 50px
@@ -373,6 +373,8 @@
   &__items-wrap
     min-height: 230px
     border-left: 4px solid #c0c0c0
+    li + li
+      margin-top: 7px
   &__items-chosed
     margin-top: 100px
     padding: 10px 60px 60px 60px

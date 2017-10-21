@@ -202,13 +202,14 @@ block main
                 .row
                     .col-sm-12
                         h2.course-designer__title Конструктор курса
+                .row
                     .col-lg-8
                         p.course-designer__manual Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.
             .container
                 form
                     .row
                         .course-designer__form.clearfix#form-file
-                            .col-lg-4
+                            .col-sm-4.col-xs-12
                                 .course-designer__items
                                     p.course-designer__courses-name Название курса
                                     .course-designer__items-wrap
@@ -221,7 +222,7 @@ block main
                                             input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
                                             label(for="managment-offline")
                                             i.fa.fa-long-arrow-right
-                            .col-lg-4
+                            .col-sm-4.col-xs-12
                                 .course-designer__items
                                     p.course-designer__courses-name Название блока
                                     .course-designer__items-wrap
@@ -248,7 +249,7 @@ block main
                                         span.course-designer__cours-name Продажи
                                             input(type="checkbox" value="Project Managment (Offline)" id="sales")
                                             label(for="sales")
-                            .col-lg-4
+                            .col-sm-4.col-xs-12
                                 .course-designer__items-chosed
                                     p.course-designer__courses-finish Вы выбрали курс:
                                     p.course-designer__courses-chosed IT Project Managment (Online)
@@ -265,24 +266,24 @@ block main
                                                 span Работа с клиентами
 
                     .row
-                        .course-designer__form-contacts
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='phone', type='text', placeholder='Телефон').mask
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='email', type='text', placeholder='E-mail')
-
-                            input(type='hidden', name='form_name', value='baseForm')
-                            input(type='hidden', name='form_type', value='normal')
-                            .intermediate_item
-                                input(type='submit', value='Записаться')
+                        .col-lg-12
+                            .course-designer__form-contacts
+                                .intermediate_item
+                                    .input_wrap
+                                        i.fa.fa-check
+                                        input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
+                                .intermediate_item
+                                    .input_wrap
+                                        i.fa.fa-check
+                                        input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
+                                .intermediate_item
+                                    .input_wrap
+                                        i.fa.fa-check
+                                        input(name='email', type='text', placeholder='E-MAIL')
+                                input(type='hidden', name='form_name', value='baseForm')
+                                input(type='hidden', name='form_type', value='normal')
+                                .intermediate_item
+                                    input(type='submit', value='Записаться')
         //section.intermediate
             .container
                 .row

@@ -1,4 +1,4 @@
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1199px)
   /**/
   //header
   .header
@@ -36,6 +36,29 @@
     flex-direction: column
     .button__type_2
       margin-top: 15px
+  //5.course-designer
+  .course-designer
+    padding: 0 0 50px 0
+    &:before
+      display: none
+    &__cours-name
+      margin-left: 30px
+      label
+        left: -28px
+        top: 3px
+    &__items-wrap i:before
+      margin: 0
+    &__items-chosed
+      padding: 0 0 10px 5px
+    &__items-wrap
+      ul
+        margin-left: 10px
+    &__form-contacts .intermediate_item input
+      padding: 16px 0px 16px 26px
+    &__form-contacts .intermediate_item input[type="submit"]
+      width: 202px
+      padding: 16px 0px 16px 0
+
 @media only screen and (max-width : 991px)
   /**/
 
@@ -58,6 +81,17 @@
   //4.our-programs
   .our-programs__info + .our-programs__info
     margin-left: 0
+  //5
+  .course-designer
+    &__items-wrap span
+      font-size: 12px
+    &__form-contacts .intermediate_item input
+      padding: 8px 0 8px 8px
+      width: 150px
+    &__form-contacts .intermediate_item input[type="submit"]
+      padding: 8px 0 8px 0px
+      width: 150px
+
 @media only screen and (max-width : 768px)
   /**/
 
@@ -120,3 +154,17 @@
       padding-bottom: 0
     &__contract
       margin-top: 25px
+  //5.course-designer
+  .course-designer
+    &__courses-name
+      margin-bottom: 10px
+    &__items-chosed
+      margin-top: 25px
+    &__form-contacts
+      margin-top: 20px
+      display: flex
+      align-items: center
+      flex-direction: column
+        .intermediate_item
+        margin-top: 25px
+
