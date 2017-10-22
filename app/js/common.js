@@ -464,9 +464,31 @@ $(document).ready(function () {
     $(".our-programs__name").equalHeights();
     $(".our-programs__name-course").equalHeights();
 
+    //video
+    let playButton = $("#play-pause"),
+        video = $("#video video"),
+        videoBg = $(".video__bg");
 
+    playButton.click(function() {
+        video[0].volume = 0;
 
+        if(video[0].paused){
+            video[0].play();
+            playButton.fadeOut();
+            videoBg.css({"opacity":"0"});
+        }else{
+            video[0].pause();
 
+        }
+    });
+
+    video.click(function() {
+        if(this.play()){
+            this.pause();
+            playButton.fadeIn();
+            videoBg.css({"opacity":"1"});
+        }
+    });
 });
 
 

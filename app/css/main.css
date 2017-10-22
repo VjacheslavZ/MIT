@@ -274,7 +274,7 @@ html.mm-blocking, html.mm-blocking body {
       content: "";
       display: inline-block;
       background-image: url(../img/sprite.png);
-      background-position: 0px -122px;
+      background-position: 0px -202px;
       width: 14px;
       height: 15px; }
     .header__private-office a {
@@ -309,7 +309,7 @@ html.mm-blocking, html.mm-blocking body {
       content: "";
       display: block;
       background-image: url(../img/sprite.png);
-      background-position: -34px -122px;
+      background-position: -34px -202px;
       width: 16px;
       height: 13px; }
     .header__swich-language a {
@@ -464,7 +464,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -60px 0px;
+  background-position: 0px -144px;
   width: 41px;
   height: 38px; }
 
@@ -472,7 +472,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -121px -56px;
+  background-position: -121px -144px;
   width: 40px;
   height: 36px; }
 
@@ -480,7 +480,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -144px 0px;
   width: 40px;
   height: 40px; }
 
@@ -488,7 +488,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: 0px -60px;
+  background-position: -144px -60px;
   width: 38px;
   height: 42px; }
 
@@ -496,7 +496,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -181px -60px;
+  background-position: -204px -120px;
   width: 35px;
   height: 41px; }
 
@@ -504,7 +504,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -121px 0px;
+  background-position: -61px -144px;
   width: 40px;
   height: 36px; }
 
@@ -512,7 +512,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -60px -58px;
+  background-position: -204px 0px;
   width: 36px;
   height: 40px; }
 
@@ -520,7 +520,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -181px 0px;
+  background-position: -204px -60px;
   width: 36px;
   height: 40px; }
 
@@ -773,6 +773,21 @@ html.mm-blocking, html.mm-blocking body {
     z-index: -1;
     left: -375px;
     top: -327px; }
+  .course-designer:after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 635px;
+    height: 635px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    right: -375px;
+    bottom: -220px; }
   .course-designer__title {
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 32px;
@@ -849,6 +864,7 @@ html.mm-blocking, html.mm-blocking body {
     .course-designer__items-wrap li + li {
       margin-top: 7px; }
   .course-designer__items-chosed {
+    background: #fff;
     margin-top: 100px;
     padding: 10px 60px 60px 60px;
     -webkit-box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09);
@@ -895,6 +911,101 @@ html.mm-blocking, html.mm-blocking body {
       font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       text-transform: uppercase; }
 
+.why-created {
+  position: relative;
+  padding: 100px 0 80px 0; }
+  .why-created:before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -124px;
+    left: -122px;
+    width: 250px;
+    height: 250px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: 70px; }
+  .why-created__wrap {
+    background-color: #fff; }
+  .why-created__title {
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative;
+    margin-bottom: 55px; }
+    .why-created__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .why-created__description {
+    font-size: 20px;
+    font-family: "ProximaNova-LightIt", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #6f6f6f; }
+    .why-created__description span {
+      font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .why-created__description strong {
+      margin-left: 5px;
+      color: #000;
+      font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .why-created__description_default {
+    margin-top: 35px;
+    font-size: 20px;
+    color: #6f6f6f; }
+
+.video {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  height: 730px; }
+  .video .video__bg {
+    background: url("../img/video_bg.jpg") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    .video .video__bg:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7); }
+  .video__play-pause {
+    z-index: 1;
+    position: absolute;
+    top: -webkit-calc(50% - 70px);
+    top: calc(50% - 70px);
+    left: -webkit-calc(50% - 70px);
+    left: calc(50% - 70px);
+    background: transparent;
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 124px;
+    height: 124px;
+    display: inline-block;
+    cursor: pointer; }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
@@ -930,7 +1041,7 @@ html.mm-blocking, html.mm-blocking body {
       margin-top: 15px; }
   .course-designer {
     padding: 0 0 50px 0; }
-    .course-designer:before {
+    .course-designer:before, .course-designer:after {
       display: none; }
     .course-designer__cours-name {
       margin-left: 30px; }
@@ -947,7 +1058,11 @@ html.mm-blocking, html.mm-blocking body {
       padding: 16px 0px 16px 26px; }
     .course-designer__form-contacts .intermediate_item input[type="submit"] {
       width: 202px;
-      padding: 16px 0px 16px 0; } }
+      padding: 16px 0px 16px 0; }
+  .why-created {
+    padding: 50px 0 40px 0; }
+    .why-created:before {
+      display: none; } }
 
 @media only screen and (max-width: 991px) {
   /**/

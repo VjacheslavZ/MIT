@@ -39,7 +39,7 @@
   //5.course-designer
   .course-designer
     padding: 0 0 50px 0
-    &:before
+    &:before, &:after
       display: none
     &__cours-name
       margin-left: 30px
@@ -58,7 +58,11 @@
     &__form-contacts .intermediate_item input[type="submit"]
       width: 202px
       padding: 16px 0px 16px 0
-
+  //6 section .why-created
+  .why-created
+    padding: 50px 0 40px 0
+    &:before
+      display: none
 @media only screen and (max-width : 991px)
   /**/
 
@@ -165,6 +169,5 @@
       display: flex
       align-items: center
       flex-direction: column
-        .intermediate_item
+      .intermediate_item
         margin-top: 25px
-

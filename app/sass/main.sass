@@ -307,6 +307,10 @@
     @include circle()
     left: -375px
     top: -327px
+  &:after
+    @include circle()
+    right: -375px
+    bottom: -220px
   &__title
     @include section-defaulf-title()
     @include underline_text()
@@ -376,6 +380,7 @@
     li + li
       margin-top: 7px
   &__items-chosed
+    background: $bgColor
     margin-top: 100px
     padding: 10px 60px 60px 60px
     box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09)
@@ -414,4 +419,63 @@
         background: $accent_color
         font-family: $ProximaNova-Bold
         text-transform: uppercase
+
+//6 section .why-created
+.why-created
+  position: relative
+  padding: 100px 0 80px 0
+  &:before
+    @include rhomb()
+    top: 70px
+  &__wrap
+    background-color: $bgColor
+  &__title
+    @include section-defaulf-title()
+    @include underline_text()
+    margin-bottom: 55px
+  &__description
+    font-size: 20px
+    font-family: $ProximaNova-LightIt
+    color: #6f6f6f
+    span
+      font-family: $ProximaNova-Light
+    strong
+      margin-left: 5px
+      color: $text_black_color
+      font-family: $ProximaNova-Bold
+  &__description_default
+    margin-top: 35px
+    font-size: 20px
+    color: #6f6f6f
+//7 sevtion video
+.video
+  display: flex
+  background-size: cover
+  position: relative
+  height: 730px
+  .video__bg
+    background: url("../img/video_bg.jpg") no-repeat
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    transition: .5s
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0, 0, 0, 0.7)
+  &__play-pause
+    z-index: 1
+    position: absolute
+    top: calc(50% - 70px)
+    left: calc(50% - 70px)
+    background: transparent
+    @include sprite($video_play_pause_ic)
+    display: inline-block
+    cursor: pointer
 @import "media"
