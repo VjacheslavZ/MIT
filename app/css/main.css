@@ -1208,6 +1208,40 @@ html.mm-blocking, html.mm-blocking body {
   .reviews .owl-theme .owl-dots .owl-dot.active span, .reviews .owl-theme .owl-dots .owl-dot:hover span {
     background: #ffec00; }
 
+.news {
+  background-color: #fbfbfb;
+  padding: 200px 0 200px 0; }
+  .news__photo {
+    width: 100%;
+    height: auto; }
+  .news__date {
+    margin: 25px 0 25px 0;
+    display: block;
+    color: #727272; }
+  .news__title {
+    display: block;
+    color: #000;
+    font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: border-bottom .3s;
+    -o-transition: border-bottom .3s;
+    transition: border-bottom .3s; }
+    .news__title:hover {
+      border-bottom: 3px solid #ffec00; }
+  .news__description {
+    margin-top: 20px;
+    color: #727272; }
+  .news .button__type_2 {
+    background-color: transparent;
+    border: 1px solid #d1d1d1;
+    display: block;
+    margin: 70px auto 0; }
+    .news .button__type_2:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
@@ -1270,7 +1304,9 @@ html.mm-blocking, html.mm-blocking body {
     .our-goal:before {
       display: none; }
   .reviews:before, .reviews:after {
-    display: none; } }
+    display: none; }
+  .news {
+    padding: 50px 0 50px 0; } }
 
 @media only screen and (max-width: 991px) {
   /**/

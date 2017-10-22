@@ -598,7 +598,36 @@
     font-family: $ProximaNova-LightIt
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
     background: $accent_color
-
+.news
+  background-color: #fbfbfb
+  padding: 200px 0 200px 0
+  &__photo
+    width: 100%
+    height: auto
+  &__date
+    margin: 25px 0 25px 0
+    display: block
+    color: #727272
+  &__title
+    display: block
+    color: #000
+    font-family: $ProximaNova-Bold
+    font-size: 24px
+    line-height: 32px
+    border-bottom: 3px solid transparent
+    transition: border-bottom .3s
+    &:hover
+      border-bottom: 3px solid $accent_color
+  &__description
+    margin-top: 20px
+    color: #727272
+  .button__type_2
+    background-color: transparent
+    border: 1px solid #d1d1d1
+    display: block
+    margin: 70px auto 0
+    &:hover
+      box-shadow: none
 
 
 @import "media"
