@@ -499,4 +499,14 @@ $(document).ready(function () {
         nav: false,
         smartSpeed: 500
     });
+
+    var reviews = $("#reviews.owl-carousel");
+
+    reviews.owlCarousel({
+        loop: false,
+        items: 1,
+        dots: true,
+        nav: false,
+        smartSpeed: 500
+    });
 });

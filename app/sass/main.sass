@@ -539,6 +539,65 @@
     position: absolute
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
     background: $accent_color
+.reviews
+  padding: 200px 0 200px 0
+  position: relative
+  &:before
+    @include rhomb()
+    top: 70px
+    right: -100px
+  &:after
+    @include circle
+    bottom: 0
+    left: -445px
+  &__wrap
+    padding-bottom: 40px
+  .container
+    background: $bgColor
+  &__wrap
+    background: $bgColor
+  &__title
+    @include section-defaulf-title()
+    @include underline_text()
+    margin-bottom: 155px
+  &__photo
+    width: 142px
+    height: 142px
+    position: relative
+  &__photo_wrap
+    position: relative
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      top: 47px
+      z-index: -1
+      right: -40px
+      width: 87px
+      height: 87px
+      border-radius: 50%
+      background-image: linear-gradient(to bottom, #ffec00 40%,#fff9b2  100%)
+  &__item
+    padding: 70px 20px 130px 20px
+    display: flex
+    align-items: center
+    flex-direction: column
+    box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09)
+  &__autor
+    margin: 35px 0 10px 0
+    font-family: $ProximaNova-Bold
+    font-size: 19px
+  &__age
+    margin-bottom: 45px
+    font-size: 15px
+    color: #a7a7a7
+  &__text
+    color: #6f6f6f
+    font-size: 17px
+    line-height: 32px
+    font-family: $ProximaNova-LightIt
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    background: $accent_color
 
 
 

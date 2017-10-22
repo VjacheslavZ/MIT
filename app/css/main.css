@@ -387,7 +387,6 @@ html.mm-blocking, html.mm-blocking body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: -124px;
-    left: -122px;
     width: 250px;
     height: 250px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -921,7 +920,6 @@ html.mm-blocking, html.mm-blocking body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: -124px;
-    left: -122px;
     width: 250px;
     height: 250px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1099,6 +1097,117 @@ html.mm-blocking, html.mm-blocking body {
   .teachers .owl-theme .owl-dots .owl-dot.active span, .teachers .owl-theme .owl-dots .owl-dot:hover span {
     background: #ffec00; }
 
+.reviews {
+  padding: 200px 0 200px 0;
+  position: relative; }
+  .reviews:before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -124px;
+    width: 250px;
+    height: 250px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: 70px;
+    right: -100px; }
+  .reviews:after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 635px;
+    height: 635px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    bottom: 0;
+    left: -445px; }
+  .reviews__wrap {
+    padding-bottom: 40px; }
+  .reviews .container {
+    background: #fff; }
+  .reviews__wrap {
+    background: #fff; }
+  .reviews__title {
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative;
+    margin-bottom: 155px; }
+    .reviews__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .reviews__photo {
+    width: 142px;
+    height: 142px;
+    position: relative; }
+  .reviews__photo_wrap {
+    position: relative; }
+    .reviews__photo_wrap:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 47px;
+      z-index: -1;
+      right: -40px;
+      width: 87px;
+      height: 87px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffec00), to(#fff9b2));
+      background-image: -webkit-linear-gradient(top, #ffec00 40%, #fff9b2 100%);
+      background-image: -o-linear-gradient(top, #ffec00 40%, #fff9b2 100%);
+      background-image: linear-gradient(to bottom, #ffec00 40%, #fff9b2 100%); }
+  .reviews__item {
+    padding: 70px 20px 130px 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09);
+            box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09); }
+  .reviews__autor {
+    margin: 35px 0 10px 0;
+    font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 19px; }
+  .reviews__age {
+    margin-bottom: 45px;
+    font-size: 15px;
+    color: #a7a7a7; }
+  .reviews__text {
+    color: #6f6f6f;
+    font-size: 17px;
+    line-height: 32px;
+    font-family: "ProximaNova-LightIt", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .reviews .owl-theme .owl-dots .owl-dot.active span, .reviews .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffec00; }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
@@ -1159,7 +1268,9 @@ html.mm-blocking, html.mm-blocking body {
   .our-goal {
     padding: 100px 0 25px 0; }
     .our-goal:before {
-      display: none; } }
+      display: none; }
+  .reviews:before, .reviews:after {
+    display: none; } }
 
 @media only screen and (max-width: 991px) {
   /**/
