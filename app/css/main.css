@@ -1006,6 +1006,49 @@ html.mm-blocking, html.mm-blocking body {
     display: inline-block;
     cursor: pointer; }
 
+.our-goal {
+  position: relative;
+  padding: 200px 0 25px 0; }
+  .our-goal:before {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 635px;
+    height: 635px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    left: -390px;
+    top: -45px; }
+  .our-goal__wrap {
+    background-color: #fff;
+    font-size: 20px; }
+    .our-goal__wrap strong {
+      font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .our-goal__title {
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative;
+    margin-bottom: 65px; }
+    .our-goal__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .our-goal__main-goal {
+    display: inline;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
@@ -1062,6 +1105,10 @@ html.mm-blocking, html.mm-blocking body {
   .why-created {
     padding: 50px 0 40px 0; }
     .why-created:before {
+      display: none; }
+  .our-goal {
+    padding: 100px 0 25px 0; }
+    .our-goal:before {
       display: none; } }
 
 @media only screen and (max-width: 991px) {

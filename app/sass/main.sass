@@ -478,4 +478,24 @@
     @include sprite($video_play_pause_ic)
     display: inline-block
     cursor: pointer
+//8 section our-goal
+.our-goal
+  position: relative
+  padding: 200px 0 25px 0
+  &:before
+    @include circle()
+    left: -390px
+    top: -45px
+  &__wrap
+    background-color: $bgColor
+    font-size: 20px
+    strong
+      font-family: $ProximaNova-Bold
+  &__title
+    @include section-defaulf-title()
+    @include underline_text()
+    margin-bottom: 65px
+  &__main-goal
+    display: inline
+    font-family: $ProximaNova-Light
 @import "media"
