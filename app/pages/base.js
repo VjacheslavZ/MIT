@@ -489,4 +489,14 @@ $(document).ready(function () {
             videoBg.css({"opacity":"1"});
         }
     });
+
+    var teachesr__slider = $("#teachesr__slider.owl-carousel");
+
+    teachesr__slider.owlCarousel({
+        loop: false,
+        items: 1,
+        dots: true,
+        nav: false,
+        smartSpeed: 500
+    });
 });

@@ -1049,6 +1049,56 @@ html.mm-blocking, html.mm-blocking body {
     display: inline;
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
+.world-leaders {
+  padding: 25px 0 185px 0; }
+
+.teachers {
+  padding: 185px 0 200px 0; }
+  .teachers__title {
+    margin-bottom: 80px;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative; }
+    .teachers__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .teachers__item {
+    position: relative;
+    display: inline-block; }
+  .teachers__social_wrap {
+    position: absolute;
+    top: 32px;
+    left: 32px; }
+  .teachers__social {
+    font-size: 20px;
+    color: #8e8e8e;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s; }
+    .teachers__social + .teachers__social {
+      margin-left: 25px; }
+    .teachers__social:hover {
+      cursor: pointer;
+      color: #000; }
+  .teachers__name {
+    margin-top: 35px;
+    font-size: 24px;
+    font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .teachers__position {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #6f6f6f; }
+  .teachers .owl-theme .owl-dots .owl-dot.active span, .teachers .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffec00; }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {

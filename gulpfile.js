@@ -56,6 +56,7 @@ gulp.task("scripts-libs", function () {
       "app/libs/select2/dist/js/select2.full.js",
       "app/libs/mmenu/mmenu/jquery.mmenu.all.js",
        "app/libs/jQuery.equalHeights/jquery.equalheights.min.js",
+       "app/libs/fotorama/fotorama.js",
 
    ])
        .pipe(concat("libs.min.js"))

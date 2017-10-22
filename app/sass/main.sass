@@ -498,4 +498,48 @@
   &__main-goal
     display: inline
     font-family: $ProximaNova-Light
+//9 section world-leaders
+.world-leaders
+  padding: 25px 0 185px 0
+//10 section teachesr
+.teachers
+  padding: 185px 0 200px 0
+  &__title
+    margin-bottom: 80px
+    @include section-defaulf-title()
+    @include underline_text()
+  //.item
+    display: flex
+    justify-content: space-between
+  &__item
+    position: relative
+    display: inline-block
+  &__social_wrap
+    position: absolute
+    top: 32px
+    left: 32px
+  &__social
+    font-size: 20px
+    color: #8e8e8e
+    transition: color .3s
+    & + .teachers__social
+      margin-left: 25px
+    &:hover
+      cursor: pointer
+      color: $text_black_color
+  &__name
+    margin-top: 35px
+    font-size: 24px
+    font-family: $ProximaNova-Bold
+  &__position
+    margin-top: 15px
+    font-size: 17px
+    color: #6f6f6f
+  //.owl-carousel
+    position: absolute
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    background: $accent_color
+
+
+
 @import "media"
