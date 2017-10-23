@@ -811,11 +811,49 @@
     top: 163px
     left: -75px
     z-index: 0
+  &__title
+    position: relative
+    @include underline_text()
+    margin-bottom: 60px
   &__advantages-list
     span
       @include atomNumber
   &__advantages-list_mt
     padding-top: 50px
+
+//section .about-course
+.about-course
+  padding: 190px 0 210px 0
+  background-color: $bgColor
+  position: relative
+  z-index: 0
+  overflow: hidden
+  &:before
+    @include circle()
+    bottom: 25%
+    left: -10%
+  &:after
+    @include circle()
+    top: -250px
+    right: -300px
+  &__title
+    position: relative
+    @include underline_text()
+    margin-bottom: 170px
+  &__description
+
+    font-family: $ProximaNova-Light
+    font-size: 20px
+    line-height: 32px
+    color: #6f6f6f
+  .video
+    margin: 70px 0 75px 0
+  &__description_accent
+    color: $text_black_color
+    font-family: $ProximaNova-Bold
+    font-size: 20px
+  .about-course__description
+    margin-top: 0
 
 
 @import "media"
