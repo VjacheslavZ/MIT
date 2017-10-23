@@ -153,27 +153,28 @@
       color: #949494
       display: inline
     span
-      font-family: $ProximaNova-Bold
-      justify-content: center
-      align-items: center
-      border-radius: 50%
-      border: 1px solid #ebebeb
-      display: inline-block
-      width: 36px
-      height: 36px
-      line-height: 1
-      position: relative
-      text-align: center
-      line-height: 2.2
-      &:after
-        content: ""
-        right: -5px
-        top: 11px
-        width: 10px
-        height: 10px
-        background-color: #ffec00
-        border-radius: 50%
-        position: absolute
+      @include atomNumber()
+      //font-family: $ProximaNova-Bold
+      //justify-content: center
+      //align-items: center
+      //border-radius: 50%
+      //border: 1px solid #ebebeb
+      //display: inline-block
+      //width: 36px
+      //height: 36px
+      ////line-height: 1
+      //position: relative
+      //text-align: center
+      //line-height: 2.2
+      //&:after
+      //  content: ""
+      //  right: -5px
+      //  top: 11px
+      //  width: 10px
+      //  height: 10px
+      //  background-color: #ffec00
+      //  border-radius: 50%
+      //  position: absolute
 //section our-programs
 .our-programs
   padding: 200px 0 200px 0
@@ -748,5 +749,73 @@
     color: #b8b7b7
     li + li
       margin-left: 20px
+
+//---------------
+//start secon page
+//---------------
+.next-course
+  padding: 140px 70px 0 70px
+  height: calc(100vh - 107px)
+  background: url(../img/next-course_bg.png) no-repeat 100% center
+  position: relative
+  &:after
+    @include rhomb()
+    right: -200px
+    top: calc(50% - 150px)
+  &__content
+    position: absolute
+    top: calc(50% - 236px)
+    width: 50%
+  &__begin
+    font-size: 22px
+  &__begin-date
+    font-family: $ProximaNova-Semibold
+    color: $text_black_color
+    margin-left: 5px
+  &__info
+    position: relative
+    margin-top: 50px
+    margin-bottom: 50px
+    li:nth-child(1)
+      &:before
+        @include sprite($calendar_ic)
+    li:nth-child(2)
+      &:before
+        @include sprite($price-ic)
+    li:nth-child(3)
+      &:before
+        @include sprite($time-ic)
+    li:nth-child(4)
+      &:before
+        @include sprite($online-offline-ic)
+    li
+      display: inline-block
+      position: relative
+      margin-left: 40px
+      font-family: $ProximaNova-Semibold
+      font-size: 15px
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        left: -30px
+        top: 4px
+// section.what-get
+.what-get
+  padding: 250px 0 190px
+  background: url("../img/what_you_get_bg.png") #fbfbfb no-repeat center
+  position: relative
+  &:before
+    position: absolute
+    @include rhomb()
+    top: 163px
+    left: -75px
+    z-index: 0
+  &__advantages-list
+    span
+      @include atomNumber
+  &__advantages-list_mt
+    padding-top: 50px
+
 
 @import "media"

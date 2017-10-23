@@ -274,7 +274,7 @@ html.mm-blocking, html.mm-blocking body {
       content: "";
       display: inline-block;
       background-image: url(../img/sprite.png);
-      background-position: 0px -202px;
+      background-position: -120px -202px;
       width: 14px;
       height: 15px; }
     .header__private-office a {
@@ -309,7 +309,7 @@ html.mm-blocking, html.mm-blocking body {
       content: "";
       display: block;
       background-image: url(../img/sprite.png);
-      background-position: -34px -202px;
+      background-position: -154px -202px;
       width: 16px;
       height: 13px; }
     .header__swich-language a {
@@ -511,7 +511,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -204px 0px;
+  background-position: -204px -60px;
   width: 36px;
   height: 40px; }
 
@@ -519,7 +519,7 @@ html.mm-blocking, html.mm-blocking body {
   content: "";
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: -204px -60px;
+  background-position: -204px 0px;
   width: 36px;
   height: 40px; }
 
@@ -573,7 +573,6 @@ html.mm-blocking, html.mm-blocking body {
     display: inline-block;
     width: 36px;
     height: 36px;
-    line-height: 1;
     position: relative;
     text-align: center;
     line-height: 2.2; }
@@ -1394,6 +1393,133 @@ html.mm-blocking, html.mm-blocking body {
     .footer__social li + li {
       margin-left: 20px; }
 
+.next-course {
+  padding: 140px 70px 0 70px;
+  height: -webkit-calc(100vh - 107px);
+  height: calc(100vh - 107px);
+  background: url(../img/next-course_bg.png) no-repeat 100% center;
+  position: relative; }
+  .next-course:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -124px;
+    width: 250px;
+    height: 250px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    right: -200px;
+    top: -webkit-calc(50% - 150px);
+    top: calc(50% - 150px); }
+  .next-course__content {
+    position: absolute;
+    top: -webkit-calc(50% - 236px);
+    top: calc(50% - 236px);
+    width: 50%; }
+  .next-course__begin {
+    font-size: 22px; }
+  .next-course__begin-date {
+    font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #000;
+    margin-left: 5px; }
+  .next-course__info {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .next-course__info li:nth-child(1):before {
+      background-image: url(../img/sprite.png);
+      background-position: -80px -202px;
+      width: 20px;
+      height: 18px; }
+    .next-course__info li:nth-child(2):before {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -202px;
+      width: 20px;
+      height: 24px; }
+    .next-course__info li:nth-child(3):before {
+      background-image: url(../img/sprite.png);
+      background-position: -40px -202px;
+      width: 20px;
+      height: 20px; }
+    .next-course__info li:nth-child(4):before {
+      background-image: url(../img/sprite.png);
+      background-position: -260px 0px;
+      width: 9px;
+      height: 20px; }
+    .next-course__info li {
+      display: inline-block;
+      position: relative;
+      margin-left: 40px;
+      font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px; }
+      .next-course__info li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -30px;
+        top: 4px; }
+
+.what-get {
+  padding: 250px 0 190px;
+  background: url("../img/what_you_get_bg.png") #fbfbfb no-repeat center;
+  position: relative; }
+  .what-get:before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -124px;
+    width: 250px;
+    height: 250px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: 163px;
+    left: -75px;
+    z-index: 0; }
+  .what-get__advantages-list span {
+    font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 1px solid #ebebeb;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    line-height: 2.2; }
+    .what-get__advantages-list span:after {
+      content: "";
+      right: -5px;
+      top: 11px;
+      width: 10px;
+      height: 10px;
+      background-color: #ffec00;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      position: absolute; }
+  .what-get__advantages-list_mt {
+    padding-top: 50px; }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
@@ -1460,7 +1586,15 @@ html.mm-blocking, html.mm-blocking body {
   .news {
     padding: 50px 0 50px 0; }
   .contacts {
-    padding: 50px 0 35px 0; } }
+    padding: 50px 0 35px 0; }
+  .next-course {
+    padding: 140px 15px 0 15px; }
+    .next-course__content {
+      width: 80%; }
+  .what-get {
+    padding: 60px 0 45px; }
+    .what-get:before {
+      display: none; } }
 
 @media only screen and (max-width: 991px) {
   /**/
@@ -1494,7 +1628,11 @@ html.mm-blocking, html.mm-blocking body {
   .footer__links {
     font-size: 13px; }
   .footer__subscribe-news span {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .what-get .after-study__advantages-list p {
+    font-size: 14px; }
+  .what-get__advantages-list_mt {
+    padding-top: 15px; } }
 
 @media only screen and (max-width: 768px) {
   /**/

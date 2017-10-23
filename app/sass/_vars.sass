@@ -89,3 +89,26 @@ $accent_color: #ffec00
     width: 6px
     height: 6px
     border-radius: 50%
+
+@mixin atomNumber()
+  font-family: $ProximaNova-Bold
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  border: 1px solid #ebebeb
+  display: inline-block
+  width: 36px
+  height: 36px
+  //line-height: 1
+  position: relative
+  text-align: center
+  line-height: 2.2
+  &:after
+    content: ""
+    right: -5px
+    top: 11px
+    width: 10px
+    height: 10px
+    background-color: #ffec00
+    border-radius: 50%
+    position: absolute

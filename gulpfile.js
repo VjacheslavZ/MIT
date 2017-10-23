@@ -130,7 +130,8 @@ gulp.task('sprite', function () {
 
 gulp.task("pages", function() {
     return gulp.src([
-        "app/pages/index/index.pug"
+        "app/pages/index/index.pug",
+        "app/pages/insidePage/insidePage.pug"
     ])
         .pipe(pug({pretty: true}))  //с переносом pretty: true
         .pipe(gulp.dest("./app"))
