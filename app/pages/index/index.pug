@@ -397,7 +397,7 @@ block main
             .container
                 .row
                     .col-sm-12.col-xs-12
-                        h2.news Новости
+                        h2.news__section-title Новости
                 .row
                     .col-sm-4
                         img(src="img/news_1.jpg").news__photo
@@ -415,14 +415,51 @@ block main
                         a(href="#").news__title Концепция ментально оспособляет закон
                         p.news__description Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших ...
                 button.button__type_2 Все новости
+        section.contacts
+            .contacts__wrap
+                .container
+                    .row
+                        .col-sm-12.col-xs-12
+                            h2.contacts__title Контакты
+            //map!!!
+
+
+            //
+            .container
+                .row
+                    .contacts__detals-wrap
+                        .col-sm-3.col-xs-12
+                            ul
+                                li.contacts__detals-title Адрес
+                                li.contacts__detals-info г. Киев
+                                li.contacts__detals-info ул. Воздвиженская, д. 35
+                        .col-sm-3.col-xs-12
+                            ul
+                                li.contacts__detals-title Телефон:
+                                li.contacts__detals-info
+                                    a(href="tel:0939615484") (093) 961 54 84,
+                                    a(href="tel:0939615484") (093) 961 54 84
+                                li.contacts__detals-info
+                                    a(href="tel:0939615484") (093) 961 54 84
+                        .col-sm-3.col-xs-12
+                            ul
+                                li.contacts__detals-title E-mail
+                                li.contacts__detals-info
+                                    a(href="mailto:school@gmail.com") school@gmail.com
+
+
+
+
+
+
         //section.intermediate
             .container
                 .row
                     .intermediate_title
                         h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы
                     .intermediate_wrap
-                        form#form-file.clearfix
-                            //.file_wrap
+                        clearfix
+                            //.file_wrapform#form-file.
                                 input(type='file' name='field')
                             .row
                                 .intermediate_item

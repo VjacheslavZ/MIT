@@ -96,8 +96,75 @@ html(class="no-js" lang='en')
 
             block main
 
-            //footer.footer#my-footer
-                h3 footer
+            footer.footer#my-footer
+                a(href="#").footer__scroll-top наверх
+                    i.fa.fa-angle-up
+                .container
+                    .row
+                        .col-sm-3.col-xs-12
+                            .footer__links
+                                ul
+                                    li
+                                        a(href="#") Для кого тренинг?
+                                    li
+                                        a(href="#") После проходения курса
+                                    li
+                                        a(href="#") Наши коуч-программы
+                                    li
+                                        a(href="#") Конструктор курса
+                        .col-sm-3.col-xs-12
+                            .footer__links
+                                ul
+                                    li
+                                        a(href="#") Ведущие программы
+                                    li
+                                        a(href="#") Отзывы
+                                    li
+                                        a(href="#") Новости
+                                    li
+                                        a(href="#") Контакты
+                        .col-sm-6.col-xs-12
+                            .footer__subscribe-news
+                                span Подписаться на новости
+                                .footer__form-wrap
+                                    form#form
+                                        .intermediate_item
+                                            .input_wrap
+                                                i.fa.fa-check
+                                                input(name='email', type='text', placeholder='E-MAIL')
+                                            input(type='hidden', name='form_name', value='baseForm')
+                                            input(type='hidden', name='form_type', value='normal')
+                                            //.intermediate_item
+                                            input(type='submit', value='подписаться').button__type_2
+                                    //a(href="#").footer__scroll-top наверх
+                                        i.fa.fa-angle-up
+                    .row
+                        .col-sm-12.col-xs-12
+                            .footer__copyright
+                                a(href="#") MIT 2017 © Разрабтка Dizz Agency.
+                                ul.footer__social
+                                    li
+                                        a(href="#" target="_blank")
+                                            i.fa.fa-facebook
+                                    li
+                                        a(href="#" target="_blank")
+                                            i.fa.fa-instagram
+                                    li
+                                        a(href="#" target="_blank")
+                                            i.fa.fa-linkedin
+                                    li
+                                        a(href="#" target="_blank")
+                                            i.fa.fa-vk
+
+
+
+
+
+
+
+
+
+
 
         link(rel='stylesheet', href='css/libs.min.css')
         link(rel='stylesheet', href='css/main.css')

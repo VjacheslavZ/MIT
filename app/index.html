@@ -518,7 +518,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-xs-12">
-                <h2 class="news">Новости</h2>
+                <h2 class="news__section-title">Новости</h2>
               </div>
             </div>
             <div class="row">
@@ -535,14 +535,53 @@
             <button class="button__type_2">Все новости</button>
           </div>
         </section>
+        <section class="contacts">
+          <div class="contacts__wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                  <h2 class="contacts__title">Контакты</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--map!!!-->
+          <!---->
+          <div class="container">
+            <div class="row">
+              <div class="contacts__detals-wrap">
+                <div class="col-sm-3 col-xs-12">
+                  <ul>
+                    <li class="contacts__detals-title">Адрес</li>
+                    <li class="contacts__detals-info">г. Киев</li>
+                    <li class="contacts__detals-info">ул. Воздвиженская, д. 35</li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                  <ul>
+                    <li class="contacts__detals-title">Телефон:</li>
+                    <li class="contacts__detals-info"><a href="tel:0939615484">(093) 961 54 84,</a><a href="tel:0939615484">(093) 961 54 84</a></li>
+                    <li class="contacts__detals-info"><a href="tel:0939615484">(093) 961 54 84</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                  <ul>
+                    <li class="contacts__detals-title">E-mail</li>
+                    <li class="contacts__detals-info"><a href="mailto:school@gmail.com">school@gmail.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!--section.intermediate
         .container
             .row
                 .intermediate_title
                     h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы
                 .intermediate_wrap
-                    form#form-file.clearfix
-                        //.file_wrap
+                    clearfix
+                        //.file_wrapform#form-file.
                             input(type='file' name='field')
                         .row
                             .intermediate_item
@@ -563,10 +602,63 @@
                                 input(type='submit', value='Записаться')
         -->
       </main>
-      <!--footer.footer#my-footer
-      h3 footer
-      
-      -->
+      <footer class="footer" id="my-footer"><a class="footer__scroll-top" href="#">наверх<i class="fa fa-angle-up"></i></a>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-xs-12">
+              <div class="footer__links">
+                <ul>
+                  <li><a href="#">Для кого тренинг?</a></li>
+                  <li><a href="#">После проходения курса</a></li>
+                  <li><a href="#">Наши коуч-программы</a></li>
+                  <li><a href="#">Конструктор курса</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footer__links">
+                <ul>
+                  <li><a href="#">Ведущие программы</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="footer__subscribe-news"><span>Подписаться на новости</span>
+                <div class="footer__form-wrap">
+                  <form id="form">
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input name="email" type="text" placeholder="E-MAIL">
+                      </div>
+                      <input type="hidden" name="form_name" value="baseForm">
+                      <input type="hidden" name="form_type" value="normal">
+                      <!--.intermediate_item-->
+                      <input class="button__type_2" type="submit" value="подписаться">
+                    </div>
+                  </form>
+                  <!--a(href="#").footer__scroll-top наверхi.fa.fa-angle-up
+                  -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-xs-12">
+              <div class="footer__copyright"><a href="#">MIT 2017 © Разрабтка Dizz Agency.</a>
+                <ul class="footer__social">
+                  <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">

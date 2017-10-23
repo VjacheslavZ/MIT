@@ -608,6 +608,10 @@
     margin: 25px 0 25px 0
     display: block
     color: #727272
+  &__section-title
+    @include section-defaulf-title()
+    @include underline_text()
+    margin-bottom: 110px
   &__title
     display: block
     color: #000
@@ -616,6 +620,7 @@
     line-height: 32px
     border-bottom: 3px solid transparent
     transition: border-bottom .3s
+
     &:hover
       border-bottom: 3px solid $accent_color
   &__description
@@ -628,6 +633,120 @@
     margin: 70px auto 0
     &:hover
       box-shadow: none
+//section .contacts
+.contacts
+  background: $bgColor
+  padding: 200px 0 175px 0
+  &__title
+    margin-bottom: 120px
+  //map
 
+
+
+  //----
+  &__detals-wrap
+    padding: 65px 0 180px 0
+    position: relative
+    background: $bgColor
+    z-index: 1
+    //overflow: hidden
+    &:before
+      @include rhomb()
+      top: -60px
+      left: -370px
+    &:after
+      display: block
+      width: 400px
+      height: 288px
+      content: ""
+      position: absolute
+      right: 0
+      z-index: 0
+      top: 0
+      background: url("../img/contacts_bg.png") no-repeat top right
+    ul
+      position: relative
+      z-index: 999
+  &__detals-title
+    font-size: 19px
+    font-family: $ProximaNova-Bold
+    margin-bottom: 25px
+  &__detals-info,a
+    font-size: 17px
+    color: #6f6f6f
+    line-height: 2
+    a + a
+      margin-left: 5px
+//section footer
+.footer
+  padding: 80px 0 70px
+  position: relative
+  &__links
+    font-family: $ProximaNova-Semibold
+    font-size: 17px
+    line-height: 48px
+    a
+      color: #c3c3c3
+      transition: color .3s
+    li:hover a
+      color: $text_black_color
+  &__subscribe-news
+    position: relative
+  &__subscribe-news span
+    font-size: 24px
+    color: #999
+    line-height: 64px
+  &__form-wrap
+    position: relative
+  //form
+    position: relative
+  .intermediate_item
+    position: relative
+  .intermediate_item input[type="text"]
+    width: 100%
+    border: 1px solid #e8e8e8
+    padding: 19px 0 19px 35px
+    border-radius: 30px
+    font-size: 12px
+    color: #c2c2c2
+  .intermediate_item input[type="submit"]
+    padding: 19px 35px 18px 35px
+    position: absolute
+    top: 0
+    right: 0
+  .input_wrap i
+    top: 21px
+    right: 190px
+  &__scroll-top
+    position: absolute
+    right: 0
+    top: 110px
+    color: #999999
+    text-transform: uppercase
+    padding-right: 40px
+    font-size: 11px
+    transition: color .3s
+    z-index: 999
+    i
+      position: absolute
+      top: 0
+      left: -30px
+      font-size: 17px
+  &__copyright
+    display: flex
+    justify-content: space-between
+    font-size: 12px
+    margin-top: 50px
+    a
+      color: #b8b7b7
+      transition: color .3s
+      &:hover
+        color: #727272
+  &__social
+    display: flex
+    font-size: 18px
+    color: #b8b7b7
+    li + li
+      margin-left: 20px
 
 @import "media"
