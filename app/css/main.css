@@ -1590,7 +1590,38 @@ html.mm-blocking, html.mm-blocking body {
     font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 20px; }
   .about-course .about-course__description {
-    margin-top: 0; }
+    margin-top: 0;
+    padding: 70px 10px 70px 70px;
+    background-color: #fbfbfb; }
+
+.who-wait__wrap {
+  -webkit-box-shadow: 0 73px 101px rgba(88, 54, 126, 0.1);
+          box-shadow: 0 73px 101px rgba(88, 54, 126, 0.1);
+  padding: 80px 0 150px 0; }
+
+.who-wait__title {
+  position: relative;
+  margin-bottom: 50px; }
+  .who-wait__title:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #ffec00; }
+
+.who-wait__items-wrap {
+  margin-top: 50px; }
+
+.who-wait__item-ic {
+  margin: 0 auto;
+  display: block; }
+
+.who-wait__item-text {
+  padding: 0 60px;
+  font-size: 19px;
+  text-align: center; }
 
 @media only screen and (max-width: 1199px) {
   /**/
@@ -1672,7 +1703,11 @@ html.mm-blocking, html.mm-blocking body {
     .about-course:before, .about-course:after {
       display: none; }
     .about-course__title {
-      margin-bottom: 35px; } }
+      margin-bottom: 35px; }
+  .who-wait__wrap {
+    padding: 20px 0 35px 0; }
+  .who-wait__item-text {
+    padding: 0 10px; } }
 
 @media only screen and (max-width: 991px) {
   /**/
@@ -1710,7 +1745,9 @@ html.mm-blocking, html.mm-blocking body {
   .what-get .after-study__advantages-list p {
     font-size: 14px; }
   .what-get__advantages-list_mt {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .who-wait__items-wrap {
+    margin-top: 0; } }
 
 @media only screen and (max-width: 768px) {
   /**/
