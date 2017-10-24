@@ -387,8 +387,8 @@ html.mm-blocking, html.mm-blocking body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: -124px;
-    width: 250px;
-    height: 250px;
+    width: 246px;
+    height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -919,8 +919,8 @@ html.mm-blocking, html.mm-blocking body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: -124px;
-    width: 250px;
-    height: 250px;
+    width: 246px;
+    height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1106,8 +1106,8 @@ html.mm-blocking, html.mm-blocking body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: -124px;
-    width: 250px;
-    height: 250px;
+    width: 246px;
+    height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1274,8 +1274,8 @@ html.mm-blocking, html.mm-blocking body {
           -ms-transform: rotate(45deg);
               transform: rotate(45deg);
       top: -124px;
-      width: 250px;
-      height: 250px;
+      width: 246px;
+      height: 246px;
       background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
       background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
       background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1406,8 +1406,8 @@ html.mm-blocking, html.mm-blocking body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: -124px;
-    width: 250px;
-    height: 250px;
+    width: 246px;
+    height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1477,8 +1477,8 @@ html.mm-blocking, html.mm-blocking body {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     top: -124px;
-    width: 250px;
-    height: 250px;
+    width: 246px;
+    height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
     background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1489,6 +1489,12 @@ html.mm-blocking, html.mm-blocking body {
     left: -75px;
     z-index: 0; }
   .what-get__title {
+    position: relative;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
     position: relative;
     margin-bottom: 60px; }
     .what-get__title:before {
@@ -1569,6 +1575,12 @@ html.mm-blocking, html.mm-blocking body {
     right: -300px; }
   .about-course__title {
     position: relative;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative;
     margin-bottom: 170px; }
     .about-course__title:before {
       content: "";
@@ -1594,34 +1606,236 @@ html.mm-blocking, html.mm-blocking body {
     padding: 70px 10px 70px 70px;
     background-color: #fbfbfb; }
 
-.who-wait__wrap {
-  -webkit-box-shadow: 0 73px 101px rgba(88, 54, 126, 0.1);
-          box-shadow: 0 73px 101px rgba(88, 54, 126, 0.1);
-  padding: 80px 0 150px 0; }
-
-.who-wait__title {
-  position: relative;
-  margin-bottom: 50px; }
-  .who-wait__title:before {
+.who-wait {
+  position: relative; }
+  .who-wait:before {
+    position: absolute;
     content: "";
     position: absolute;
-    bottom: -15px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -124px;
+    width: 246px;
+    height: 246px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: inherit;
+    bottom: -150px;
     left: 0;
-    width: 80px;
-    height: 3px;
-    background-color: #ffec00; }
+    z-index: 0; }
+  .who-wait:after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 635px;
+    height: 635px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    bottom: -100px;
+    right: -100px;
+    width: 350px;
+    height: 350px; }
+  .who-wait__wrap {
+    position: relative;
+    z-index: 999;
+    -webkit-box-shadow: 0 73px 101px rgba(88, 54, 126, 0.1);
+            box-shadow: 0 73px 101px rgba(88, 54, 126, 0.1);
+    padding: 80px 0 150px 0;
+    background-color: #fff; }
+  .who-wait__title {
+    position: relative;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative;
+    margin-bottom: 50px; }
+    .who-wait__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .who-wait__items-wrap {
+    margin-top: 50px; }
+  .who-wait__item-ic {
+    margin: 0 auto;
+    display: block; }
+  .who-wait__item-text {
+    padding: 0 60px;
+    font-size: 19px;
+    text-align: center; }
 
-.who-wait__items-wrap {
-  margin-top: 50px; }
+.course-schedule {
+  padding: 200px 0 207px 0;
+  background-color: #fbfbfb; }
+  .course-schedule__title {
+    position: relative;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative; }
+    .course-schedule__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .course-schedule__swich-type_wrap {
+    text-align: center; }
+  .course-schedule__swich-type {
+    margin: 100px 0 80px 0;
+    border: 1px solid #e1e1e1;
+    -webkit-border-radius: 33px;
+            border-radius: 33px;
+    padding: 8px;
+    display: inline-block; }
+    .course-schedule__swich-type li {
+      display: inline-block;
+      padding: 10px 30px; }
+    .course-schedule__swich-type li.active {
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      -webkit-box-shadow: 0 6px 16px rgba(255, 236, 0, 0.58);
+              box-shadow: 0 6px 16px rgba(255, 236, 0, 0.58);
+      padding: 10px 30px;
+      background-color: #ffec00; }
 
-.who-wait__item-ic {
-  margin: 0 auto;
-  display: block; }
-
-.who-wait__item-text {
-  padding: 0 60px;
-  font-size: 19px;
-  text-align: center; }
+.career {
+  padding: 200px 0 200px 0;
+  background-color: #fbfbfb;
+  position: relative; }
+  .career:before {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 635px;
+    height: 635px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    bottom: -108px;
+    left: -500px;
+    z-index: 0; }
+  .career:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -124px;
+    width: 246px;
+    height: 246px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: 153px;
+    right: -33px;
+    z-index: 0; }
+  .career__title {
+    margin-bottom: 80px;
+    position: relative;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative; }
+    .career__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .career__item-wrap {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09);
+            box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    vertical-align: middle;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1; }
+  .career__step {
+    color: #9e9e9e;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 26px; }
+  .career__position {
+    margin-top: 20px;
+    padding: 0 40px;
+    color: #000;
+    font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px; }
+  .career__item + .career__item:after {
+    width: 100px;
+    height: 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffec00), to(#fff9b2));
+    background-image: -webkit-linear-gradient(top, #ffec00 40%, #fff9b2 100%);
+    background-image: -o-linear-gradient(top, #ffec00 40%, #fff9b2 100%);
+    background-image: linear-gradient(to bottom, #ffec00 40%, #fff9b2 100%);
+    position: absolute;
+    content: "\f178";
+    font-family: "FontAwesome";
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: -webkit-calc(50% - 50px);
+    top: calc(50% - 50px);
+    left: -55px; }
 
 @media only screen and (max-width: 1199px) {
   /**/
@@ -1707,7 +1921,16 @@ html.mm-blocking, html.mm-blocking body {
   .who-wait__wrap {
     padding: 20px 0 35px 0; }
   .who-wait__item-text {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .career {
+    padding: 50px 0 50px 0; }
+    .career:before, .career:after {
+      display: none; }
+    .career__item-wrap {
+      width: 200px;
+      height: 200px; }
+    .career__position {
+      padding: 0 5px; } }
 
 @media only screen and (max-width: 991px) {
   /**/
@@ -1747,7 +1970,10 @@ html.mm-blocking, html.mm-blocking body {
   .what-get__advantages-list_mt {
     padding-top: 15px; }
   .who-wait__items-wrap {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .career__item-wrap {
+    width: 160px;
+    height: 160px; } }
 
 @media only screen and (max-width: 768px) {
   /**/
@@ -1771,7 +1997,19 @@ html.mm-blocking, html.mm-blocking body {
   .for-who__wrap .col-lg-3:before {
     margin: 0 auto; }
   .after-study__title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .career__item-wrap {
+    margin: 0 auto; }
+  .career__item + .career__item {
+    margin-top: 30px; }
+  .career__item + .career__item:after {
+    top: -webkit-calc(50% - 147px);
+    top: calc(50% - 147px);
+    left: -webkit-calc(50% - 50px);
+    left: calc(50% - 50px);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); } }
 
 @media only screen and (max-width: 520px) {
   /**/

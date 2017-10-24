@@ -96,6 +96,15 @@
       padding: 20px 0 35px 0
     &__item-text
       padding: 0 10px
+  .career
+    padding: 50px 0 50px 0
+    &:before, &:after
+      display: none
+    &__item-wrap
+      width: 200px
+      height: 200px
+    &__position
+      padding: 0 5px
 @media only screen and (max-width : 991px)
   /**/
 
@@ -149,7 +158,9 @@
 
   .who-wait__items-wrap
     margin-top: 0
-
+  .career__item-wrap
+    width: 160px
+    height: 160px
 @media only screen and (max-width : 768px)
   /**/
 
@@ -174,6 +185,14 @@
   //3.after-study
   .after-study__title
     font-size: 18px
+  .career__item-wrap
+    margin: 0 auto
+  .career__item + .career__item
+    margin-top: 30px
+  .career__item + .career__item:after
+    top: calc(50% - 147px)
+    left: calc(50% - 50px)
+    transform: rotate(90deg)
 
 @media only screen and (max-width : 520px)
   /**/

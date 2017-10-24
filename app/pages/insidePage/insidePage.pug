@@ -105,3 +105,46 @@ block main
                             .col-md-4
                                 img.who-wait__item-ic(src="img/it_entrepreneurs_ic.png")
                                 p.who-wait__item-text Стартаперов
+        section.course-schedule
+            .container
+                .row
+                    .col-md-12.col-sm-12
+                        h2.course-schedule__title Расписание курса
+                .row
+                    .course-schedule__swich-type_wrap
+                        ul.course-schedule__swich-type
+                            li.active
+                                a(href='#Online', data-toggle='tab') Online
+                            li
+                                a(href='#Offline', data-toggle='tab') Offline
+
+                .row
+                    .tab-content
+                        #Online.tab-pane.actip 1ve
+
+                        #Offline.tab-pane
+                            p 2
+            //допилить здесь
+        section.career
+            .container
+                .row
+                    .col-md-12.col-sm-12
+                        h2.career__title Карьерный рост it pm
+                .row
+                    .col-sm-3.col-xs-12.career__item
+                        .career__item-wrap
+                            span.career__step 01
+                            p.career__position Project manager
+                    .col-sm-3.col-xs-12.career__item
+                        .career__item-wrap
+                            span.career__step 02
+                            p.career__position Program manager
+                    .col-sm-3.col-xs-12.career__item
+                        .career__item-wrap
+                            span.career__step 03
+                            p.career__position Project portfolio manager
+                    .col-sm-3.col-xs-12.career__item
+                        .career__item-wrap
+                            span.career__step 04
+                            p.career__position ТОП менеджмент
+
