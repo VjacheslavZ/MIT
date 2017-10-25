@@ -14,6 +14,7 @@ var gulp         = require("gulp"),
     gutil        = require("gulp-util"),
     gulpCopy    = require('gulp-copy'),
     spritesmith = require('gulp.spritesmith');
+    notify = require("gulp-notify");
 
 gulp.task("sass", function () {
     return gulp.src([
@@ -134,6 +135,9 @@ gulp.task("pages", function() {
         "app/pages/insidePage/insidePage.pug"
     ])
         .pipe(pug({pretty: true}))  //с переносом pretty: true
+        .on('error', notify.onError(function (error) {
+            return error
+        }))
         .pipe(gulp.dest("./app"))
         .on('error', gutil.log)
         .pipe(browserSync.stream())

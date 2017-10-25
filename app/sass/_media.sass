@@ -105,6 +105,9 @@
       height: 200px
     &__position
       padding: 0 5px
+  .course-program
+    padding: 50px 0 25px 0
+
 @media only screen and (max-width : 991px)
   /**/
 
@@ -161,6 +164,16 @@
   .career__item-wrap
     width: 160px
     height: 160px
+  .course-program
+    &__steps_wrap
+      flex-direction: column
+    &__steps
+      width: 100%
+    &__swich-type li
+      padding: 13px 4px
+    &__swich-type li a
+      font-size: 11px
+
 @media only screen and (max-width : 768px)
   /**/
 
@@ -193,7 +206,14 @@
     top: calc(50% - 147px)
     left: calc(50% - 50px)
     transform: rotate(90deg)
-
+  .course-program
+    &__swich-type
+      flex-wrap: wrap
+      justify-content: center
+    &__swich-type li
+      border-bottom: 1px solid transparent
+    &__swich-type li.active
+      border-bottom: 1px solid #f4f3f5
 @media only screen and (max-width : 520px)
   /**/
   .top-section
@@ -244,3 +264,15 @@
       flex-direction: column
       .intermediate_item
         margin-top: 25px
+  .course-program
+    &__info_wrap
+      flex-direction: column
+    &__info
+      margin: 10px 0 15px 0
+      align-items: center
+      text-align: center
+      width: 100%
+    &__item-info
+      margin-left: 30px
+    &__item + .course-program__item
+      margin-top: 30px
