@@ -463,6 +463,7 @@ $(document).ready(function () {
     $(".our-programs__pogram_wrap").equalHeights();
     $(".our-programs__name").equalHeights();
     $(".our-programs__name-course").equalHeights();
+    $(".training__stages-info").equalHeights();
 
     //video
     let playButton = $("#play-pause"),
