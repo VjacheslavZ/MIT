@@ -1124,6 +1124,18 @@
 .training
   padding: 200px 0 190px 0
   background-color: #fbfbfb
+  position: relative
+  //&:before
+    @include rhomb()
+    top: 450px
+    left: -33px
+    z-index: 0
+  &:after
+    @include rhomb()
+    top: inherit
+    bottom: -120px
+    right: -33px
+    z-index: 0
   &__title
     position: relative
     @include section-defaulf-title()
@@ -1160,5 +1172,69 @@
   &__stages-description
     font-size: 17px
     color: #898989
+.questions
+  padding: 200px 0 150px 0
+  position: relative
+  //&:before
+    @include rhomb()
+    bottom: -300px
+    left: -33px
+    z-index: 0
+  //&:after
+    @include rhomb()
+    top: inherit
+    bottom: -120px
+    right: -33px
+    z-index: 0
+  &__title
+    position: relative
+    @include section-defaulf-title()
+    @include underline_text()
+    margin-bottom: 100px
+  .panel.panel-default
+    box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09)
+  .questions__panel-heading
+    padding: 32px 50px
+  .questions__panel-heading a
+    color: $text_black_color
+    font-size: 17px
+    font-family: $ProximaNova-Semibold
+    transition: color .3s
+    &:after
+      color: $text_black_color
+      transition: transform .3s
+      display: inline-block
+      //margin-left: 160px
+      float: right
+      display: block
+      content: "\f107"
+      font-family: "FontAwesome"
+      transform: rotate(-180deg)
+
+  .questions__panel-heading a.collapsed
+    color: #6f6f6f
+    &:after
+      transform: rotate(0deg)
+  .panel-body
+    padding: 35px 50px 50px 50px
+    position: relative
+    span
+      margin-right: 5px
+      display: inline-block
+      font-family: $ProximaNova-Bold
+      color: #6f6f6f
+    p
+      display: inline-block
+      color: #6f6f6f
+      font-family: $ProximaNova-Light
+    &:before
+      position: absolute
+      content: ""
+      top: 0
+      width: 82%
+      display: block
+      margin: 0 auto
+      border-top: 1px solid $accent_color
+
 
 @import "media"

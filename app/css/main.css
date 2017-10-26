@@ -391,7 +391,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -923,7 +922,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1110,7 +1108,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1278,7 +1275,6 @@ html.mm-blocking, html.mm-blocking body {
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg);
-      top: -124px;
       width: 246px;
       height: 246px;
       background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1410,7 +1406,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1481,7 +1476,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1620,7 +1614,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1749,7 +1742,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1853,7 +1845,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -1871,7 +1862,6 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: -124px;
     width: 246px;
     height: 246px;
     background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
@@ -2051,7 +2041,26 @@ html.mm-blocking, html.mm-blocking body {
 
 .training {
   padding: 200px 0 190px 0;
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  position: relative; }
+  .training:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 246px;
+    height: 246px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: inherit;
+    bottom: -120px;
+    right: -33px;
+    z-index: 0; }
   .training__title {
     position: relative;
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -2107,6 +2116,80 @@ html.mm-blocking, html.mm-blocking body {
   .training__stages-description {
     font-size: 17px;
     color: #898989; }
+
+.questions {
+  padding: 200px 0 150px 0;
+  position: relative; }
+  .questions__title {
+    position: relative;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative;
+    margin-bottom: 100px; }
+    .questions__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .questions .panel.panel-default {
+    -webkit-box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09);
+            box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09); }
+  .questions .questions__panel-heading {
+    padding: 32px 50px; }
+  .questions .questions__panel-heading a {
+    color: #000;
+    font-size: 17px;
+    font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s; }
+    .questions .questions__panel-heading a:after {
+      color: #000;
+      -webkit-transition: -webkit-transform .3s;
+      transition: -webkit-transform .3s;
+      -o-transition: transform .3s;
+      transition: transform .3s;
+      transition: transform .3s, -webkit-transform .3s;
+      display: inline-block;
+      float: right;
+      display: block;
+      content: "\f107";
+      font-family: "FontAwesome";
+      -webkit-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+  .questions .questions__panel-heading a.collapsed {
+    color: #6f6f6f; }
+    .questions .questions__panel-heading a.collapsed:after {
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg); }
+  .questions .panel-body {
+    padding: 35px 50px 50px 50px;
+    position: relative; }
+    .questions .panel-body span {
+      margin-right: 5px;
+      display: inline-block;
+      font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #6f6f6f; }
+    .questions .panel-body p {
+      display: inline-block;
+      color: #6f6f6f;
+      font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .questions .panel-body:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 82%;
+      display: block;
+      margin: 0 auto;
+      border-top: 1px solid #ffec00; }
 
 @media only screen and (max-width: 1199px) {
   /**/
