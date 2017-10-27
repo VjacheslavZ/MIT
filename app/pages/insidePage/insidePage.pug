@@ -117,13 +117,109 @@ block main
                                 a(href='#Online', data-toggle='tab') Online
                             li
                                 a(href='#Offline', data-toggle='tab') Offline
-
                 .row
                     .tab-content
-                        #Online.tab-pane.actip 1ve
+                        #Online.tab-pane.active
+                            div
+                                ul(role='tablist').course-schedule__dates.nav-tabs
+                                    li.active(role='presentation')
+                                        a(href='#home', aria-controls='home', role='tab', data-toggle='tab') 07
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') 09
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 14
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') 16
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 21
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 23
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 28
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 30
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 05
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
+                                // Tab panes
+                                .tab-content
+                                    #home.tab-pane.active(role='tabpanel')
+                                        .tab-content__wrap
+                                            .course-schedule__course-info.col-lg-9
+                                                .course-schedule__course-info_wrap
+                                                    p.course-schedule__name Старт модуля Управление командой
+                                                    p.course-schedule__name-descriprion Концепция ментально оспособляет закон внешнего мира. Сомнение раскладывает на элементы неоднозначный структурализм.
+                                                    .course-schedule__speaker-info
+                                                        img(src="img/speacer.png").course-schedule__speaker-photo
+                                                        p.speaker-name Спикер:
+                                                            span Владими Озирный
+                                            .course-schedule__date-info.col-lg-3
+                                                span.course-schedule__date 19:30 - 21:00
+                                                span.course-schedule__duration Длительность 1,5 часа
+
+                                    #profile.tab-pane(role='tabpanel')
+                                        p 2
+                                    #messages.tab-pane(role='tabpanel')
+                                        p 3
+                                    #settings.tab-pane(role='tabpanel')
+                                        p 4
 
                         #Offline.tab-pane
-                            p 2
+                            div
+                                ul(role='tablist').course-schedule__dates.nav-tabs
+                                    li.active(role='presentation')
+                                        a(href='#home', aria-controls='home', role='tab', data-toggle='tab') 11
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') 12
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 14
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') 16
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 21
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 23
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 28
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 30
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 05
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
             //допилить здесь
         section.career
             .container
@@ -559,6 +655,28 @@ block main
                                         p
                                             span Ответ:
                                             | Задача организации, в особенности же рамки и место обучения требуют определения и уточнения дальнейших направлений развития.
-
+        section.have-questions
+                .container
+                    .row
+                        .have-questions__wrap
+                            h2.have-questions__title Остались вопросы?
+                            form#form
+                                .course-designer__form-contacts
+                                    .intermediate_item
+                                        .input_wrap
+                                            i.fa.fa-check
+                                            input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
+                                    .intermediate_item
+                                        .input_wrap
+                                            i.fa.fa-check
+                                            input(name='email', type='text', placeholder='E-MAIL')
+                                    .intermediate_item
+                                        .input_wrap
+                                            i.fa.fa-check
+                                            textarea(name='textarea', placeholder='')
+                                    input(type='hidden', name='form_name', value='baseForm')
+                                    input(type='hidden', name='form_type', value='normal')
+                                    .intermediate_item
+                                        input(type='submit', value='Отправить')
 
 

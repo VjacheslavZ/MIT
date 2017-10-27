@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>внутренняя страница
     </title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <style type="text/css">
       html .loader {
           background: #fff;
@@ -37,7 +38,7 @@
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
     <div id="my-page">
       <div>
         <div class="loader">
@@ -94,14 +95,14 @@
         <div class="header__wrap">
           <div class="header__main">
             <div class="header__logo"><a class="logo" href="/" title="MIT">MIT</a></div>
-            <nav class="header__nav">
-              <ul>
+            <nav class="header__nav" id="navbar">
+              <ul class="nav" role="tablist">
                 <!--each i in links-->
                 <li><a href="insidePage.html">Главная</a></li>
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">Ведущие</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#our-programs">Курсы</a></li>
+                <li><a href="#teachers">Ведущие</a></li>
+                <li><a href="#news">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -269,9 +270,67 @@
             </div>
             <div class="row">
               <div class="tab-content">
-                <div class="tab-pane actip" id="Online">1ve</div>
+                <div class="tab-pane active" id="Online">
+                  <div>
+                    <ul class="course-schedule__dates nav-tabs" role="tablist">
+                      <li class="active" role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">07<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">09<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">14<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">16<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">21<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">23<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">28<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">30<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">05<span>Декабря</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">07<span>Декабря</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">07<span>Декабря</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">07<span>Декабря</span></a></li>
+                    </ul>
+                    <!-- Tab panes-->
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="home" role="tabpanel">
+                        <div class="tab-content__wrap">
+                          <div class="course-schedule__course-info col-lg-9">
+                            <div class="course-schedule__course-info_wrap">
+                              <p class="course-schedule__name">Старт модуля Управление командой</p>
+                              <p class="course-schedule__name-descriprion">Концепция ментально оспособляет закон внешнего мира. Сомнение раскладывает на элементы неоднозначный структурализм.</p>
+                              <div class="course-schedule__speaker-info"><img class="course-schedule__speaker-photo" src="img/speacer.png">
+                                <p class="speaker-name">Спикер:<span>Владими Озирный</span></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="course-schedule__date-info col-lg-3"><span class="course-schedule__date">19:30 - 21:00</span><span class="course-schedule__duration">Длительность 1,5 часа</span></div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="profile" role="tabpanel">
+                        <p>2</p>
+                      </div>
+                      <div class="tab-pane" id="messages" role="tabpanel">
+                        <p>3</p>
+                      </div>
+                      <div class="tab-pane" id="settings" role="tabpanel">
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="tab-pane" id="Offline">
-                  <p>2</p>
+                  <div>
+                    <ul class="course-schedule__dates nav-tabs" role="tablist">
+                      <li class="active" role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">11<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">12<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">14<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">16<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">21<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">23<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">28<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">30<span>Ноября</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">05<span>Декабря</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">07<span>Декабря</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">07<span>Декабря</span></a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">07<span>Декабря</span></a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -772,6 +831,39 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="have-questions">
+          <div class="container">
+            <div class="row">
+              <div class="have-questions__wrap">
+                <h2 class="have-questions__title">Остались вопросы?</h2>
+                <form id="form">
+                  <div class="course-designer__form-contacts">
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input name="name" type="text" placeholder="ИМЯ ФАМИЛИЯ">
+                      </div>
+                    </div>
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input name="email" type="text" placeholder="E-MAIL">
+                      </div>
+                    </div>
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <textarea name="textarea" placeholder=""></textarea>
+                      </div>
+                    </div>
+                    <input type="hidden" name="form_name" value="baseForm">
+                    <input type="hidden" name="form_type" value="normal">
+                    <div class="intermediate_item">
+                      <input type="submit" value="Отправить">
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

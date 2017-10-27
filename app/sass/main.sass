@@ -5,10 +5,9 @@
 @import "part"
 @import "header"
 
-// Секция top-section
 .top-section
   padding: 140px 70px 0 70px
-  height: calc(100vh - 107px)
+  height: calc(100vh - -107px)
   background: url(../img/top_section-bg.png) no-repeat 100% center
   position: relative
   &__content
@@ -28,7 +27,6 @@
     line-height: 32px
     margin: 50px 0 87px 0
 
-//section .for-who START
 .for-who
   padding: 70px 0 75px 0
   &__wrap
@@ -83,8 +81,6 @@
     font-weight: 400
     line-height: 32px
 
-
-//Icons section .for-who
 .for-who__wrap .col-lg-3
   &:nth-child(2)
     &:before
@@ -129,8 +125,6 @@
   &:before
     min-height: 42px
 
-
-//section after-study START
 .after-study
   padding: 100px 0 150px 0
   background: url("../img/after_training_bg.png") no-repeat left 80%
@@ -154,28 +148,6 @@
       display: inline
     span
       @include atomNumber()
-      //font-family: $ProximaNova-Bold
-      //justify-content: center
-      //align-items: center
-      //border-radius: 50%
-      //border: 1px solid #ebebeb
-      //display: inline-block
-      //width: 36px
-      //height: 36px
-      ////line-height: 1
-      //position: relative
-      //text-align: center
-      //line-height: 2.2
-      //&:after
-      //  content: ""
-      //  right: -5px
-      //  top: 11px
-      //  width: 10px
-      //  height: 10px
-      //  background-color: #ffec00
-      //  border-radius: 50%
-      //  position: absolute
-//section our-programs
 .our-programs
   padding: 200px 0 200px 0
   &__title
@@ -300,7 +272,6 @@
   &__tabs-show-more
     text-align: center
 
-//section .course-designer
 .course-designer
   padding: 200px 0 100px 0
   position: relative
@@ -421,7 +392,6 @@
         font-family: $ProximaNova-Bold
         text-transform: uppercase
 
-//6 section .why-created
 .why-created
   position: relative
   padding: 100px 0 80px 0
@@ -448,7 +418,6 @@
     margin-top: 35px
     font-size: 20px
     color: #6f6f6f
-//7 sevtion video
 .video
   display: flex
   background-size: cover
@@ -479,7 +448,6 @@
     @include sprite($video_play_pause_ic)
     display: inline-block
     cursor: pointer
-//8 section our-goal
 .our-goal
   position: relative
   padding: 200px 0 25px 0
@@ -499,10 +467,8 @@
   &__main-goal
     display: inline
     font-family: $ProximaNova-Light
-//9 section world-leaders
 .world-leaders
   padding: 25px 0 185px 0
-//10 section teachesr
 .teachers
   padding: 185px 0 200px 0
   &__title
@@ -634,7 +600,6 @@
     margin: 70px auto 0
     &:hover
       box-shadow: none
-//section .contacts
 .contacts
   background: $bgColor
   padding: 200px 0 175px 0
@@ -682,6 +647,7 @@
 .footer
   padding: 80px 0 70px
   position: relative
+  border-top: 5px solid #f2f2f2
   &__links
     font-family: $ProximaNova-Semibold
     font-size: 17px
@@ -750,9 +716,11 @@
     li + li
       margin-left: 20px
 
+
 //---------------
-//start secon page
+//start second page
 //---------------
+
 .next-course
   padding: 140px 70px 0 70px
   height: calc(100vh - 107px)
@@ -893,22 +861,6 @@
     padding: 0 60px
     font-size: 19px
     text-align: center
-  //&__item:before
-  //  margin: 0 auto
-  //  content: ""
-  //  display: block
-  //&__items-wrap :nth-child(1) p:before
-  //  @include sprite($project_manager_ic)
-  //&__items-wrap :nth-child(2) p:before
-  //  @include sprite($product_owners_ic)
-  //&__items-wrap :nth-child(3) p:before
-  //  @include sprite($it_specialist_ic)
-  //&__items-wrap :nth-child(4) p:before
-  //  @include sprite($starters_companies_ic)
-  //&__items-wrap :nth-child(5) p:before
-  //  @include sprite($managers_ic)
-  //&__items-wrap :nth-child(6) p:before
-  //  @include sprite($it_entrepreneurs_ic)
 .course-schedule
   padding: 200px 0 207px 0
   background-color: #fbfbfb
@@ -933,7 +885,106 @@
       padding: 10px 30px
       background-color: $accent_color
   //допилить
-  //--------
+  .nav-tabs
+    border-bottom: transparent
+  &__dates
+    display: flex
+    flex-direction: row
+    text-align: center
+    li
+      border: 1px solid #dddddd
+      border-top: 4px solid #dddddd
+      padding: 15px 30px
+    a
+      display: block
+      font-family: $ProximaNova-Semibold
+      font-size: 22px
+    span
+      font-size: 12px
+      display: block
+      font-family: $ProximaNova-Regular
+  //.scrtabs-tabs-fixed-container
+    height: 116px
+  .scrtabs-tabs-fixed-container
+    height: 116px
+  .course-schedule__dates a
+    font-size: 22px
+    font-family: $ProximaNova-Semibold
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+    border: transparent
+  .scrtabs-tab-container
+    height: 85px
+  .scrtabs-tab-scroll-arrow
+    height: 85px
+    background-color: #ebebeb
+    border: transparent
+    text-align: center
+    padding: 34px 0
+  .glyphicon-chevron-left:before, glyphicon-chevron-right:before
+    color: #999899
+  .nav-tabs>li>a:hover
+    border-color: transparent
+  .course-schedule__dates li.active
+    border-top: 4px solid $accent_color
+    box-shadow: 10px 8px 19px rgba(88, 54, 126, 0.09)
+    border-bottom: none
+    position: relative
+    &:before
+      content: ""
+      //font-family: "FontAwesome"
+      position: absolute
+      width: 0px
+      height: 0px
+      bottom: -15px
+      left: calc(50% - 8px)
+      z-index: 9999
+      border-left: 8px solid transparent
+      border-right: 8px solid transparent
+      border-top: 16px solid #fff
+  &__course-info
+    padding: 55px 80px 80px 80px
+    position: relative
+  &__course-info_wrap
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      height: 100%
+      right: 0
+      top: 0
+      border-left: 1px solid #f4f3f5
+  &__name
+    font-family: $ProximaNova-Extrabold
+    font-size: 22px
+    color: #000
+  &__name-descriprion
+    color: #b0b0b0
+    font-size: 17px
+    line-height: 32px
+    margin-top: 10px
+  &__speaker-info
+    margin-top: 20px
+    p
+      display: inline-block
+      font-size: 15px
+      span
+        font-family: $ProximaNova-Semibold
+        margin-left: 5px
+  .tab-content__wrap
+    display: flex
+    width: 100%
+  &__date-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+
+  &__date
+    font-family: $ProximaNova-Extrabold
+    font-size: 22px
+  &__duration
+    font-size: 15px
+    color: #6f6f6f
 .career
   padding: 200px 0 200px 0
   background-color: #fbfbfb
@@ -1235,6 +1286,76 @@
       display: block
       margin: 0 auto
       border-top: 1px solid $accent_color
+.have-questions
+  position: relative
+  padding: 150px 0 200px 0
+  &:before
+   @include rhomb()
+   top: 0px
+   left: -100px
+   z-index: 0
+  &:after
+    @include circle()
+    top: -113px
+    right: -420px
+    z-index: 0
+  &__wrap
+    position: relative
+    overflow: hidden
+    &:before
+      width: 134px
+      height: 109px
+      position: absolute
+      top: 0
+      left: 0
+      content: ""
+      display: block
+      background: url("../img/boxes_bg.png") no-repeat
+    &:after
+      width: 320px
+      height: 212px
+      position: absolute
+      bottom: -30px
+      right: 0
+      content: ""
+      display: block
+      background: url("../img/box_bg.png") no-repeat
+      background-size: contain
+  &__title
+    @include section-defaulf-title()
+    text-align: center
+    &:before
+      content: ""
+      background-color: #ffec00
+      position: absolute
+      bottom: -14px
+      right: 0
+      left: 0
+      margin: 0 auto
+      width: 80px
+      height: 3px
+  .course-designer__form-contacts
+    flex-direction: column
+    //align-items: center
+    text-align: center
+  .intermediate_item
+    width: 100%
+    input
+      width: 45%
+    input[type="submit"]
+      margin-top: 20px
+      width: 45%
+    textarea
+      resize: none
+      height: 150px
+      border: 1px solid #616161
+      border-radius: 30px
+      padding: 16px 48px 16px 40px
+      outline-width: 0px
+      outline-color: transparent
+      width: 45%
+    & + .intermediate_item
+      margin-top: 20px
 
 
 @import "media"

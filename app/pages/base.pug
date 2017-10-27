@@ -6,6 +6,8 @@ html(class="no-js" lang='en')
         meta(http-equiv='X-UA-Compatible', content='ie=edge')
         title
             block title
+        link(rel="shortcut icon" href=("img/favicon.png") type="image/x-icon")
+
 
         style(type='text/css').
             html .loader {
@@ -37,7 +39,7 @@ html(class="no-js" lang='en')
         script(src='js/libs.min.js')
         script(src='js/common.js')
 
-    body
+    body(data-spy="scroll" data-target="#navbar")
         div#my-page
             div
                 .loader
@@ -58,20 +60,20 @@ html(class="no-js" lang='en')
                             .header__logo
                                 a(href="/" class="logo" title="MIT").
                                     MIT
-                            nav.header__nav
-                                ul
+                            nav#navbar.header__nav
+                                ul.nav(role="tablist")
                                     //-var links = [{title:'About us', href:'#'},{title:'Reservation', href:'#'},{title:'Gallery', href:'#'},{title:'', href:"index.html"},{title:'Blog', href:'#'}, {title:'Elements', href:'#'}, {title:'shop', href:'#'}];
                                     //each i in links
                                     li
                                         a(href="insidePage.html") Главная
                                     li
-                                        a(href="#") Курсы
+                                        a(href="#our-programs") Курсы
                                     li
-                                        a(href="#") Ведущие
+                                        a(href="#teachers") Ведущие
                                     li
-                                        a(href="#") О нас
+                                        a(href="#news") О нас
                                     li
-                                        a(href="#") Контакты
+                                        a(href="#contacts") Контакты
                         .header___controls
                             .header___dropdown-language
                                 span.header__curent-language Рус
@@ -155,16 +157,6 @@ html(class="no-js" lang='en')
                                     li
                                         a(href="#" target="_blank")
                                             i.fa.fa-vk
-
-
-
-
-
-
-
-
-
-
 
         link(rel='stylesheet', href='css/libs.min.css')
         link(rel='stylesheet', href='css/main.css')

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная
     </title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <style type="text/css">
       html .loader {
           background: #fff;
@@ -37,7 +38,7 @@
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
     <div id="my-page">
       <div>
         <div class="loader">
@@ -94,14 +95,14 @@
         <div class="header__wrap">
           <div class="header__main">
             <div class="header__logo"><a class="logo" href="/" title="MIT">MIT</a></div>
-            <nav class="header__nav">
-              <ul>
+            <nav class="header__nav" id="navbar">
+              <ul class="nav" role="tablist">
                 <!--each i in links-->
                 <li><a href="insidePage.html">Главная</a></li>
-                <li><a href="#">Курсы</a></li>
-                <li><a href="#">Ведущие</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#our-programs">Курсы</a></li>
+                <li><a href="#teachers">Ведущие</a></li>
+                <li><a href="#news">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -196,7 +197,7 @@
             </div>
           </div>
         </section>
-        <section class="our-programs">
+        <section class="our-programs" id="our-programs">
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
@@ -440,7 +441,7 @@
           </div>
         </section>
         <section class="world-leaders"></section>
-        <section class="teachers">
+        <section class="teachers" id="teachers">
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-xs-12">
@@ -514,7 +515,7 @@
             </div>
           </div>
         </section>
-        <section class="news">
+        <section class="news" id="news">
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-xs-12">
@@ -535,7 +536,7 @@
             <button class="button__type_2">Все новости</button>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="contacts__wrap">
             <div class="container">
               <div class="row">
@@ -573,34 +574,8 @@
               </div>
             </div>
           </div>
+          <!--iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.278490346681!2d36.21467091558348!3d49.98738802850304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a057d436ef1f%3A0x5ba90ea43af9ab4e!2z0LLRg9C70LjRhtGPINCf0L7Qu9GC0LDQstGB0YzQutC40Lkg0KjQu9GP0YUsIDMxLCDQpdCw0YDQutGW0LIsINCl0LDRgNC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1499350020130', width='570', height='314', frameborder='0', style='border:0', allowfullscreen='')-->
         </section>
-        <!--section.intermediate
-        .container
-            .row
-                .intermediate_title
-                    h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы
-                .intermediate_wrap
-                    clearfix
-                        //.file_wrapform#form-file.
-                            input(type='file' name='field')
-                        .row
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='name', type='text', placeholder='Имя')
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='email', type='text', placeholder='Почта')
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='phone', type='text', placeholder='Телефон')
-                            input(type='hidden', name='form_name', value='baseForm')
-                            input(type='hidden', name='form_type', value='normal')
-                            .intermediate_item
-                                input(type='submit', value='Записаться')
-        -->
       </main>
       <footer class="footer" id="my-footer"><a class="footer__scroll-top" href="#">наверх<i class="fa fa-angle-up"></i></a>
         <div class="container">

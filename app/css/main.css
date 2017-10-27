@@ -20,10 +20,10 @@
   font-family: "ProximaNova-Extrabold";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.ttf) format("truetype");
-  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot) format("embedded-opentype");
-  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.eot?#iefix) format("embedded-opentype");
-  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabold.woff) format("woff"); }
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabld.ttf) format("truetype");
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabld.eot) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabld.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/ProximaNova-Extrabold/ProximaNova-Extrabld.woff) format("woff"); }
 
 @font-face {
   font-family: "ProximaNova-Light";
@@ -50,14 +50,25 @@
   src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf) format("truetype");
   src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.eot) format("embedded-opentype");
   src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix) format("embedded-opentype");
-  src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.woff) format("woff");
-  @font-face {}  font-family: "ProximaNova-Semibold";
+  src: url(../fonts/ProximaNova-Regular/ProximaNova-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf) format("truetype");
   src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot) format("embedded-opentype");
   src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix) format("embedded-opentype");
   src: url(../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff) format("woff"); }
+
+@font-face {
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.ttf) format("truetype");
+  src: url(../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot) format("embedded-opentype");
+  src: url(../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype");
+  src: url(../fonts/glyphicons-halflings-regular/glyphicons-halflings-regular.woff) format("woff"); }
 
 body {
   font-size: 16px;
@@ -152,7 +163,13 @@ input {
           border-radius: 30px;
   text-align: center;
   position: relative;
-  outline: none; }
+  outline: none;
+  -webkit-transition: color,background-color .3s;
+  -o-transition: color,background-color .3s;
+  transition: color,background-color .3s; }
+  .button__type_3:hover {
+    color: #fff;
+    background-color: #000; }
 
 .input_wrap {
   position: relative;
@@ -179,7 +196,10 @@ html.mm-blocking, html.mm-blocking body {
   background-color: #fff;
   padding: 25px 0;
   -webkit-box-shadow: 0 4px 2px -2px rgba(88, 54, 126, 0.04);
-          box-shadow: 0 4px 2px -2px rgba(88, 54, 126, 0.04); }
+          box-shadow: 0 4px 2px -2px rgba(88, 54, 126, 0.04);
+  position: fixed;
+  top: 0;
+  z-index: 9999; }
   .header__logo {
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #000;
@@ -242,7 +262,7 @@ html.mm-blocking, html.mm-blocking body {
         .header__nav ul li a:before {
           content: " ";
           position: absolute;
-          top: 22px;
+          top: 35px;
           height: 2px;
           width: 0;
           background-color: #ffec00;
@@ -253,7 +273,7 @@ html.mm-blocking, html.mm-blocking body {
         .header__nav ul li a:after {
           content: " ";
           position: absolute;
-          top: 22px;
+          top: 35px;
           height: 2px;
           width: 0;
           background-color: #ffec00;
@@ -272,6 +292,10 @@ html.mm-blocking, html.mm-blocking body {
             width: 50%; }
       .header__nav ul li + li {
         margin-left: 60px; }
+    .header__nav ul .active a:before {
+      width: 50%; }
+    .header__nav ul .active a:after {
+      width: 50%; }
   .header__private-office {
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .header__private-office:before {
@@ -352,10 +376,13 @@ html.mm-blocking, html.mm-blocking body {
   right: 10px;
   display: none; }
 
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent; }
+
 .top-section {
   padding: 140px 70px 0 70px;
-  height: -webkit-calc(100vh - 107px);
-  height: calc(100vh - 107px);
+  height: -webkit-calc(100vh - -107px);
+  height: calc(100vh - -107px);
   background: url(../img/top_section-bg.png) no-repeat 100% center;
   position: relative; }
   .top-section__content {
@@ -1311,7 +1338,8 @@ html.mm-blocking, html.mm-blocking body {
 
 .footer {
   padding: 80px 0 70px;
-  position: relative; }
+  position: relative;
+  border-top: 5px solid #f2f2f2; }
   .footer__links {
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 17px;
@@ -1715,6 +1743,124 @@ html.mm-blocking, html.mm-blocking body {
               box-shadow: 0 6px 16px rgba(255, 236, 0, 0.58);
       padding: 10px 30px;
       background-color: #ffec00; }
+  .course-schedule .nav-tabs {
+    border-bottom: transparent; }
+  .course-schedule__dates {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center; }
+    .course-schedule__dates li {
+      border: 1px solid #dddddd;
+      border-top: 4px solid #dddddd;
+      padding: 15px 30px; }
+    .course-schedule__dates a {
+      display: block;
+      font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 22px; }
+    .course-schedule__dates span {
+      font-size: 12px;
+      display: block;
+      font-family: "ProximaNova-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .course-schedule .scrtabs-tabs-fixed-container {
+    height: 116px; }
+  .course-schedule .course-schedule__dates a {
+    font-size: 22px;
+    font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .course-schedule .nav-tabs > li.active > a, .course-schedule .nav-tabs > li.active > a:focus, .course-schedule .nav-tabs > li.active > a:hover {
+    border: transparent; }
+  .course-schedule .scrtabs-tab-container {
+    height: 85px; }
+  .course-schedule .scrtabs-tab-scroll-arrow {
+    height: 85px;
+    background-color: #ebebeb;
+    border: transparent;
+    text-align: center;
+    padding: 34px 0; }
+  .course-schedule .glyphicon-chevron-left:before, .course-schedule glyphicon-chevron-right:before {
+    color: #999899; }
+  .course-schedule .nav-tabs > li > a:hover {
+    border-color: transparent; }
+  .course-schedule .course-schedule__dates li.active {
+    border-top: 4px solid #ffec00;
+    -webkit-box-shadow: 10px 8px 19px rgba(88, 54, 126, 0.09);
+            box-shadow: 10px 8px 19px rgba(88, 54, 126, 0.09);
+    border-bottom: none;
+    position: relative; }
+    .course-schedule .course-schedule__dates li.active:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      bottom: -15px;
+      left: -webkit-calc(50% - 8px);
+      left: calc(50% - 8px);
+      z-index: 9999;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 16px solid #fff; }
+  .course-schedule__course-info {
+    padding: 55px 80px 80px 80px;
+    position: relative; }
+  .course-schedule__course-info_wrap {
+    position: relative; }
+    .course-schedule__course-info_wrap:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0;
+      border-left: 1px solid #f4f3f5; }
+  .course-schedule__name {
+    font-family: "ProximaNova-Extrabold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px;
+    color: #000; }
+  .course-schedule__name-descriprion {
+    color: #b0b0b0;
+    font-size: 17px;
+    line-height: 32px;
+    margin-top: 10px; }
+  .course-schedule__speaker-info {
+    margin-top: 20px; }
+    .course-schedule__speaker-info p {
+      display: inline-block;
+      font-size: 15px; }
+      .course-schedule__speaker-info p span {
+        font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        margin-left: 5px; }
+  .course-schedule .tab-content__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .course-schedule__date-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+  .course-schedule__date {
+    font-family: "ProximaNova-Extrabold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px; }
+  .course-schedule__duration {
+    font-size: 15px;
+    color: #6f6f6f; }
 
 .career {
   padding: 200px 0 200px 0;
@@ -2190,6 +2336,110 @@ html.mm-blocking, html.mm-blocking body {
       display: block;
       margin: 0 auto;
       border-top: 1px solid #ffec00; }
+
+.have-questions {
+  position: relative;
+  padding: 150px 0 200px 0; }
+  .have-questions:before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 246px;
+    height: 246px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: 0px;
+    left: -100px;
+    z-index: 0; }
+  .have-questions:after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 635px;
+    height: 635px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: -113px;
+    right: -420px;
+    z-index: 0; }
+  .have-questions__wrap {
+    position: relative;
+    overflow: hidden; }
+    .have-questions__wrap:before {
+      width: 134px;
+      height: 109px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      background: url("../img/boxes_bg.png") no-repeat; }
+    .have-questions__wrap:after {
+      width: 320px;
+      height: 212px;
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      content: "";
+      display: block;
+      background: url("../img/box_bg.png") no-repeat;
+      -webkit-background-size: contain;
+              background-size: contain; }
+  .have-questions__title {
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative;
+    text-align: center; }
+    .have-questions__title:before {
+      content: "";
+      background-color: #ffec00;
+      position: absolute;
+      bottom: -14px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 80px;
+      height: 3px; }
+  .have-questions .course-designer__form-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+  .have-questions .intermediate_item {
+    width: 100%; }
+    .have-questions .intermediate_item input {
+      width: 45%; }
+    .have-questions .intermediate_item input[type="submit"] {
+      margin-top: 20px;
+      width: 45%; }
+    .have-questions .intermediate_item textarea {
+      resize: none;
+      height: 150px;
+      border: 1px solid #616161;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      padding: 16px 48px 16px 40px;
+      outline-width: 0px;
+      outline-color: transparent;
+      width: 45%; }
+    .have-questions .intermediate_item + .intermediate_item {
+      margin-top: 20px; }
 
 @media only screen and (max-width: 1199px) {
   /**/

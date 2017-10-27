@@ -510,6 +510,9 @@ $(document).ready(function () {
         nav: false,
         smartSpeed: 500
     });
+
+    $('.nav-tabs').scrollingTabs();
+
 });
 
 

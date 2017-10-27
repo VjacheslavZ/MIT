@@ -13,7 +13,7 @@ var gulp         = require("gulp"),
     pug          = require('gulp-pug'),
     gutil        = require("gulp-util"),
     gulpCopy    = require('gulp-copy'),
-    spritesmith = require('gulp.spritesmith');
+    spritesmith = require('gulp.spritesmith'),
     notify = require("gulp-notify");
 
 gulp.task("sass", function () {
@@ -58,6 +58,7 @@ gulp.task("scripts-libs", function () {
       "app/libs/mmenu/mmenu/jquery.mmenu.all.js",
        "app/libs/jQuery.equalHeights/jquery.equalheights.min.js",
        "app/libs/fotorama/fotorama.js",
+       "app/libs/responsive-scrolling/dist/jquery.scrolling-tabs.js"
 
    ])
        .pipe(concat("libs.min.js"))

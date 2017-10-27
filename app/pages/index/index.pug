@@ -73,7 +73,7 @@ block main
                                 span 06
                                 p Проводить незабываемые презентации
 
-        section.our-programs
+        section.our-programs#our-programs
             .container
                 .row
                     .col-sm-12
@@ -310,7 +310,7 @@ block main
         section.world-leaders
 
 
-        section.teachers
+        section.teachers#teachers
             .container
                 .row
                     .col-sm-12.col-xs-12
@@ -393,7 +393,7 @@ block main
                                     span.reviews__autor Татьяна Шевченко
                                     span.reviews__age 36 лет
                                     p.reviews__text Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
-        section.news
+        section.news#news
             .container
                 .row
                     .col-sm-12.col-xs-12
@@ -415,14 +415,13 @@ block main
                         a(href="#").news__title Концепция ментально оспособляет закон
                         p.news__description Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших ...
                 button.button__type_2 Все новости
-        section.contacts
+        section.contacts#contacts
             .contacts__wrap
                 .container
                     .row
                         .col-sm-12.col-xs-12
                             h2.contacts__title Контакты
             //map!!!
-
 
             //
             .container
@@ -446,35 +445,4 @@ block main
                                 li.contacts__detals-title E-mail
                                 li.contacts__detals-info
                                     a(href="mailto:school@gmail.com") school@gmail.com
-
-
-
-
-
-
-        //section.intermediate
-            .container
-                .row
-                    .intermediate_title
-                        h3 Заполните форму и мы бесплатно перезвоним и ответим на ваши вопросы
-                    .intermediate_wrap
-                        clearfix
-                            //.file_wrapform#form-file.
-                                input(type='file' name='field')
-                            .row
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='name', type='text', placeholder='Имя')
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='email', type='text', placeholder='Почта')
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='phone', type='text', placeholder='Телефон')
-                                input(type='hidden', name='form_name', value='baseForm')
-                                input(type='hidden', name='form_type', value='normal')
-                                .intermediate_item
-                                    input(type='submit', value='Записаться')
+            //iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.278490346681!2d36.21467091558348!3d49.98738802850304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a057d436ef1f%3A0x5ba90ea43af9ab4e!2z0LLRg9C70LjRhtGPINCf0L7Qu9GC0LDQstGB0YzQutC40Lkg0KjQu9GP0YUsIDMxLCDQpdCw0YDQutGW0LIsINCl0LDRgNC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1499350020130', width='570', height='314', frameborder='0', style='border:0', allowfullscreen='')
