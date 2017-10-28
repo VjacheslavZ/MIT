@@ -134,7 +134,7 @@
             <button class="button">Получить знания</button>
           </div>
         </section>
-        <section class="for-who">
+        <section class="for-who" id="for-who">
           <div class="container">
             <div class="row">
               <div class="for-who__wrap clearfix">
@@ -163,7 +163,7 @@
             </div>
           </div>
         </section>
-        <section class="after-study">
+        <section class="after-study" id="after-study">
           <div class="container">
             <div class="row">
               <div class="col-md-12 col-sm-12">
@@ -322,7 +322,99 @@
             </div>
           </div>
         </section>
-        <section class="course-designer">
+        <!--section.course-designer#course-designer
+        .container
+            .row
+                .col-sm-12
+                    h2.course-designer__title Конструктор курса
+            .row
+                .col-lg-8
+                    p.course-designer__manual Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.
+        .container
+            form
+                .row
+                    .course-designer__form.clearfix#form-file
+                        .col-sm-4.col-xs-6
+                            .course-designer__items
+                                p.course-designer__courses-name Название курса
+                                .course-designer__items-wrap
+                                    span.course-designer__cours-name.course-designer__cours-name_selected Project Managment (Online)
+                                        input(type="checkbox" value="Project Managment (Online)" id="managment-online")
+                                        label(for="managment-online")
+                                        i.fa.fa-long-arrow-right
+        
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+        
+                        .col-sm-4.col-xs-6
+                            .course-designer__items
+                                p.course-designer__courses-name Название блока
+                                .course-designer__items-wrap
+                                    span.course-designer__cours-name.course-designer__cours-name_selected Полный курс
+                                        input(type="checkbox" value="Project Managment (Online)" id="full-course")
+                                        label(for="full-course")
+        
+                                    span.course-designer__cours-name Управление проектами
+                                        input(type="checkbox" value="Project Managment (Offline)" id="project-management")
+                                        label(for="project-management")
+        
+                                    span.course-designer__cours-name Управление командой
+                                            input(type="checkbox" value="Project Managment (Offline)" id="team-management")
+                                            label(for="team-management")
+        
+                                    span.course-designer__cours-name Работа с клиентами
+                                        input(type="checkbox" value="Project Managment (Offline)" id="work-with-clients")
+                                        label(for="work-with-clients")
+        
+                                    span.course-designer__cours-name Маркетинг
+                                        input(type="checkbox" value="Project Managment (Offline)" id="marketing")
+                                        label(for="marketing")
+        
+                                    span.course-designer__cours-name Продажи
+                                        input(type="checkbox" value="Project Managment (Offline)" id="sales")
+                                        label(for="sales")
+                        .col-xs-6.hidden-lg.hidden-md
+                            .course-designer__items-chosed-adaptive
+                                p.course-designer__courses-finish-adaptive Вы выбрали курс:
+                        .col-sm-4.col-xs-6
+                            .course-designer__items-chosed
+                                p.course-designer__courses-finish Вы выбрали курс:
+                                p.course-designer__courses-chosed IT Project Managment (Online)
+                                .course-designer__items-wrap
+                                    ul
+                                        li
+                                            i.fa.fa-check
+                                            span Управление проектами
+                                        li
+                                            i.fa.fa-check
+                                            span Управление командой
+                                        li
+                                            i.fa.fa-check
+                                            span Работа с клиентами
+        
+                .row
+                    .col-lg-12
+                        .course-designer__form-contacts
+                            .intermediate_item
+                                .input_wrap
+                                    i.fa.fa-check
+                                    input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
+                            .intermediate_item
+                                .input_wrap
+                                    i.fa.fa-check
+                                    input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
+                            .intermediate_item
+                                .input_wrap
+                                    i.fa.fa-check
+                                    input(name='email', type='text', placeholder='E-MAIL')
+                            input(type='hidden', name='form_name', value='baseForm')
+                            input(type='hidden', name='form_type', value='normal')
+                            .intermediate_item
+                                input(type='submit', value='Записаться')
+        -->
+        <section class="course-designer" id="course-designer">
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
@@ -332,49 +424,53 @@
             <div class="row">
               <div class="col-lg-8">
                 <p class="course-designer__manual">Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.</p>
+                <ul class="course-designer__step">
+                  <li class="active">01</li>
+                  <li>02</li>
+                  <li>03</li>
+                  <li>04</li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="container">
             <form>
-              <div class="row">
-                <div class="course-designer__form clearfix" id="form-file">
-                  <div class="col-sm-4 col-xs-12">
-                    <div class="course-designer__items">
-                      <p class="course-designer__courses-name">Название курса</p>
-                      <div class="course-designer__items-wrap"><span class="course-designer__cours-name course-designer__cours-name_selected">Project Managment (Online)
-                          <input type="checkbox" value="Project Managment (Online)" id="managment-online">
-                          <label for="managment-online"></label><i class="fa fa-long-arrow-right"></i></span><span class="course-designer__cours-name">Project Managment (Offline)
-                          <input type="checkbox" value="Project Managment (Offline)" id="managment-offline">
-                          <label for="managment-offline"></label><i class="fa fa-long-arrow-right"></i></span></div>
-                    </div>
+              <div class="course-designer__items">
+                <div class="course-designer__builder">
+                  <div class="course-designer__items-wrap">
+                    <p class="course-designer__courses-name">Название курса</p>
+                    <div class="course-designer__scroll"><span class="course-designer__cours-name course-designer__cours-name_selected">Project Managment (Online)
+                        <input type="checkbox" value="Project Managment (Online)" id="managment-online">
+                        <label for="managment-online"></label><i class="fa fa-long-arrow-right"></i></span><span class="course-designer__cours-name">Project Managment (Offline)
+                        <input type="checkbox" value="Project Managment (Offline)" id="managment-offline">
+                        <label for="managment-offline"></label><i class="fa fa-long-arrow-right"></i></span></div>
                   </div>
-                  <div class="col-sm-4 col-xs-12">
-                    <div class="course-designer__items">
-                      <p class="course-designer__courses-name">Название блока</p>
-                      <div class="course-designer__items-wrap"><span class="course-designer__cours-name course-designer__cours-name_selected">Полный курс
-                          <input type="checkbox" value="Project Managment (Online)" id="full-course">
-                          <label for="full-course"></label></span><span class="course-designer__cours-name">Управление проектами
-                          <input type="checkbox" value="Project Managment (Offline)" id="project-management">
-                          <label for="project-management"></label></span><span class="course-designer__cours-name">Управление командой
-                          <input type="checkbox" value="Project Managment (Offline)" id="team-management">
-                          <label for="team-management"></label></span><span class="course-designer__cours-name">Работа с клиентами
-                          <input type="checkbox" value="Project Managment (Offline)" id="work-with-clients">
-                          <label for="work-with-clients"></label></span><span class="course-designer__cours-name">Маркетинг
-                          <input type="checkbox" value="Project Managment (Offline)" id="marketing">
-                          <label for="marketing"></label></span><span class="course-designer__cours-name">Продажи
-                          <input type="checkbox" value="Project Managment (Offline)" id="sales">
-                          <label for="sales"></label></span></div>
-                    </div>
+                  <div class="course-designer__items-wrap">
+                    <p class="course-designer__courses-name">Название блока</p>
+                    <div class="course-designer__scroll"><span class="course-designer__cours-name course-designer__cours-name_selected">Полный курс
+                        <input type="checkbox" value="Project Managment (Online)" id="full-course">
+                        <label for="full-course"></label></span><span class="course-designer__cours-name">Управление проектами
+                        <input type="checkbox" value="Project Managment (Offline)" id="project-management">
+                        <label for="project-management"></label></span><span class="course-designer__cours-name">Управление командой
+                        <input type="checkbox" value="Project Managment (Offline)" id="team-management">
+                        <label for="team-management"></label></span><span class="course-designer__cours-name">Работа с клиентами
+                        <input type="checkbox" value="Project Managment (Offline)" id="work-with-clients">
+                        <label for="work-with-clients"></label></span><span class="course-designer__cours-name">Маркетинг
+                        <input type="checkbox" value="Project Managment (Offline)" id="marketing">
+                        <label for="marketing"></label></span></div>
                   </div>
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="course-designer__items-wrap course-designer__items-wrap_width">
                     <div class="course-designer__items-chosed">
-                      <p class="course-designer__courses-finish">Вы выбрали курс:</p>
-                      <p class="course-designer__courses-chosed">IT Project Managment (Online)</p>
-                      <div class="course-designer__items-wrap">
+                      <div class="course-designer__text">
+                        <p class="course-designer__courses-finish">Вы выбрали курс:</p>
+                        <p class="course-designer__courses-chosed">IT Project Managment (Online)</p>
+                      </div>
+                      <div class="course-designer__items-list">
                         <ul>
                           <li><i class="fa fa-check"></i><span>Управление проектами</span></li>
                           <li><i class="fa fa-check"></i><span>Управление командой</span></li>
+                          <li><i class="fa fa-check"></i><span>Работа с клиентами</span></li>
+                          <li><i class="fa fa-check"></i><span>Работа с клиентами</span></li>
                           <li><i class="fa fa-check"></i><span>Работа с клиентами</span></li>
                         </ul>
                       </div>
@@ -382,33 +478,33 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="course-designer__form-contacts">
-                    <div class="intermediate_item">
-                      <div class="input_wrap"><i class="fa fa-check"></i>
-                        <input name="name" type="text" placeholder="ИМЯ ФАМИЛИЯ">
-                      </div>
+            </form>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="course-designer__form-contacts">
+                  <div class="intermediate_item">
+                    <div class="input_wrap"><i class="fa fa-check"></i>
+                      <input name="name" type="text" placeholder="ИМЯ ФАМИЛИЯ">
                     </div>
-                    <div class="intermediate_item">
-                      <div class="input_wrap"><i class="fa fa-check"></i>
-                        <input class="mask" name="phone" type="text" placeholder="ТЕЛЕФОН">
-                      </div>
+                  </div>
+                  <div class="intermediate_item">
+                    <div class="input_wrap"><i class="fa fa-check"></i>
+                      <input class="mask" name="phone" type="text" placeholder="ТЕЛЕФОН">
                     </div>
-                    <div class="intermediate_item">
-                      <div class="input_wrap"><i class="fa fa-check"></i>
-                        <input name="email" type="text" placeholder="E-MAIL">
-                      </div>
+                  </div>
+                  <div class="intermediate_item">
+                    <div class="input_wrap"><i class="fa fa-check"></i>
+                      <input name="email" type="text" placeholder="E-MAIL">
                     </div>
-                    <input type="hidden" name="form_name" value="baseForm">
-                    <input type="hidden" name="form_type" value="normal">
-                    <div class="intermediate_item">
-                      <input type="submit" value="Записаться">
-                    </div>
+                  </div>
+                  <input type="hidden" name="form_name" value="baseForm">
+                  <input type="hidden" name="form_type" value="normal">
+                  <div class="intermediate_item">
+                    <input type="submit" value="Записаться">
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </section>
         <section class="why-created">
@@ -474,7 +570,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="container">
             <div class="row">
               <div class="reviews__wrap col-sm-12 col-xs-12">
@@ -583,20 +679,20 @@
             <div class="col-sm-3 col-xs-12">
               <div class="footer__links">
                 <ul>
-                  <li><a href="#">Для кого тренинг?</a></li>
-                  <li><a href="#">После проходения курса</a></li>
-                  <li><a href="#">Наши коуч-программы</a></li>
-                  <li><a href="#">Конструктор курса</a></li>
+                  <li><a href="#for-who">Для кого тренинг?</a></li>
+                  <li><a href="#after-study">После проходения курса</a></li>
+                  <li><a href="#our-programs">Наши коуч-программы</a></li>
+                  <li><a href="#course-designer">Конструктор курса</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-sm-3 col-xs-12">
               <div class="footer__links">
                 <ul>
-                  <li><a href="#">Ведущие программы</a></li>
-                  <li><a href="#">Отзывы</a></li>
-                  <li><a href="#">Новости</a></li>
-                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#teachers">Ведущие программы</a></li>
+                  <li><a href="#reviews">Отзывы</a></li>
+                  <li><a href="#news">Новости</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
                 </ul>
               </div>
             </div>

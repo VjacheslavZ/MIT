@@ -464,6 +464,7 @@ $(document).ready(function () {
     $(".our-programs__name").equalHeights();
     $(".our-programs__name-course").equalHeights();
     $(".training__stages-info").equalHeights();
+    // $(".course-designer__items-wrap").equalHeights();
 
     //video
     let playButton = $("#play-pause"),
@@ -512,5 +513,27 @@ $(document).ready(function () {
     });
 
     $('.nav-tabs').scrollingTabs();
+
+    (function ($) {
+
+        $("body").on("click", ".header__nav a[href*='#'], .footer__links a[href*='#'],#my-menu a[href*='#']", scroll_header_links);
+
+        function scroll_header_links(e) {
+            e.preventDefault();
+
+            var anchor =  $(this);
+
+            console.log(anchor);
+
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 500);
+
+            return false;
+        }
+    })(jQuery);
+
+    $('.course-designer__scroll').jScrollPane();
+    $('.course-designer__items-list ul').jScrollPane();
 
 });

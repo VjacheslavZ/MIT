@@ -9,7 +9,7 @@ block main
                 h1.top-section__title Сообщество IT управленцев
                 p.top-section__description Главная цель сообщества - обучить  IT правленцев которые будут создавать сильные команды и успешные проекты мирового уровня
                 button.button Получить знания
-        section.for-who
+        section.for-who#for-who
             .container
                 .row
                     .for-who__wrap.clearfix
@@ -44,7 +44,7 @@ block main
 
 
 
-        section.after-study
+        section.after-study#after-study
             .container
                 .row
                     .col-md-12.col-sm-12
@@ -197,7 +197,7 @@ block main
 
 
 
-        section.course-designer
+        //section.course-designer#course-designer
             .container
                 .row
                     .col-sm-12
@@ -209,7 +209,7 @@ block main
                 form
                     .row
                         .course-designer__form.clearfix#form-file
-                            .col-sm-4.col-xs-12
+                            .col-sm-4.col-xs-6
                                 .course-designer__items
                                     p.course-designer__courses-name Название курса
                                     .course-designer__items-wrap
@@ -222,7 +222,8 @@ block main
                                             input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
                                             label(for="managment-offline")
                                             i.fa.fa-long-arrow-right
-                            .col-sm-4.col-xs-12
+
+                            .col-sm-4.col-xs-6
                                 .course-designer__items
                                     p.course-designer__courses-name Название блока
                                     .course-designer__items-wrap
@@ -249,7 +250,10 @@ block main
                                         span.course-designer__cours-name Продажи
                                             input(type="checkbox" value="Project Managment (Offline)" id="sales")
                                             label(for="sales")
-                            .col-sm-4.col-xs-12
+                            .col-xs-6.hidden-lg.hidden-md
+                                .course-designer__items-chosed-adaptive
+                                    p.course-designer__courses-finish-adaptive Вы выбрали курс:
+                            .col-sm-4.col-xs-6
                                 .course-designer__items-chosed
                                     p.course-designer__courses-finish Вы выбрали курс:
                                     p.course-designer__courses-chosed IT Project Managment (Online)
@@ -284,6 +288,100 @@ block main
                                 input(type='hidden', name='form_type', value='normal')
                                 .intermediate_item
                                     input(type='submit', value='Записаться')
+        section.course-designer#course-designer
+            .container
+                .row
+                    .col-sm-12
+                        h2.course-designer__title Конструктор курса
+                .row
+                    .col-lg-8
+                        p.course-designer__manual Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.
+                        ul.course-designer__step
+                            li.active 01
+                            li 02
+                            li 03
+                            li 04
+            .container
+                form
+                    .course-designer__items
+                        .course-designer__builder
+                            .course-designer__items-wrap
+                                p.course-designer__courses-name Название курса
+                                .course-designer__scroll
+                                    span.course-designer__cours-name.course-designer__cours-name_selected Project Managment (Online)
+                                        input(type="checkbox" value="Project Managment (Online)" id="managment-online")
+                                        label(for="managment-online")
+                                        i.fa.fa-long-arrow-right
+
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+
+                            .course-designer__items-wrap
+                                p.course-designer__courses-name Название блока
+                                .course-designer__scroll
+                                    span.course-designer__cours-name.course-designer__cours-name_selected Полный курс
+                                        input(type="checkbox" value="Project Managment (Online)" id="full-course")
+                                        label(for="full-course")
+
+                                    span.course-designer__cours-name Управление проектами
+                                        input(type="checkbox" value="Project Managment (Offline)" id="project-management")
+                                        label(for="project-management")
+
+                                    span.course-designer__cours-name Управление командой
+                                        input(type="checkbox" value="Project Managment (Offline)" id="team-management")
+                                        label(for="team-management")
+
+                                    span.course-designer__cours-name Работа с клиентами
+                                        input(type="checkbox" value="Project Managment (Offline)" id="work-with-clients")
+                                        label(for="work-with-clients")
+
+                                    span.course-designer__cours-name Маркетинг
+                                        input(type="checkbox" value="Project Managment (Offline)" id="marketing")
+                                        label(for="marketing")
+                            .course-designer__items-wrap.course-designer__items-wrap_width
+                                .course-designer__items-chosed
+                                    .course-designer__text
+                                        p.course-designer__courses-finish Вы выбрали курс:
+                                        p.course-designer__courses-chosed IT Project Managment (Online)
+                                    .course-designer__items-list
+                                        ul
+                                            li
+                                                i.fa.fa-check
+                                                span Управление проектами
+                                            li
+                                                i.fa.fa-check
+                                                span Управление командой
+                                            li
+                                                i.fa.fa-check
+                                                span Работа с клиентами
+                                            li
+                                                i.fa.fa-check
+                                                span Работа с клиентами
+                                            li
+                                                i.fa.fa-check
+                                                span Работа с клиентами
+
+                .row
+                    .col-lg-12
+                        .course-designer__form-contacts
+                            .intermediate_item
+                                .input_wrap
+                                    i.fa.fa-check
+                                    input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
+                            .intermediate_item
+                                .input_wrap
+                                    i.fa.fa-check
+                                    input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
+                            .intermediate_item
+                                .input_wrap
+                                    i.fa.fa-check
+                                    input(name='email', type='text', placeholder='E-MAIL')
+                            input(type='hidden', name='form_name', value='baseForm')
+                            input(type='hidden', name='form_type', value='normal')
+                            .intermediate_item
+                                input(type='submit', value='Записаться')
         section.why-created
             .container
                 .row
@@ -356,7 +454,7 @@ block main
                                 p.teachers__name Владимир Озирный
                                 span.teachers__position SEO Dizz Agency / Say-hi
 
-        section.reviews
+        section.reviews#reviews
             .container
                 .row
                     .reviews__wrap.col-sm-12.col-xs-12

@@ -58,7 +58,8 @@ gulp.task("scripts-libs", function () {
       "app/libs/mmenu/mmenu/jquery.mmenu.all.js",
        "app/libs/jQuery.equalHeights/jquery.equalheights.min.js",
        "app/libs/fotorama/fotorama.js",
-       "app/libs/responsive-scrolling/dist/jquery.scrolling-tabs.js"
+       "app/libs/responsive-scrolling/dist/jquery.scrolling-tabs.js",
+       "app/libs/jScrollPane/script/jquery.jscrollpane.min.js"
 
    ])
        .pipe(concat("libs.min.js"))
