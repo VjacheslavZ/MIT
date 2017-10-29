@@ -9,6 +9,7 @@ block main
                 h1.top-section__title Сообщество IT управленцев
                 p.top-section__description Главная цель сообщества - обучить  IT правленцев которые будут создавать сильные команды и успешные проекты мирового уровня
                 button.button Получить знания
+                a(href="#notyfi").notyfi Уведомить
         section.for-who#for-who
             .container
                 .row
@@ -320,6 +321,10 @@ block main
 
                             .course-designer__items-wrap
                                 p.course-designer__courses-name Название блока
+                                a(href="#")
+                                    i.fa.fa-chevron-up
+                                a(href="#")
+                                    i.fa.fa-chevron-down
                                 .course-designer__scroll
                                     span.course-designer__cours-name.course-designer__cours-name_selected Полный курс
                                         input(type="checkbox" value="Project Managment (Online)" id="full-course")
@@ -346,6 +351,10 @@ block main
                                         p.course-designer__courses-finish Вы выбрали курс:
                                         p.course-designer__courses-chosed IT Project Managment (Online)
                                     .course-designer__items-list
+                                        a(href="#")
+                                            i.fa.fa-chevron-up
+                                        a(href="#")
+                                            i.fa.fa-chevron-down
                                         ul
                                             li
                                                 i.fa.fa-check
@@ -364,7 +373,7 @@ block main
                                                 span Работа с клиентами
 
                 .row
-                    .col-lg-12
+                    .col-lg-12.col-xs-12
                         .course-designer__form-contacts
                             .intermediate_item
                                 .input_wrap
@@ -519,6 +528,221 @@ block main
                     .row
                         .col-sm-12.col-xs-12
                             h2.contacts__title Контакты
+            .div#map
+            //AIzaSyCSRXQn0dP78R_l53ALKwKVWqcogBFGnl0
+            script.
+                function initMap() {
+                    var uluru = {lat: -25.363, lng: 131.044};
+
+                    var style = [
+                        {
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#616161"
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.land_parcel",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#bdbdbd"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#eeeeee"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#757575"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#e5e5e5"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#9e9e9e"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#757575"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dadada"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#616161"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#9e9e9e"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.line",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#e5e5e5"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#eeeeee"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#c9c9c9"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#9e9e9e"
+                                }
+                            ]
+                        }
+                    ]
+
+                    var map = new google.maps.Map(document.getElementById('map'),
+                        {
+                        zoom: 16,
+                        center: {lat: 50.449298, lng: 30.528427},
+                        styles: style,
+                    });
+
+
+
+
+
+                    addmarker({
+                        coordinate : {lat: 50.449298, lng: 30.528427},
+                        image: "img/map_ic.png",
+                    })
+
+                    addmarker({
+                        coordinate : {lat: 49.988358, lng: 36.232845}
+                    })
+
+                    function addmarker(properties) {
+                        var marker = new google.maps.Marker({
+                            position: properties.coordinate,
+                            map: map,
+                            //label:  "ABC"
+                        });
+
+                        if(properties.image){
+                            marker.setIcon(properties.image)
+                        }
+
+                        //if(properties.label){
+                        //    var label = new google.maps.label({
+                         //       content: properties.label
+                         //   })
+                        //}
+                    }
+
+
+
+                    //var infoWindow = new google.maps.infoWindow({
+                    //    content: "<h1>dsadas</h1>"
+                    //});
+                }
+
+
+            script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCSRXQn0dP78R_l53ALKwKVWqcogBFGnl0&callback=initMap')
+
             //map!!!
 
             //
@@ -543,4 +767,3 @@ block main
                                 li.contacts__detals-title E-mail
                                 li.contacts__detals-info
                                     a(href="mailto:school@gmail.com") school@gmail.com
-            //iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.278490346681!2d36.21467091558348!3d49.98738802850304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a057d436ef1f%3A0x5ba90ea43af9ab4e!2z0LLRg9C70LjRhtGPINCf0L7Qu9GC0LDQstGB0YzQutC40Lkg0KjQu9GP0YUsIDMxLCDQpdCw0YDQutGW0LIsINCl0LDRgNC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1499350020130', width='570', height='314', frameborder='0', style='border:0', allowfullscreen='')

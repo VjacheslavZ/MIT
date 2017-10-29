@@ -1,27 +1,21 @@
-#popup.mfp-hide.white-popup.mfp-with-anim.popup
-    p.success_mail Спасибо! Ваша заявка уже обрабатывается менеджером и в ближайшее время он с вами свяжется.
-    form
-        p.modal-title.
-            Введите данные
-        p.modal-paragraph.
-            и мы Вам перезвоним
+#notyfi.mfp-hide.white-popup.mfp-with-anim.popup
+    form.notyfi-form.mfp-close-btn-in
+        p.modal-title
+            | Уведомить о наборе
         div
             .input_wrap
                 i.fa.fa-check
                 input(name="name" type="text" placeholder="Имя")
             .input_wrap
                 i.fa.fa-check
-                input(name="phone" type="text" placeholder="Введите свой телефон")
+                input(name="email" type="text" placeholder="E-MAIL")
             .input_wrap
                 i.fa.fa-check
-                input(name="phone_mask" type="text" class="mask" placeholder="+38(___) ___-__-__")
-            .input_wrap
-                i.fa.fa-check
-                input(name="email" type="text" placeholder="E-mail")
-            .input_wrap
+                input(name="phone_mask" type="text" class="mask" placeholder="Телефон").mask
+            //.input_wrap
                 i.fa.fa-check
                 textarea(name="textarea" type="text" placeholder="Описание заяки")
-            .select
+            //.select
                 .slct_arrow
                     i.fa.fa-angle-down
                 a(href="#" class="slct") Выбор заголовков:
@@ -33,7 +27,7 @@
         input(type="hidden" name="form_name" value="")
         input(type="hidden" name="form_type" value="modal")
         input(type="submit" value="Отправить")
-.overlay
+//.overlay
 // Модальное окно success
 #popup-success.mfp-hide.white-popup.mfp-with-anim.popup
     p.success_mail Заявка отправлена

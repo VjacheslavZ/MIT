@@ -49,43 +49,40 @@
           </div>
         </div>
       </div>
-      <div class="mfp-hide white-popup mfp-with-anim popup" id="popup">
-        <p class="success_mail">Спасибо! Ваша заявка уже обрабатывается менеджером и в ближайшее время он с вами свяжется.</p>
-        <form>
-          <p class="modal-title">Введите данные</p>
-          <p class="modal-paragraph">и мы Вам перезвоним</p>
+      <div class="mfp-hide white-popup mfp-with-anim popup" id="notyfi">
+        <form class="notyfi-form mfp-close-btn-in">
+          <p class="modal-title">Уведомить о наборе</p>
           <div>
             <div class="input_wrap"><i class="fa fa-check"></i>
               <input name="name" type="text" placeholder="Имя">
             </div>
             <div class="input_wrap"><i class="fa fa-check"></i>
-              <input name="phone" type="text" placeholder="Введите свой телефон">
+              <input name="email" type="text" placeholder="E-MAIL">
             </div>
             <div class="input_wrap"><i class="fa fa-check"></i>
-              <input class="mask" name="phone_mask" type="text" placeholder="+38(___) ___-__-__">
+              <input class="mask mask" name="phone_mask" type="text" placeholder="Телефон">
             </div>
-            <div class="input_wrap"><i class="fa fa-check"></i>
-              <input name="email" type="text" placeholder="E-mail">
-            </div>
-            <div class="input_wrap"><i class="fa fa-check"></i>
-              <textarea name="textarea" type="text" placeholder="Описание заяки"></textarea>
-            </div>
-            <div class="select">
-              <div class="slct_arrow"><i class="fa fa-angle-down"></i></div><a class="slct" href="#">Выбор заголовков:</a>
-              <ul class="drop">
-                <li>Вы крутые</li>
-                <li>Я в Вас влюбился</li>
-                <li>Быстрей Вас только Флеш</li>
-              </ul>
-              <input type="hidden" name="services">
-            </div>
+            <!--.input_wrap
+            i.fa.fa-check
+            textarea(name="textarea" type="text" placeholder="Описание заяки")
+            -->
+            <!--.select
+            .slct_arrow
+                i.fa.fa-angle-down
+            a(href="#" class="slct") Выбор заголовков:
+            ul.drop
+                li Вы крутые
+                li Я в Вас влюбился
+                li Быстрей Вас только Флеш
+            input(type="hidden" name="services")
+            -->
           </div>
           <input type="hidden" name="form_name" value="">
           <input type="hidden" name="form_type" value="modal">
           <input type="submit" value="Отправить">
         </form>
       </div>
-      <div class="overlay"></div>
+      <!--.overlay-->
       <!-- Модальное окно success-->
       <div class="mfp-hide white-popup mfp-with-anim popup" id="popup-success">
         <p class="success_mail">Заявка отправлена</p>
@@ -131,7 +128,7 @@
           <div class="top-section__content">
             <h1 class="top-section__title">Сообщество IT управленцев</h1>
             <p class="top-section__description">Главная цель сообщества - обучить  IT правленцев которые будут создавать сильные команды и успешные проекты мирового уровня</p>
-            <button class="button">Получить знания</button>
+            <button class="button">Получить знания</button><a class="notyfi" href="#notyfi">Уведомить</a>
           </div>
         </section>
         <section class="for-who" id="for-who">
@@ -446,7 +443,7 @@
                         <label for="managment-offline"></label><i class="fa fa-long-arrow-right"></i></span></div>
                   </div>
                   <div class="course-designer__items-wrap">
-                    <p class="course-designer__courses-name">Название блока</p>
+                    <p class="course-designer__courses-name">Название блока</p><a href="#"><i class="fa fa-chevron-up"></i></a><a href="#"><i class="fa fa-chevron-down"></i></a>
                     <div class="course-designer__scroll"><span class="course-designer__cours-name course-designer__cours-name_selected">Полный курс
                         <input type="checkbox" value="Project Managment (Online)" id="full-course">
                         <label for="full-course"></label></span><span class="course-designer__cours-name">Управление проектами
@@ -465,7 +462,7 @@
                         <p class="course-designer__courses-finish">Вы выбрали курс:</p>
                         <p class="course-designer__courses-chosed">IT Project Managment (Online)</p>
                       </div>
-                      <div class="course-designer__items-list">
+                      <div class="course-designer__items-list"><a href="#"><i class="fa fa-chevron-up"></i></a><a href="#"><i class="fa fa-chevron-down"></i></a>
                         <ul>
                           <li><i class="fa fa-check"></i><span>Управление проектами</span></li>
                           <li><i class="fa fa-check"></i><span>Управление командой</span></li>
@@ -480,7 +477,7 @@
               </div>
             </form>
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-12 col-xs-12">
                 <div class="course-designer__form-contacts">
                   <div class="intermediate_item">
                     <div class="input_wrap"><i class="fa fa-check"></i>
@@ -642,6 +639,221 @@
               </div>
             </div>
           </div>
+          <div class="div" id="map"></div>
+          <!--AIzaSyCSRXQn0dP78R_l53ALKwKVWqcogBFGnl0-->
+          <script>
+            function initMap() {
+                var uluru = {lat: -25.363, lng: 131.044};
+            
+                var style = [
+                    {
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#bdbdbd"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#eeeeee"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dadada"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.station",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#eeeeee"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#c9c9c9"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    }
+                ]
+            
+                var map = new google.maps.Map(document.getElementById('map'),
+                    {
+                    zoom: 16,
+                    center: {lat: 50.449298, lng: 30.528427},
+                    styles: style,
+                });
+            
+            
+            
+            
+            
+                addmarker({
+                    coordinate : {lat: 50.449298, lng: 30.528427},
+                    image: "img/map_ic.png",
+                })
+            
+                addmarker({
+                    coordinate : {lat: 49.988358, lng: 36.232845}
+                })
+            
+                function addmarker(properties) {
+                    var marker = new google.maps.Marker({
+                        position: properties.coordinate,
+                        map: map,
+                        //label:  "ABC"
+                    });
+            
+                    if(properties.image){
+                        marker.setIcon(properties.image)
+                    }
+            
+                    //if(properties.label){
+                    //    var label = new google.maps.label({
+                     //       content: properties.label
+                     //   })
+                    //}
+                }
+            
+            
+            
+                //var infoWindow = new google.maps.infoWindow({
+                //    content: "<h1>dsadas</h1>"
+                //});
+            }
+            
+            
+          </script>
+          <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSRXQn0dP78R_l53ALKwKVWqcogBFGnl0&amp;callback=initMap"></script>
           <!--map!!!-->
           <!---->
           <div class="container">
@@ -670,7 +882,6 @@
               </div>
             </div>
           </div>
-          <!--iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.278490346681!2d36.21467091558348!3d49.98738802850304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a057d436ef1f%3A0x5ba90ea43af9ab4e!2z0LLRg9C70LjRhtGPINCf0L7Qu9GC0LDQstGB0YzQutC40Lkg0KjQu9GP0YUsIDMxLCDQpdCw0YDQutGW0LIsINCl0LDRgNC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1499350020130', width='570', height='314', frameborder='0', style='border:0', allowfullscreen='')-->
         </section>
       </main>
       <footer class="footer" id="my-footer"><a class="footer__scroll-top" href="#">наверх<i class="fa fa-angle-up"></i></a>

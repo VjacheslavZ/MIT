@@ -536,6 +536,8 @@ $(document).ready(function () {
     $('.course-designer__scroll').jScrollPane();
     $('.course-designer__items-list ul').jScrollPane();
 
+    $(".notyfi").magnificPopup();
+
 });
 
 

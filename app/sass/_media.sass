@@ -53,9 +53,9 @@
     //&__items-wrap
       ul
         margin-left: 10px
-    //&__form-contacts .intermediate_item input
+    &__form-contacts .intermediate_item input
       padding: 16px 0px 16px 26px
-    //&__form-contacts .intermediate_item input[type="submit"]
+    &__form-contacts .intermediate_item input[type="submit"]
       width: 202px
       padding: 16px 0px 16px 0
   //6 section .why-created
@@ -107,6 +107,8 @@
       padding: 0 5px
   .course-program
     padding: 50px 0 25px 0
+  .course-schedule
+    padding: 50px 0 50px 0
 
 @media only screen and (max-width : 991px)
   /**/
@@ -130,7 +132,6 @@
     position: inherit
     background: url(../img/top_section-bg-adaptive.png) no-repeat 100% 50%
     background-size: contain
-
   .top-section__content
     position: inherit
     text-align: center
@@ -145,7 +146,6 @@
   //3.after-study
   .after-study
     background: none
-
   //4.our-programs
   .our-programs__info + .our-programs__info
     margin-left: 0
@@ -157,6 +157,7 @@
       width: 50%
       padding-bottom: 30px
       position: relative
+      overflow: visible
       &:after
         content: ""
         margin: 0 auto
@@ -165,6 +166,23 @@
         bottom: 5px
         width: 88%
         border-top: 2px solid #f4f3f5
+      .fa-chevron-up
+        display: block
+        position: absolute
+        top: 71px
+        left: 0
+        right: 0
+        text-align: center
+        color: #b3b3b3
+      .fa-chevron-down
+        color: #b3b3b3
+        display: block
+        position: absolute
+        bottom: -15px
+        left: 0
+        right: 0
+        z-index: 9999
+        text-align: center
     .jspContainer
       position: relative
       &:after
@@ -201,6 +219,10 @@
     &__items-list
       width: 50%
       position: relative
+      .fa-chevron-up
+        top: -40px
+      .fa-chevron-down
+        bottom: -40px
       &:before
         content: ""
         margin: 0 auto
@@ -221,6 +243,14 @@
         height: 185px
         li + li
           margin-top: 10px
+    &__items-wrap span
+      font-size: 12px
+    &__form-contacts .intermediate_item input
+      padding: 15px 20px
+      width: 150px
+    &__form-contacts .intermediate_item input[type="submit"]
+      padding: 15px 20px
+      width: 150px
   .contacts
     &__detals-info
       a
@@ -239,7 +269,6 @@
       font-size: 14px
   .what-get__advantages-list_mt
     padding-top: 15px
-
   .who-wait__items-wrap
     margin-top: 0
   .career__item-wrap
@@ -254,7 +283,9 @@
       padding: 13px 4px
     &__swich-type li a
       font-size: 11px
-
+  .contacts
+    #map
+      width: 100%
 @media only screen and (max-width : 768px)
   /**/
   .top-section
@@ -263,7 +294,6 @@
   .header__wrap
     flex-direction: column
     padding: 0
-
   //2.for-who
   .for-who__item
     text-align: center
@@ -274,7 +304,6 @@
   .for-who__wrap .col-lg-3
     &:before
       margin: 0 auto
-
   //3.after-study
   .after-study__title
     font-size: 18px
@@ -294,6 +323,15 @@
       border-bottom: 1px solid transparent
     &__swich-type li.active
       border-bottom: 1px solid #f4f3f5
+  .course-designer
+    &__form-contacts
+      flex-wrap: wrap
+      .intermediate_item
+        margin-top: 30px
+        input
+            width: 300px
+    &__form-contacts .intermediate_item input[type="submit"]
+      width: 300px
   //.course-designer
     &__items-wrap
       border-top: 2px solid #f4f3f5
@@ -316,13 +354,36 @@
         font-size: 12px
         float: inherit
         margin-right: 20px
+  .course-schedule
+    .tab-content
+      padding-bottom: 35px
+      border-left: 1px solid #f4f3f5
+      border-right: 1px solid #f4f3f5
+      border-bottom: 1px solid #f4f3f5
+    .tab-content.col-sm-12
+      border-bottom: 1px solid transparent
+    .tab-content__wrap
+      flex-direction: column
+      //padding: 55px 80px 80px 80px
+    &__date-info
+      padding: 0 80px
+    &__course-info_wrap:after
+      display: none
+    &__speaker-info
+      padding-bottom: 60px
+      border-bottom: 2px solid #f4f3f5
+
 @media only screen and (max-width : 650px)
+
   /**/
   .course-designer
     &__items-wrap
       width: 100%
     &__courses-name
       text-align: center
+    &__form-contacts
+      justify-content: center
+      //margin-left: 10px
     &__step
       display: block
       margin: 0 auto
@@ -348,6 +409,20 @@
         color: #000
         &:before
           color: $accent_color
+  .course-schedule
+    &__dates li
+      padding: 15px 11px
+    &__course-info
+      padding: 55px 40px 40px 40px
+    &__speaker-info p
+      vertical-align: middle
+      margin-left: 30px
+    &__speaker-info p span
+      margin-left: 0
+      display: block
+      vertical-align: middle
+    &__date-info
+      padding: 0 60px
 
 @media only screen and (max-width : 520px)
   /**/
@@ -364,7 +439,6 @@
   //3.after-study
   .after-study__advantages-title
     font-size: 17px
-
   //4.our-programs
   .our-programs
     .nav-tabs li + li

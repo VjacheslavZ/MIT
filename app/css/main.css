@@ -860,6 +860,8 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-wrap {
     width: 33%;
     background-color: #fff; }
+    .course-designer__items-wrap .fa-chevron-up, .course-designer__items-wrap .fa-chevron-down {
+      display: none; }
   .course-designer__cours-name {
     display: block;
     position: relative;
@@ -944,6 +946,8 @@ html.mm-blocking, html.mm-blocking body {
         margin: 0 20px; }
     .course-designer__items-list span {
       font-size: 17px; }
+    .course-designer__items-list .fa-chevron-up, .course-designer__items-list .fa-chevron-down {
+      display: none; }
   .course-designer__form-contacts {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1322,7 +1326,25 @@ html.mm-blocking, html.mm-blocking body {
   background: #fff;
   padding: 200px 0 175px 0; }
   .contacts__title {
-    margin-bottom: 120px; }
+    margin-bottom: 120px;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: relative; }
+    .contacts__title:before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: #ffec00; }
+  .contacts #map {
+    height: 400px;
+    width: 84%;
+    z-index: 9; }
   .contacts__detals-wrap {
     padding: 65px 0 180px 0;
     position: relative;
@@ -1352,7 +1374,7 @@ html.mm-blocking, html.mm-blocking body {
       position: absolute;
       right: 0;
       z-index: 0;
-      top: 0;
+      top: -50px;
       background: url("../img/contacts_bg.png") no-repeat top right; }
     .contacts__detals-wrap ul {
       position: relative;
@@ -2473,6 +2495,109 @@ html.mm-blocking, html.mm-blocking body {
     .have-questions .intermediate_item + .intermediate_item {
       margin-top: 20px; }
 
+.white-popup.mfp-with-anim.popup {
+  text-align: center;
+  display: inline-block;
+  position: relative; }
+
+.mfp-close {
+  position: absolute;
+  right: 35px;
+  top: 35px; }
+
+.mfp-content {
+  text-align: center; }
+
+.notyfi-form {
+  padding: 150px 225px 150px 225px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden; }
+  .notyfi-form:before {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 246px;
+    height: 246px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: -webkit-calc(50% - 103px);
+    top: calc(50% - 103px);
+    left: -125px;
+    z-index: 0; }
+  .notyfi-form:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 246px;
+    height: 246px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    top: -webkit-calc(50% - 103px);
+    top: calc(50% - 103px);
+    right: -125px;
+    z-index: 0; }
+
+.modal-title {
+  font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  position: relative;
+  margin-bottom: 85px; }
+  .modal-title:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #ffec00; }
+
+.modal-title:before {
+  right: 0;
+  display: block;
+  margin: 0 auto; }
+
+.notyfi-form {
+  position: relative; }
+  .notyfi-form input {
+    width: 100%;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    border: 1px solid #d0d0d0;
+    -webkit-transition: border .3s;
+    -o-transition: border .3s;
+    transition: border .3s;
+    padding: 17px 40px; }
+    .notyfi-form input:focus {
+      border: 1px solid #616161; }
+  .notyfi-form input[type="submit"] {
+    background-color: #ffec00;
+    margin-top: 20px;
+    border: transparent; }
+  .notyfi-form .input_wrap + .input_wrap {
+    margin-top: 20px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #9a9a9a; }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
@@ -2510,6 +2635,11 @@ html.mm-blocking, html.mm-blocking body {
     padding: 0 0 50px 0; }
     .course-designer:before, .course-designer:after {
       display: none; }
+    .course-designer__form-contacts .intermediate_item input {
+      padding: 16px 0px 16px 26px; }
+    .course-designer__form-contacts .intermediate_item input[type="submit"] {
+      width: 202px;
+      padding: 16px 0px 16px 0; }
   .why-created {
     padding: 50px 0 40px 0; }
     .why-created:before {
@@ -2552,7 +2682,9 @@ html.mm-blocking, html.mm-blocking body {
     .career__position {
       padding: 0 5px; }
   .course-program {
-    padding: 50px 0 25px 0; } }
+    padding: 50px 0 25px 0; }
+  .course-schedule {
+    padding: 50px 0 50px 0; } }
 
 @media only screen and (max-width: 991px) {
   /**/
@@ -2597,7 +2729,8 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-wrap {
     width: 50%;
     padding-bottom: 30px;
-    position: relative; }
+    position: relative;
+    overflow: visible; }
     .course-designer__items-wrap:after {
       content: "";
       margin: 0 auto;
@@ -2606,6 +2739,23 @@ html.mm-blocking, html.mm-blocking body {
       bottom: 5px;
       width: 88%;
       border-top: 2px solid #f4f3f5; }
+    .course-designer__items-wrap .fa-chevron-up {
+      display: block;
+      position: absolute;
+      top: 71px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #b3b3b3; }
+    .course-designer__items-wrap .fa-chevron-down {
+      color: #b3b3b3;
+      display: block;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      text-align: center; }
   .course-designer .jspContainer {
     position: relative; }
     .course-designer .jspContainer:after {
@@ -2647,6 +2797,10 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-list {
     width: 50%;
     position: relative; }
+    .course-designer__items-list .fa-chevron-up {
+      top: -40px; }
+    .course-designer__items-list .fa-chevron-down {
+      bottom: -40px; }
     .course-designer__items-list:before {
       content: "";
       margin: 0 auto;
@@ -2667,6 +2821,14 @@ html.mm-blocking, html.mm-blocking body {
       height: 185px; }
       .course-designer__items-list ul li + li {
         margin-top: 10px; }
+  .course-designer__items-wrap span {
+    font-size: 12px; }
+  .course-designer__form-contacts .intermediate_item input {
+    padding: 15px 20px;
+    width: 150px; }
+  .course-designer__form-contacts .intermediate_item input[type="submit"] {
+    padding: 15px 20px;
+    width: 150px; }
   .contacts__detals-info a {
     display: block; }
   .contacts__detals-info a + a {
@@ -2695,7 +2857,9 @@ html.mm-blocking, html.mm-blocking body {
   .course-program__swich-type li {
     padding: 13px 4px; }
   .course-program__swich-type li a {
-    font-size: 11px; } }
+    font-size: 11px; }
+  .contacts #map {
+    width: 100%; } }
 
 @media only screen and (max-width: 768px) {
   /**/
@@ -2742,7 +2906,37 @@ html.mm-blocking, html.mm-blocking body {
   .course-program__swich-type li {
     border-bottom: 1px solid transparent; }
   .course-program__swich-type li.active {
-    border-bottom: 1px solid #f4f3f5; } }
+    border-bottom: 1px solid #f4f3f5; }
+  .course-designer__form-contacts {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .course-designer__form-contacts .intermediate_item {
+      margin-top: 30px; }
+      .course-designer__form-contacts .intermediate_item input {
+        width: 300px; }
+  .course-designer__form-contacts .intermediate_item input[type="submit"] {
+    width: 300px; }
+  .course-schedule .tab-content {
+    padding-bottom: 35px;
+    border-left: 1px solid #f4f3f5;
+    border-right: 1px solid #f4f3f5;
+    border-bottom: 1px solid #f4f3f5; }
+  .course-schedule .tab-content.col-sm-12 {
+    border-bottom: 1px solid transparent; }
+  .course-schedule .tab-content__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .course-schedule__date-info {
+    padding: 0 80px; }
+  .course-schedule__course-info_wrap:after {
+    display: none; }
+  .course-schedule__speaker-info {
+    padding-bottom: 60px;
+    border-bottom: 2px solid #f4f3f5; } }
 
 @media only screen and (max-width: 650px) {
   /**/
@@ -2750,6 +2944,11 @@ html.mm-blocking, html.mm-blocking body {
     width: 100%; }
   .course-designer__courses-name {
     text-align: center; }
+  .course-designer__form-contacts {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .course-designer__step {
     display: block;
     margin: 0 auto;
@@ -2773,7 +2972,20 @@ html.mm-blocking, html.mm-blocking body {
     .course-designer__step li.active {
       color: #000; }
       .course-designer__step li.active:before {
-        color: #ffec00; } }
+        color: #ffec00; }
+  .course-schedule__dates li {
+    padding: 15px 11px; }
+  .course-schedule__course-info {
+    padding: 55px 40px 40px 40px; }
+  .course-schedule__speaker-info p {
+    vertical-align: middle;
+    margin-left: 30px; }
+  .course-schedule__speaker-info p span {
+    margin-left: 0;
+    display: block;
+    vertical-align: middle; }
+  .course-schedule__date-info {
+    padding: 0 60px; } }
 
 @media only screen and (max-width: 520px) {
   /**/
