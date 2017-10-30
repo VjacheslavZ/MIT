@@ -14,11 +14,11 @@
   //2.for-who
   .for-who
     padding: 20px 0 2px 0
-  .for-who__wrap
-    padding: 50px 0 45px 0
-  .for-who__wrap-bg
-    &:before,  &:after
-      display: none
+    &__wrap
+      padding: 50px 0 45px 0
+    &__wrap-bg
+      &:before,  &:after
+        display: none
 
   //3.after-study
   .after-study
@@ -41,18 +41,6 @@
     padding: 0 0 50px 0
     &:before, &:after
       display: none
-    //&__cours-name
-      margin-left: 30px
-      label
-        left: -28px
-        top: 3px
-    //&__items-wrap i:before
-      margin: 0
-    //&__items-chosed
-      padding: 0 0 10px 5px
-    //&__items-wrap
-      ul
-        margin-left: 10px
     &__form-contacts .intermediate_item input
       padding: 16px 0px 16px 26px
     &__form-contacts .intermediate_item input[type="submit"]
@@ -109,7 +97,9 @@
     padding: 50px 0 25px 0
   .course-schedule
     padding: 50px 0 50px 0
-
+  //popUp
+  .form
+    padding: 75px 115px 75px 115px
 @media only screen and (max-width : 991px)
   /**/
   //header
@@ -372,6 +362,18 @@
     &__speaker-info
       padding-bottom: 60px
       border-bottom: 2px solid #f4f3f5
+  //popUp
+  .form
+    padding: 35px 60px 35px 60px
+  .mfp-close
+    right: 0
+    top: 0
+  .mfp-container
+    //width: 85%
+    margin: 0 auto
+  .mfp-close:active
+    top: 0
+
 
 @media only screen and (max-width : 650px)
 
@@ -484,3 +486,8 @@
       margin-left: 30px
     &__item + .course-program__item
       margin-top: 30px
+  //popUp
+  .form
+    padding: 5px 30px 5px 30px
+    .modal-title
+      font-size: 20px

@@ -1382,7 +1382,8 @@
   top: 35px
 .mfp-content
   text-align: center
-.notyfi-form
+
+.form
   padding: 150px 225px 150px 225px
   display: inline-block
   margin: 0 auto
@@ -1400,20 +1401,21 @@
     top: calc(50% - 103px)
     right: -125px
     z-index: 0
-.modal-title
-  @include section-defaulf-title()
-  @include underline_text()
-  margin-bottom: 85px
-.modal-title:before
-  right: 0
-  display: block
-  margin: 0 auto
-.notyfi-form
-  position: relative
-
+  &__wrap
+    position: relative
+    z-index: 9
+  .modal-title
+    @include section-defaulf-title()
+    @include underline_text()
+    margin-bottom: 85px
+  .modal-title:before
+    right: 0
+    display: block
+    margin: 0 auto
   input
     width: 100%
     border-radius: 30px
+    background-color: #fff
     border: 1px solid #d0d0d0
     transition: border .3s
     padding: 17px 40px
@@ -1425,6 +1427,29 @@
     border: transparent
   .input_wrap + .input_wrap
     margin-top: 20px
+
 .mfp-close-btn-in .mfp-close
   color: #9a9a9a
+.mfp-close:active
+  top: 35px
+
+//popUp anima
+.mfp-fade.mfp-bg
+  opacity: .5
+  transition: all 0.15s ease-out
+.mfp-fade.mfp-bg.mfp-ready
+  opacity: 0.8
+.mfp-fade.mfp-bg.mfp-removing
+  opacity: 0
+.mfp-fade.mfp-wrap .mfp-content
+  opacity: 1
+  transition: all 0.3s
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+  opacity: 1
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+  opacity: 0
+
+
+
+
 @import "media"

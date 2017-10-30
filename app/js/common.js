@@ -536,7 +536,10 @@ $(document).ready(function () {
     $('.course-designer__scroll').jScrollPane();
     $('.course-designer__items-list ul').jScrollPane();
 
-    $(".notyfi").magnificPopup();
+    $(".notyfi").magnificPopup({
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    });
 
 });
 
