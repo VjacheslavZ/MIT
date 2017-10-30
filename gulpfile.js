@@ -59,8 +59,9 @@ gulp.task("scripts-libs", function () {
        "app/libs/jQuery.equalHeights/jquery.equalheights.min.js",
        "app/libs/fotorama/fotorama.js",
        "app/libs/responsive-scrolling/dist/jquery.scrolling-tabs.js",
-       "app/libs/jScrollPane/script/jquery.jscrollpane.min.js"
-
+       "app/libs/jScrollPane/script/jquery.jscrollpane.min.js",
+       "app/libs/jquery.scrollbar-gh-pages/jquery.scrollbar.js",
+       "app/libs/slicknav/dist/jquery.slicknav.min.js",
    ])
        .pipe(concat("libs.min.js"))
        .pipe(uglyfi())

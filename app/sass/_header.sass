@@ -130,9 +130,45 @@
   right: 10px
   display: none
 
-.nav>li>a:focus, .nav>li>a:hover
-  background-color: transparent
 
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-  height: 2px
-  width: 24px
+.header__mob-menu
+  height: 0
+  visibility: hidden
+  transition: visibility .3s
+  &:before
+    @include rhomb()
+    top: calc(50% - 103px)
+    left: -125px
+    z-index: 0
+  &:after
+    @include rhomb()
+    top: calc(50% - 103px)
+    right: -125px
+    z-index: 0
+  ul
+    text-align: center
+    font-size: 20px
+    color: #2a2a2a
+    li + li
+      margin-top: 40px
+.header__mob-menu.active
+  height: 100%
+  visibility: visible
+.header__mob-menu-bottom
+  margin-top: 190px
+  display: flex
+  justify-content: space-around
+.header__header__mob-menu-language
+  font-size: 16px
+  font-family: $ProximaNova-Semibold
+  a
+    color: #b0b0b0
+  a.active
+    color: #2a2a2a
+  a + a
+    margin-left: 20px
+.header__header__mob-menu-social
+  font-size: 23px
+  color: #727272
+  a + a
+    margin-left: 25px

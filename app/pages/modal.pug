@@ -30,4 +30,37 @@
 //.overlay
 // Модальное окно success
 #popup-success.mfp-hide.white-popup.mfp-with-anim.popup
-    p.success_mail Заявка отправлена
+    .form.form-notyfi
+        p.modal-title спасибо, заявка отправлена
+        p.modal-text__success   Мы оповестим вас, о будущем начале курса
+        button.form__othercourse.button__type_3 пОСМОТРЕТЬ ДРУГИЕ КУРСЫ
+
+#popup-subscription.mfp-hide.white-popup.mfp-with-anim.popup
+    .form.form-notyfi
+        p.modal-title Спасибо за подписку
+        p.modal-text__success   Теперь вы всегда будете в курсе всех новостей от нас
+
+#popup-course-description.popup-course-description.mfp-hide.white-popup.mfp-with-anim.popup
+    .form
+        a(href="#notyfi").notyfi.popup-course-description__notify-me Уведомить меня о начале
+            i.fa.fa-envelope-o
+        .popup-course-description__notify
+            .opopup-course-description__pogram_wrap
+                .popup-course-description__pogram.scrollbar-inner
+                    .popup-course-description__date
+                        span.popup-course-description__date-day.popup-course-description__date-day_soon Скоро
+                    .popup-course-description__name
+                        h3.popup-course-description__name-course Старт в IT Business community
+                        span.popup-course-description__type.our-programs__type_online Online
+                        span.popup-course-description__type.our-programs__type_offline offline
+                        p.popup-course-description__detals-accent Принцип восприятия непредвзято создает паллиативный интеллект, условно.
+                        p.popup-course-description__detals Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон
+                            span внешнего мира.
+                            | Сомнение раскладывает на элементы неоднозначный структурализм.
+                        p.popup-course-description__process Процесс разработки It проекта
+                        ul.popup-course-description__process-stages
+                            li Анализ и исследование рынка
+                            li Структура
+                            li Прототип
+                            li Дизайн
+                            li Верстка

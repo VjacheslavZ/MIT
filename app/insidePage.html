@@ -85,16 +85,54 @@
       <!--.overlay-->
       <!-- Модальное окно success-->
       <div class="mfp-hide white-popup mfp-with-anim popup" id="popup-success">
-        <p class="success_mail">Заявка отправлена</p>
-      </div><a class="hamburger hamburger--collapse" href="#my-menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></a>
+        <div class="form form-notyfi">
+          <p class="modal-title">спасибо, заявка отправлена</p>
+          <p class="modal-text__success">  Мы оповестим вас, о будущем начале курса</p>
+          <button class="form__othercourse button__type_3">пОСМОТРЕТЬ ДРУГИЕ КУРСЫ</button>
+        </div>
+      </div>
+      <div class="mfp-hide white-popup mfp-with-anim popup" id="popup-subscription">
+        <div class="form form-notyfi">
+          <p class="modal-title">Спасибо за подписку</p>
+          <p class="modal-text__success">  Теперь вы всегда будете в курсе всех новостей от нас</p>
+        </div>
+      </div>
+      <div class="popup-course-description mfp-hide white-popup mfp-with-anim popup" id="popup-course-description">
+        <div class="form"><a class="notyfi popup-course-description__notify-me" href="#notyfi">Уведомить меня о начале<i class="fa fa-envelope-o"></i></a>
+          <div class="popup-course-description__notify">
+            <div class="opopup-course-description__pogram_wrap">
+              <div class="popup-course-description__pogram scrollbar-inner">
+                <div class="popup-course-description__date"><span class="popup-course-description__date-day popup-course-description__date-day_soon">Скоро</span></div>
+                <div class="popup-course-description__name">
+                  <h3 class="popup-course-description__name-course">Старт в IT Business community</h3><span class="popup-course-description__type our-programs__type_online">Online</span><span class="popup-course-description__type our-programs__type_offline">offline</span>
+                  <p class="popup-course-description__detals-accent">Принцип восприятия непредвзято создает паллиативный интеллект, условно.</p>
+                  <p class="popup-course-description__detals">Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон<span>внешнего мира.</span>Сомнение раскладывает на элементы неоднозначный структурализм.</p>
+                  <p class="popup-course-description__process">Процесс разработки It проекта</p>
+                  <ul class="popup-course-description__process-stages">
+                    <li>Анализ и исследование рынка</li>
+                    <li>Структура</li>
+                    <li>Прототип</li>
+                    <li>Дизайн</li>
+                    <li>Верстка</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--a(href="#my-menu").hamburger.hamburger--collapse
+      span.hamburger-box
+          span.hamburger-inner
+      
+      -->
       <header class="header" id="my-header">
         <!--.container-->
         <div class="header__wrap">
           <div class="header__main">
             <div class="header__logo"><a class="logo" href="/" title="MIT">MIT</a></div>
             <nav class="header__nav" id="navbar">
-              <ul class="nav" role="tablist">
-                <!--each i in links-->
+              <ul class="nav" role="tablist" id="navigation">
                 <li><a href="insidePage.html">Главная</a></li>
                 <li><a href="#our-programs">Курсы</a></li>
                 <li><a href="#teachers">Ведущие</a></li>
@@ -110,17 +148,27 @@
             <div class="header__private-office"><a href="#">Личный кабинет</a></div>
           </div>
           <!--.header__modala(data-effect="mfp-zoom-in" data-info="Обратный звонок" href="#popup" class="open-popup-link" title='Вызов стандартного модального окна') Обратный звонок
+          --><a class="hamburger hamburger--collapse" href="#my-menu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></a>
+          <!--nav#my-menu
+          ul
+              li
+                  a(href="#") item 1
+              li.active
+                  a(href="#") item 2
           -->
-          <!--a(href="#my-menu").hamburger.hamburger--collapse
-          span.hamburger-box
-              span.hamburger-inner
-          -->
-          <nav id="my-menu">
-            <ul>
-              <li><a href="#">item 1</a></li>
-              <li class="active"><a href="#">item 2</a></li>
-            </ul>
-          </nav>
+        </div>
+        <div class="header__mob-menu">
+          <ul role="tablist">
+            <li><a href="insidePage.html">Главная</a></li>
+            <li><a href="#our-programs">Курсы</a></li>
+            <li><a href="#teachers">Ведущие</a></li>
+            <li><a href="#news">О нас</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+          <div class="header__mob-menu-bottom">
+            <div class="header__header__mob-menu-language"><a class="active" href="#">Рус</a><a href="#">Eng</a></div>
+            <div class="header__header__mob-menu-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-vk"></i></a></div>
+          </div>
         </div>
       </header>
       <main id="my-content">
@@ -866,7 +914,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer" id="my-footer"><a class="footer__scroll-top" href="#">наверх<i class="fa fa-angle-up"></i></a>
+      <footer class="footer" id="my-footer"><a class="footer__scroll-top" href="#top-section">наверх<i class="fa fa-angle-up"></i></a>
         <div class="container">
           <div class="row">
             <div class="col-sm-3 col-xs-12">

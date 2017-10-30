@@ -49,7 +49,7 @@ html(class="no-js" lang='en')
             block modal
                 include modal
 
-            a(href="#my-menu").hamburger.hamburger--collapse
+            //a(href="#my-menu").hamburger.hamburger--collapse
                 span.hamburger-box
                     span.hamburger-inner
 
@@ -61,9 +61,7 @@ html(class="no-js" lang='en')
                                 a(href="/" class="logo" title="MIT").
                                     MIT
                             nav#navbar.header__nav
-                                ul.nav(role="tablist")
-                                    //-var links = [{title:'About us', href:'#'},{title:'Reservation', href:'#'},{title:'Gallery', href:'#'},{title:'', href:"index.html"},{title:'Blog', href:'#'}, {title:'Elements', href:'#'}, {title:'shop', href:'#'}];
-                                    //each i in links
+                                ul.nav(role="tablist")#navigation
                                     li
                                         a(href="insidePage.html") Главная
                                     li
@@ -86,20 +84,44 @@ html(class="no-js" lang='en')
 
                         //.header__modal
                             a(data-effect="mfp-zoom-in" data-info="Обратный звонок" href="#popup" class="open-popup-link" title='Вызов стандартного модального окна') Обратный звонок
-                        //a(href="#my-menu").hamburger.hamburger--collapse
+                        a(href="#my-menu").hamburger.hamburger--collapse
                             span.hamburger-box
                                 span.hamburger-inner
-                        nav#my-menu
+                        //nav#my-menu
                             ul
                                 li
                                     a(href="#") item 1
                                 li.active
                                     a(href="#") item 2
-
+                    .header__mob-menu
+                        ul(role="tablist")
+                            li
+                                a(href="insidePage.html") Главная
+                            li
+                                a(href="#our-programs") Курсы
+                            li
+                                a(href="#teachers") Ведущие
+                            li
+                                a(href="#news") О нас
+                            li
+                                a(href="#contacts") Контакты
+                        .header__mob-menu-bottom
+                            .header__header__mob-menu-language
+                                a(href="#").active Рус
+                                a(href="#") Eng
+                            .header__header__mob-menu-social
+                                a(href="#")
+                                    i.fa.fa-facebook
+                                a(href="#")
+                                    i.fa.fa-instagram
+                                a(href="#")
+                                    i.fa.fa-linkedin
+                                a(href="#")
+                                    i.fa.fa-vk
             block main
 
             footer.footer#my-footer
-                a(href="#").footer__scroll-top наверх
+                a(href="#top-section").footer__scroll-top наверх
                     i.fa.fa-angle-up
                 .container
                     .row

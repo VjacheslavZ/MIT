@@ -440,22 +440,22 @@ $(document).ready(function () {
     });
 
     //mob menu
-    $("#my-menu").mmenu({
-        extensions: ["theme-black", "effect-menu-slide", "pagedim-black"],
-        offCanvas: {
-            position: "right"
-        }
-    });
-
-    //   Get the API
-    var api = $("#my-menu").data("mmenu");
-
-    //   Hook into methods
-    api.bind("open:finish", function() {
-        $(".hamburger").addClass("is-active")
-    }).bind("close:finish", function () {
-        $(".hamburger").removeClass("is-active")
-    })
+    // $("#my-menu").mmenu({
+    //     extensions: ["theme-black", "effect-menu-slide", "pagedim-black"],
+    //     offCanvas: {
+    //         position: "right"
+    //     }
+    // });
+    //
+    // //   Get the API
+    // var api = $("#my-menu").data("mmenu");
+    //
+    // //   Hook into methods
+    // api.bind("open:finish", function() {
+    //     $(".hamburger").addClass("is-active")
+    // }).bind("close:finish", function () {
+    //     $(".hamburger").removeClass("is-active")
+    // })
 
     //equal height
 
@@ -516,14 +516,12 @@ $(document).ready(function () {
 
     (function ($) {
 
-        $("body").on("click", ".header__nav a[href*='#'], .footer__links a[href*='#'],#my-menu a[href*='#']", scroll_header_links);
+        $("body").on("click", ".header__nav a[href*='#'], .footer__scroll-top[href*='#'], #my-menu a[href*='#']", scroll_header_links);
 
         function scroll_header_links(e) {
             e.preventDefault();
 
             var anchor =  $(this);
-
-            console.log(anchor);
 
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top
@@ -535,10 +533,22 @@ $(document).ready(function () {
 
     $('.course-designer__scroll').jScrollPane();
     $('.course-designer__items-list ul').jScrollPane();
+    // $('.popup-course-description form').jScrollPane();
 
     $(".notyfi").magnificPopup({
         removalDelay: 300,
         mainClass: 'mfp-fade'
     });
+
+    jQuery('.scrollbar-inner').scrollbar();
+
+    // $('#navigation').slicknav({
+    //     prependTo: '.header .header__wrap',
+    //     label: '',
+    // });
+
+    $(".hamburger").on("click", function () {
+        $( ".header__mob-menu" ).toggleClass( "active" )
+    })
 
 });

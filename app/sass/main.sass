@@ -1427,11 +1427,20 @@
     border: transparent
   .input_wrap + .input_wrap
     margin-top: 20px
+  .modal-text__success
+    color: #bbbbbb
+    font-size: 22px
+    margin-bottom: 45px
+    position: relative
+    z-index: 99
+    background-color: #fff
 
-.mfp-close-btn-in .mfp-close
-  color: #9a9a9a
-.mfp-close:active
-  top: 35px
+.mfp-close-btn-in
+  .mfp-close
+    color: #9a9a9a
+    font-size: 50px
+    &:active
+      top: 35px
 
 //popUp anima
 .mfp-fade.mfp-bg
@@ -1448,8 +1457,117 @@
   opacity: 1
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content
   opacity: 0
+.popup-course-description
+  width: 70%
+  .form
+    padding: 50px 50px 80px 60px
+    text-align: left
+    &:before, &:after
+      display: none
+  &__pogram_wrap
+    margin-top: 60px
+    border: 1px solid #f0f0f0
+    padding: 60px 40px 40px 40px
+    background: #fff
+  &__pogram
+    max-height: 50vh
+    border-bottom: transparent
+    display: flex
+    position: relative
+    padding: 0 40px 60px 40px
+  &__notify
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 55px
 
-
-
-
+  &__notify-me
+    border-bottom: 2px solid #ffec00
+    display: inline-block
+    position: relative
+    margin-left: 30px
+  &__notify-me i
+    color: #7f7f7f
+    position: absolute
+    left: -30px
+    top: 6px
+  &__date-day
+    display: block
+    color: #fff
+    text-align: center
+    font-size: 22px
+    line-height: 2.7
+    width: 60px
+    height: 60px
+    background-color: #565656
+    border-radius: 50%
+  &__date-day_soon
+    font-size: 12px
+    text-transform: uppercase
+    line-height: 5
+  &__name
+    text-align: left
+    padding: 0 60px
+  &__name-course
+    font-family: $ProximaNova-Bold
+    color: #000
+    font-size: 30px
+    line-height: 1.2
+  &__type
+    font-size: 14px
+    color: #b0b0b0
+    position: relative
+    margin-left: 10px
+    & + .popup-course-description__type
+      margin-left: 25px
+    &:before
+      background-color: #ffec00
+      position: absolute
+      left: -11px
+      top: 7px
+      display: block
+      content: ""
+      width: 6px
+      height: 6px
+      -webkit-border-radius: 50%
+      border-radius: 50%
+  .popup-course-description__type.our-programs__type_offline
+    &:before
+      background-color: #eee
+  &__detals-accent
+    margin-top: 50px
+    margin-bottom: 40px
+    font-family: $ProximaNova-LightIt
+    font-size: 26px
+    color: #6f6f6f
+    line-height: 36px
+  &__detals
+    font-size: 19px
+    color: #6f6f6f
+    span
+      font-family: $ProximaNova-Extrabold
+      color: #000
+      margin: 0 5px
+  &__process
+    margin: 38px 0 20px 0
+    font-family: $ProximaNova-Bold
+    font-size: 22px
+  &__process-stages
+    padding-left: 40px
+    li
+      position: relative
+      & + li
+        margin-top: 25px
+      &:before
+        content: ""
+        display: block
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        background-color: $accent_color
+        position: absolute
+        left: -25px
+        top: 8px
+html.mm-blocking, html.mm-blocking body
+  overflow: hidden
 @import "media"

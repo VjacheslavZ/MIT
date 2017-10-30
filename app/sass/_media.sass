@@ -7,7 +7,7 @@
     &__nav
       margin-left: 50px
       ul li + li
-        margin-left: 30px
+        margin-left: 21px
     &___dropdown-language
       margin-right: 20px
 
@@ -100,6 +100,8 @@
   //popUp
   .form
     padding: 75px 115px 75px 115px
+  .popup-course-description
+    width: 85%
 @media only screen and (max-width : 991px)
   /**/
   //header
@@ -276,6 +278,8 @@
   .contacts
     #map
       width: 100%
+  .popup-course-description .form
+    padding: 25px 25px 40px 30px
 @media only screen and (max-width : 768px)
   /**/
   .top-section
@@ -369,11 +373,23 @@
     right: 0
     top: 0
   .mfp-container
-    //width: 85%
     margin: 0 auto
-  .mfp-close:active
+  .mfp-close-btn-in .mfp-close:active
     top: 0
-
+  .popup-course-description__name
+    padding: 0 20px
+  .popup-course-description__name-course
+    font-size: 20px
+  .popup-course-description__detals-accent
+    margin-top: 25px
+    margin-bottom: 20px
+    font-size: 18px
+  .popup-course-description__detals
+    font-size: 14px
+  .popup-course-description__process
+    margin: 10px 0 8px 0
+  .popup-course-description__process-stages li + li
+    margin-top: 10px
 
 @media only screen and (max-width : 650px)
 
@@ -425,7 +441,12 @@
       vertical-align: middle
     &__date-info
       padding: 0 60px
-
+  //form
+  .form
+    &:after
+      right: -200px
+    &:before
+      left: -200px
 @media only screen and (max-width : 520px)
   /**/
   .top-section
@@ -491,3 +512,10 @@
     padding: 5px 30px 5px 30px
     .modal-title
       font-size: 20px
+  .popup-course-description__pogram
+    flex-direction: column
+    //justify-content: center
+  .popup-course-description
+    width: 95%
+  .popup-course-description .form
+    padding: 15px 15px 20px 15px
