@@ -927,6 +927,8 @@ html.mm-blocking, html.mm-blocking body {
     z-index: -1;
     right: -375px;
     top: 0px; }
+  .course-designer__items {
+    position: relative; }
   .course-designer__title {
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 32px;
@@ -3052,7 +3054,7 @@ html.mm-blocking, html.mm-blocking body {
       border-top: 2px solid #f4f3f5; }
   .course-designer__courses-name {
     position: relative;
-    margin-top: 40px; }
+    margin-top: 100px; }
     .course-designer__courses-name:before {
       content: "";
       margin: 0 auto;
@@ -3258,30 +3260,31 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .course-designer__step {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 45px;
+  .course-designer .owl-dots {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0; }
+  .course-designer .owl-dot {
+    position: relative;
     font-size: 18px;
     color: #9d9d9d; }
-    .course-designer__step li + li {
+    .course-designer .owl-dot + .owl-dot {
       margin-left: 43px; }
-    .course-designer__step li {
-      display: inline-block;
-      position: relative; }
-      .course-designer__step li:not(:last-child):before {
-        position: absolute;
-        content: "\f061";
-        font-family: "FontAwesome";
-        font-size: 14px;
-        left: 38px;
-        top: 3px;
-        color: #d3d3d3; }
-    .course-designer__step li.active {
-      color: #000; }
-      .course-designer__step li.active:before {
-        color: #ffec00; }
+    .course-designer .owl-dot:not(:last-child):before {
+      position: absolute;
+      content: "\f061";
+      font-family: "FontAwesome";
+      font-size: 14px;
+      left: 25px;
+      top: 3px;
+      color: #d3d3d3; }
+  .course-designer .owl-dot.active {
+    color: #000; }
+    .course-designer .owl-dot.active:before {
+      color: #ffec00; }
+  .course-designer .owl-carousel .owl-nav .owl-prev {
+    display: none; }
   .course-schedule__dates li {
     padding: 15px 11px; }
   .course-schedule__course-info {

@@ -502,7 +502,8 @@ $(document).ready(function () {
         smartSpeed: 500
     });
 
-    var reviews = $("#reviews.owl-carousel");
+    var reviews = $("#reviews.owl-carousel"),
+        course_designer = $("#course-designer__slider.owl-carousel");
 
     reviews.owlCarousel({
         loop: false,
@@ -512,7 +513,19 @@ $(document).ready(function () {
         smartSpeed: 500
     });
 
-    $('.nav-tabs').scrollingTabs();
+    var vindWidth = $( window ).width();
+
+    if(vindWidth <= 650){
+        course_designer.owlCarousel({
+            loop: false,
+            items: 1,
+            dots: true,
+            nav: true,
+            smartSpeed: 500
+        });
+    }
+
+
 
     (function ($) {
 
@@ -616,7 +629,28 @@ $(document).ready(function () {
 
     create_choosed_list()
 
+    // total slides count
+    var i = 1, total = $('.owl-dots div').length;
+    $('#course-designer__slider .owl-dot').each(function(){
+        $(this).text(i);
+        i++;
+    });
+    $('.total-slide').text(total);
 
+    // current slide find
+
+    owl.on('changed.owl.carousel', function(event) {
+        var current =  $('.owl-dot.active').text();
+        $('.current-slide').text(current);
+    });
+
+    // custom thumbnail
+    $('.custom-thumb .thumb').click(function() {
+        var clickThumb = $(this).attr('data-number');
+        $('.owl-controls .owl-dot:nth-child('+clickThumb+')').trigger('click');
+    });
+
+    $('.nav-tabs').scrollingTabs();
 });
 
 

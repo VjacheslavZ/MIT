@@ -299,7 +299,7 @@ block main
                 .row
                     .col-lg-8
                         p.course-designer__manual Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.
-                        ul.course-designer__step
+                        //ul.course-designer__step
                             li.active 01
                             li 02
                             li 03
@@ -307,7 +307,7 @@ block main
             .container
                 form
                     .course-designer__items
-                        .course-designer__builder
+                        .course-designer__builder#course-designer__slider.owl-carousel.owl-theme
                             .course-designer__items-wrap#course-designer__name
                                 p.course-designer__courses-name Название курса
                                 .course-designer__scroll
@@ -382,6 +382,9 @@ block main
                                         //        i.fa.fa-check
                                         //        span Работа с клиентами
 
+                        .slider-count
+                            span.current-slide
+                            //span.total-slide
                 .row
                     .col-lg-12.col-xs-12
                         .course-designer__form-contacts
@@ -401,6 +404,7 @@ block main
                             input(type='hidden', name='form_type', value='normal')
                             .intermediate_item
                                 input(type='submit', value='Записаться')
+
         section.why-created
             .container
                 .row

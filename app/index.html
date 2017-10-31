@@ -467,19 +467,19 @@
             <div class="row">
               <div class="col-lg-8">
                 <p class="course-designer__manual">Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.</p>
-                <ul class="course-designer__step">
-                  <li class="active">01</li>
-                  <li>02</li>
-                  <li>03</li>
-                  <li>04</li>
-                </ul>
+                <!--ul.course-designer__step
+                li.active 01
+                li 02
+                li 03
+                li 04
+                -->
               </div>
             </div>
           </div>
           <div class="container">
             <form>
               <div class="course-designer__items">
-                <div class="course-designer__builder">
+                <div class="course-designer__builder owl-carousel owl-theme" id="course-designer__slider">
                   <div class="course-designer__items-wrap" id="course-designer__name">
                     <p class="course-designer__courses-name">Название курса</p>
                     <div class="course-designer__scroll"><span class="course-designer__cours-name">Project Managment (Online)
@@ -536,6 +536,9 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="slider-count"><span class="current-slide"></span>
+                  <!--span.total-slide-->
                 </div>
               </div>
             </form>
