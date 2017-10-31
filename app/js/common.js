@@ -552,6 +552,71 @@ $(document).ready(function () {
         $( ".hamburger.hamburger--collapse" ).toggleClass( "is-active" );
     })
 
+    //section course-designer__cours builder
+
+    $("#course-designer__name .course-designer__cours-name").on("click",  find_selected_name_course);
+    $("#course-designer__name-block .course-designer__cours-name").on("click",  find_selected_name_blcok);
+    $("#course-designer__name-block .course-designer__cours-name").on("click",  create_choosed_list);
+    $("#course-designer__cours-name_selected-all").on("click",  selectAllItems)
+
+    function find_selected_name_course() {
+
+        var name_course_selected = $("#course-designer__name .course-designer__cours-name_selected"),
+            finis_list_course_selected = $(".course-designer__courses-chosed");
+
+        name_course_selected.removeClass("course-designer__cours-name_selected");
+
+        $(this).addClass("course-designer__cours-name_selected");
+        finis_list_course_selected.text($(this).text())
+        // console.log($(this).text())
+    };
+
+    function find_selected_name_blcok() {
+
+        var name_block_selected = $("#course-designer__name-block .course-designer__cours-name_selected");
+
+        $(this).toggleClass("course-designer__cours-name_selected");
+
+    }
+
+    function  selectAllItems() {
+        var items =  $("#course-designer__name-block .course-designer__cours-name")
+
+        //Чек Полный курс  переключатель активного класса
+        //$(this).toggleClass("course-designer__cours-name_selected-all")
+
+        if($("#course-designer__name-block .course-designer__cours-name_selected-all").hasClass("course-designer__cours-name_selected-all")){
+            items.addClass("course-designer__cours-name_selected")
+        } else {
+            //items.removeClass("course-designer__cours-name_selected")  //при снятии галочки с Чека Полный курс все айтемы неактивны
+        }
+    }
+
+    //все чекбоксы выбраны в секции КОНСТРУКТОР КУРСА "название блока"
+    selectAllItems();
+
+    function create_choosed_list() {
+
+        var allselected = $("#course-designer__name-block .course-designer__cours-name_selected:not(#course-designer__cours-name_selected-all) input");
+
+        var inputValues = allselected.map(function() {
+            return $(this).val();
+        }).toArray();
+
+        $(".course-designer__items-chosed .jspContainer .jspPane").empty()
+
+        for(var i = 0; i < inputValues.length; i++){
+            $(".course-designer__items-chosed .jspContainer .jspPane").append($("<li></li>").text(inputValues[i]))
+        }
+
+        //console.log(inputValues)
+
+        $('.course-designer__items-list ul').jScrollPane();
+    }
+
+    create_choosed_list()
+
+
 });
 
 

@@ -951,6 +951,8 @@ html.mm-blocking, html.mm-blocking body {
     font-size: 24px;
     margin-top: 40px;
     margin-bottom: 38px; }
+    .course-designer__courses-name i {
+      display: none; }
   .course-designer__builder {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1005,8 +1007,10 @@ html.mm-blocking, html.mm-blocking body {
           opacity: 0.3; }
     .course-designer__cours-name + .course-designer__cours-name {
       margin-top: 25px; }
+    .course-designer__cours-name i {
+      opacity: 0; }
   .course-designer__scroll {
-    height: 220px;
+    height: 280px;
     left: 0;
     outline: none; }
   .course-designer .jspVerticalBar {
@@ -1018,13 +1022,15 @@ html.mm-blocking, html.mm-blocking body {
     background: transparent; }
   .course-designer .jspDrag {
     background: #c0c0c0; }
-  .course-designer .course-designer__cours-name_selected {
+  .course-designer__cours-name_selected {
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #000; }
-    .course-designer .course-designer__cours-name_selected label {
+    .course-designer__cours-name_selected label {
       border: 2px solid #ffec00; }
-      .course-designer .course-designer__cours-name_selected label:after {
+      .course-designer__cours-name_selected label:after {
         background: #000; }
+    .course-designer__cours-name_selected i {
+      opacity: 1; }
   .course-designer__items-chosed {
     background: #fff;
     margin-top: 100px;
@@ -1042,7 +1048,7 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-list {
     color: #c2c2c2; }
     .course-designer__items-list ul {
-      height: 110px;
+      height: 150px;
       overflow: overlay; }
     .course-designer__items-list i {
       font-size: 18px; }
@@ -1079,6 +1085,16 @@ html.mm-blocking, html.mm-blocking body {
       text-transform: uppercase; }
   .course-designer__step {
     display: none; }
+  .course-designer__items-chosed .jspContainer .jspPane li {
+    margin-left: 50px;
+    position: relative; }
+  .course-designer__items-chosed .jspContainer .jspPane li:before {
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    font-size: 10px;
+    content: "\f00c";
+    font-family: "FontAwesome"; }
 
 .why-created {
   position: relative;
