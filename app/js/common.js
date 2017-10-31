@@ -548,7 +548,8 @@ $(document).ready(function () {
     // });
 
     $(".hamburger").on("click", function () {
-        $( ".header__mob-menu" ).toggleClass( "active" )
+        $( ".header__mob-menu" ).toggleClass( "active" );
+        $( ".hamburger.hamburger--collapse" ).toggleClass( "is-active" );
     })
 
 });

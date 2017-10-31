@@ -134,7 +134,23 @@
 .header__mob-menu
   height: 0
   visibility: hidden
-  transition: visibility .3s
+  position: absolute
+  left: 0
+  right: 0
+  top: 60px
+  transform: translateY(-560px)
+  transition: all .3s ease
+  background-color: #fff
+  opacity: 0
+  padding-top: 100px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &.active
+    visibility: visible
+    height: calc(100vh - 60px)
+    transform: translateY(-0px)
+    opacity: 1
   &:before
     @include rhomb()
     top: calc(50% - 103px)
@@ -151,11 +167,7 @@
     color: #2a2a2a
     li + li
       margin-top: 40px
-.header__mob-menu.active
-  height: 100%
-  visibility: visible
 .header__mob-menu-bottom
-  margin-top: 190px
   display: flex
   justify-content: space-around
 .header__header__mob-menu-language
@@ -169,6 +181,10 @@
     margin-left: 20px
 .header__header__mob-menu-social
   font-size: 23px
-  color: #727272
+  a
+    transition: color .3s
+    color: #727272
+    &:hover
+      color: #000
   a + a
     margin-left: 25px

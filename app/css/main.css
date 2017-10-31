@@ -379,9 +379,40 @@ html.mm-blocking, html.mm-blocking body {
 .header__mob-menu {
   height: 0;
   visibility: hidden;
-  -webkit-transition: visibility .3s;
-  -o-transition: visibility .3s;
-  transition: visibility .3s; }
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  -webkit-transform: translateY(-560px);
+      -ms-transform: translateY(-560px);
+          transform: translateY(-560px);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #fff;
+  opacity: 0;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .header__mob-menu.active {
+    visibility: visible;
+    height: -webkit-calc(100vh - 60px);
+    height: calc(100vh - 60px);
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1; }
   .header__mob-menu:before {
     content: "";
     position: absolute;
@@ -425,12 +456,7 @@ html.mm-blocking, html.mm-blocking body {
     .header__mob-menu ul li + li {
       margin-top: 40px; }
 
-.header__mob-menu.active {
-  height: 100%;
-  visibility: visible; }
-
 .header__mob-menu-bottom {
-  margin-top: 190px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -450,8 +476,14 @@ html.mm-blocking, html.mm-blocking body {
     margin-left: 20px; }
 
 .header__header__mob-menu-social {
-  font-size: 23px;
-  color: #727272; }
+  font-size: 23px; }
+  .header__header__mob-menu-social a {
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    color: #727272; }
+    .header__header__mob-menu-social a:hover {
+      color: #000; }
   .header__header__mob-menu-social a + a {
     margin-left: 25px; }
 
@@ -3323,4 +3355,8 @@ html.mm-blocking, html.mm-blocking body {
   .popup-course-description {
     width: 95%; }
   .popup-course-description .form {
-    padding: 15px 15px 20px 15px; } }
+    padding: 15px 15px 20px 15px; }
+  .header__mob-menu:after {
+    right: -200px; }
+  .header__mob-menu:before {
+    left: -200px; } }
