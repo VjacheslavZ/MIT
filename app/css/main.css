@@ -497,7 +497,7 @@ html.mm-blocking, html.mm-blocking body {
     position: absolute;
     top: -webkit-calc(50% - 236px);
     top: calc(50% - 236px);
-    width: 406px; }
+    width: 520px; }
   .top-section__title {
     color: #000;
     text-transform: uppercase;
@@ -968,8 +968,8 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-wrap {
     width: 33%;
     background-color: #fff; }
-    .course-designer__items-wrap .fa-chevron-up, .course-designer__items-wrap .fa-chevron-down {
-      display: none; }
+  .course-designer__up, .course-designer .course-designer__down {
+    display: none; }
   .course-designer__cours-name {
     display: block;
     position: relative;
@@ -1015,6 +1015,8 @@ html.mm-blocking, html.mm-blocking body {
     height: 280px;
     left: 0;
     outline: none; }
+  .course-designer__form-slider {
+    display: none; }
   .course-designer .jspVerticalBar {
     left: 0;
     width: 5px; }
@@ -1097,6 +1099,14 @@ html.mm-blocking, html.mm-blocking body {
     font-size: 10px;
     content: "\f00c";
     font-family: "FontAwesome"; }
+  .course-designer .jspVerticalBar {
+    display: none; }
+
+.no-js .course-designer .owl-carousel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .why-created {
   position: relative;
@@ -1193,7 +1203,8 @@ html.mm-blocking, html.mm-blocking body {
 
 .our-goal {
   position: relative;
-  padding: 200px 0 25px 0; }
+  padding: 200px 0 25px 0;
+  background-color: #fff; }
   .our-goal:before {
     content: "";
     position: absolute;
@@ -1235,7 +1246,133 @@ html.mm-blocking, html.mm-blocking body {
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .world-leaders {
-  padding: 25px 0 185px 0; }
+  padding: 225px 0 185px 0;
+  position: relative; }
+  .world-leaders__tabs {
+    width: 80%;
+    height: 540px;
+    position: relative;
+    margin: 0 auto; }
+  .world-leaders__tabs-wrap {
+    position: relative; }
+  .world-leaders__leaders-photo {
+    z-index: 9;
+    position: relative; }
+    .world-leaders__leaders-photo li {
+      display: inline-block;
+      position: absolute; }
+      .world-leaders__leaders-photo li:focus, .world-leaders__leaders-photo li:visited {
+        outline: none;
+        outline-color: transparent;
+        outline-width: 0; }
+      .world-leaders__leaders-photo li a:hover {
+        background-color: transparent; }
+      .world-leaders__leaders-photo li img {
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: 4px solid transparent;
+        -webkit-transition: border .3s;
+        -o-transition: border .3s;
+        transition: border .3s; }
+    .world-leaders__leaders-photo li.active {
+      color: transparent; }
+      .world-leaders__leaders-photo li.active img {
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: 4px solid #ffec00;
+        -webkit-box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09);
+                box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09); }
+    .world-leaders__leaders-photo li:nth-child(1) {
+      top: 0;
+      left: 0; }
+    .world-leaders__leaders-photo li:nth-child(2) {
+      top: 78px;
+      left: 200px; }
+    .world-leaders__leaders-photo li:nth-child(3) {
+      top: 200px;
+      left: 40px; }
+    .world-leaders__leaders-photo li:nth-child(4) {
+      top: 240px;
+      left: 235px; }
+    .world-leaders__leaders-photo li:nth-child(5) {
+      top: 370px;
+      left: 130px; }
+    .world-leaders__leaders-photo li:nth-child(6) {
+      top: 450px;
+      left: 0; }
+    .world-leaders__leaders-photo li:nth-child(7) {
+      top: 0;
+      right: 0; }
+    .world-leaders__leaders-photo li:nth-child(8) {
+      top: 78px;
+      right: 200px; }
+    .world-leaders__leaders-photo li:nth-child(9) {
+      top: 200px;
+      right: 40px; }
+    .world-leaders__leaders-photo li:nth-child(10) {
+      top: 240px;
+      right: 235px; }
+    .world-leaders__leaders-photo li:nth-child(11) {
+      top: 370px;
+      right: 130px; }
+    .world-leaders__leaders-photo li:nth-child(12) {
+      top: 450px;
+      right: 0; }
+  .world-leaders .tab-pane {
+    padding: 0 60px;
+    text-align: center; }
+  .world-leaders__leaders-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -55px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 691px;
+    height: 691px;
+    background-color: white;
+    -webkit-box-shadow: 0 6px 133px rgba(115, 1, 243, 0.13);
+            box-shadow: 0 6px 133px rgba(115, 1, 243, 0.13); }
+  .world-leaders__leaders-content-title {
+    display: block;
+    text-align: center;
+    font-family: "ProximaNova-Extrabold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-bottom: 65px;
+    font-size: 36px; }
+  .world-leaders__leaders-content-blockquote {
+    text-align: center;
+    color: #aaa;
+    font-family: "ProximaNova-LightIt", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px;
+    margin-bottom: 35px; }
+  .world-leaders__leaders-content-name {
+    display: block;
+    text-align: center;
+    font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+  .world-leaders__leaders-content-who {
+    display: block;
+    font-size: 15px;
+    color: #a7a7a7;
+    margin-bottom: 10px; }
+  .world-leaders__quotes {
+    display: block;
+    margin: 0 auto; }
 
 .teachers {
   padding: 185px 0 200px 0; }
@@ -2880,6 +3017,17 @@ html.mm-blocking, html.mm-blocking body {
 html.mm-blocking, html.mm-blocking body {
   overflow: hidden; }
 
+@media only screen and (max-width: 1535px) {
+  /**/
+  .world-leaders__tabs {
+    width: 95%; }
+  .world-leaders__leaders-photo li:nth-child(4) {
+    top: 240px;
+    left: 180px; }
+  .world-leaders__leaders-photo li:nth-child(10) {
+    top: 240px;
+    right: 180px; } }
+
 @media only screen and (max-width: 1199px) {
   /**/
   .header__wrap {
@@ -2930,6 +3078,16 @@ html.mm-blocking, html.mm-blocking body {
     padding: 100px 0 25px 0; }
     .our-goal:before {
       display: none; }
+  .world-leaders {
+    padding: 55px 0 45px 0; }
+    .world-leaders .world-leaders__leaders-content {
+      position: inherit; }
+    .world-leaders__leaders-photo li:nth-child(4) {
+      top: 240px;
+      left: 235px; }
+    .world-leaders__leaders-photo li:nth-child(10) {
+      top: 240px;
+      right: 235px; }
   .reviews:before, .reviews:after {
     display: none; }
   .news {
@@ -3022,22 +3180,22 @@ html.mm-blocking, html.mm-blocking body {
       margin: 0 auto;
       display: block;
       position: absolute;
-      bottom: 5px;
+      bottom: 25px;
       width: 88%;
       border-top: 2px solid #f4f3f5; }
-    .course-designer__items-wrap .fa-chevron-up {
+    .course-designer__items-wrap .course-designer__up {
       display: block;
       position: absolute;
-      top: 71px;
+      top: 35px;
       left: 0;
       right: 0;
       text-align: center;
       color: #b3b3b3; }
-    .course-designer__items-wrap .fa-chevron-down {
+    .course-designer__items-wrap .course-designer__down {
       color: #b3b3b3;
       display: block;
       position: absolute;
-      bottom: -15px;
+      bottom: 0px;
       left: 0;
       right: 0;
       z-index: 9999;
@@ -3060,7 +3218,7 @@ html.mm-blocking, html.mm-blocking body {
       margin: 0 auto;
       display: block;
       position: absolute;
-      bottom: -17px;
+      bottom: -30px;
       width: 88%;
       border-top: 2px solid #f4f3f5; }
   .course-designer__scroll {
@@ -3169,6 +3327,44 @@ html.mm-blocking, html.mm-blocking body {
       left: inherit; }
   .for-who__wrap .col-lg-3:before {
     margin: 0 auto; }
+  .world-leaders__leaders-content {
+    width: 490px;
+    height: 490px; }
+  .world-leaders__tabs {
+    text-align: center; }
+  .world-leaders__leaders-photo li:nth-child(2) {
+    top: 50px;
+    left: 90px; }
+  .world-leaders__leaders-photo li:nth-child(3) {
+    top: 121px;
+    left: 0; }
+  .world-leaders__leaders-photo li:nth-child(4) {
+    top: 315px;
+    left: 90px; }
+  .world-leaders__leaders-photo li:nth-child(5) {
+    top: 180px;
+    left: 120px; }
+  .world-leaders__leaders-photo li:nth-child(6) {
+    top: 257px;
+    left: 0; }
+  .world-leaders__leaders-photo li:nth-child(7) {
+    top: 50px;
+    right: 0; }
+  .world-leaders__leaders-photo li:nth-child(8) {
+    top: 0;
+    right: 115px; }
+  .world-leaders__leaders-photo li:nth-child(9) {
+    top: 180px;
+    right: 0; }
+  .world-leaders__leaders-photo li:nth-child(10) {
+    top: 257px;
+    right: 125px; }
+  .world-leaders__leaders-photo li:nth-child(11) {
+    top: 121px;
+    right: 120px; }
+  .world-leaders__leaders-photo li:nth-child(12) {
+    top: 315px;
+    right: 0px; }
   .after-study__title {
     font-size: 18px; }
   .career__item-wrap {
@@ -3256,10 +3452,34 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__courses-name {
     text-align: center; }
   .course-designer__form-contacts {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .course-designer__items-chosed {
+    margin-top: 150px; }
+  .course-designer__form-contacts-single {
+    display: none; }
+  .course-designer__accept {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #9d9d9d;
+    font-size: 22px; }
+  .course-designer__form-slider {
+    display: block; }
+  .course-designer__form-contacts .intermediate_item input {
+    width: 260px; }
+  .course-designer__form-contacts .intermediate_item input[type="submit"] {
+    width: 260px; }
+  .course-designer .owl-nav {
+    width: 100%; }
   .course-designer .owl-dots {
     position: absolute;
     top: 28px;
@@ -3285,6 +3505,13 @@ html.mm-blocking, html.mm-blocking body {
       color: #ffec00; }
   .course-designer .owl-carousel .owl-nav .owl-prev {
     display: none; }
+  .course-designer .owl-theme .owl-nav [class*=owl-] {
+    background: transparent; }
+  .course-designer .owl-next.disabled {
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    opacity: 0; }
   .course-schedule__dates li {
     padding: 15px 11px; }
   .course-schedule__course-info {
@@ -3378,4 +3605,62 @@ html.mm-blocking, html.mm-blocking body {
   .header__mob-menu:after {
     right: -200px; }
   .header__mob-menu:before {
-    left: -200px; } }
+    left: -200px; }
+  .world-leaders__tabs {
+    height: 380px; }
+  .world-leaders__leaders-content-title {
+    font-size: 19px; }
+  .world-leaders__leaders-content-blockquote {
+    font-size: 18px; }
+  .world-leaders__leaders-content {
+    -webkit-border-radius: inherit;
+            border-radius: inherit;
+    height: 783px;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: url("../img/world-leaders-bg.png") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .world-leaders__leaders-photo li img {
+    width: 50%; } }
+
+@media only screen and (max-width: 320px) {
+  .world-leaders__tabs {
+    height: 180px; }
+  .world-leaders__leaders-photo li:nth-child(1) {
+    top: 73px;
+    left: 0; }
+  .world-leaders__leaders-photo li:nth-child(2) {
+    top: 57px;
+    left: 79px; }
+  .world-leaders__leaders-photo li:nth-child(3) {
+    top: 0;
+    left: 20px; }
+  .world-leaders__leaders-photo li:nth-child(4) {
+    top: 175px;
+    left: 184px; }
+  .world-leaders__leaders-photo li:nth-child(5) {
+    top: 0;
+    left: 125px; }
+  .world-leaders__leaders-photo li:nth-child(6) {
+    top: 174px;
+    left: 55px; }
+  .world-leaders__leaders-photo li:nth-child(7) {
+    top: 50px;
+    right: 0; }
+  .world-leaders__leaders-photo li:nth-child(8) {
+    top: 150px;
+    right: 200px; }
+  .world-leaders__leaders-photo li:nth-child(9) {
+    top: 68px;
+    right: 40px; }
+  .world-leaders__leaders-photo li:nth-child(10) {
+    top: 138px;
+    right: 70px; }
+  .world-leaders__leaders-photo li:nth-child(11) {
+    top: 97px;
+    right: 120px; }
+  .world-leaders__leaders-photo li:nth-child(12) {
+    top: 115px;
+    right: 19px; } }

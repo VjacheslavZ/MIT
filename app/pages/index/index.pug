@@ -7,10 +7,11 @@ block main
 
         section.top-section#top-section
             .top-section__content
-                h1.top-section__title Сообщество IT управленцев
-                p.top-section__description Главная цель сообщества - обучить  IT правленцев которые будут создавать сильные команды и успешные проекты мирового уровня
+                h1.top-section__title Сообщество IT-управленцев
+                p.top-section__description Мы создаем культуру IT-управленцев, методом обучения и погружения их в практику. Объединяем людей для получения новых знаний, навыков и профессионального роста.
+
                 button.button Получить знания
-                a(href="#popup-subscription" style="").notyfi.our-programs__notify-me test
+                //a(href="#popup-subscription" style="").notyfi.our-programs__notify-me test
         section.for-who#for-who
             .container
                 .row
@@ -43,37 +44,34 @@ block main
                                 p.for-who__item-title Стартаперы и компании
                                 p.for-who__item-description Для воплощения в жизнь идеи в условиях полной неопределенности
 
-
-
-
         section.after-study#after-study
             .container
                 .row
                     .col-md-12.col-sm-12
-                        h2.after-study__title После обучения вы сможете
+                        h2.after-study__title После прохождения обучения Вы сможете -  главный заголовок
                     .col-lg-5.col-md-5.hidden-sm
                         div
                     .col-lg-7.col-md-7.col-sm-12
-                        span.after-study__advantages-title Что вы сможете после обучения?
+                        //span.after-study__advantages-title Что вы сможете после обучения?
                         ul.after-study__advantages-list
                             li
                                 span 01
-                                p Стать профессионалом в своей предметной области
+                                p Стать профессионалом в своей области
                             li
                                 span 02
-                                p Собрать и управлять командой разработки и продвижения
+                                p Собрать команду разработчиков и грамотно ею управлять
                             li
                                 span 03
-                                p Создавать, продвигать и продавать свои идеи
+                                p Создавать идеи и продвигать их
                             li
                                 span 04
-                                p Открыть свое успешное дело в IT
+                                p Запустить свое дело в IT
                             li
                                 span 05
-                                p Побеждать в перегеворах
+                                p Выигрывать перегеворы
                             li
                                 span 06
-                                p Проводить незабываемые презентации
+                                p Создавать и проводить впечатляющие презентации
 
         section.our-programs#our-programs
             .container
@@ -96,8 +94,8 @@ block main
                                 .our-programs__pogram_wrap
                                     .our-programs__pogram
                                         .our-programs__date
-                                            span.our-programs__date-day 05
-                                            span.our-programs__date-month Ноября
+                                            span.our-programs__date-day 15
+                                            span.our-programs__date-month декабря
                                         .our-programs__name
                                             p.our-programs__name-course IT Project management
                                             span.our-programs__type.our-programs__type_online Online
@@ -105,12 +103,30 @@ block main
                                     .our-programs__contract
                                         ul
                                             li.our-programs__info Цена:
-                                                span.our-programs__conditions 4000 грн\месяц
+                                                span.our-programs__conditions 3000 грн\месяц/ 110$.
+                                            li.our-programs__info   Дни:
+                                                span.our-programs__conditions Вт, Чт
+                                        button.button__type_2 К курсу
+                            .col-sm-6.col-xs-12
+                                .our-programs__pogram_wrap
+                                    .our-programs__pogram
+                                        .our-programs__date
+                                            span.our-programs__date-day 15
+                                            span.our-programs__date-month декабря
+                                        .our-programs__name
+                                            p.our-programs__name-course IT Project management
+                                            span.our-programs__type.our-programs__type_online Online
+                                            span.our-programs__type.our-programs__type_offline offline
+                                        img(src="img/fingerprint.png").our-programs__bg
+                                    .our-programs__contract
+                                        ul
+                                            li.our-programs__info Цена:
+                                                span.our-programs__conditions 3000 грн\месяц/ 110$.
                                             li.our-programs__info   Дни:
                                                 span.our-programs__conditions Вт, Чт
                                         button.button__type_2 К курсу
 
-                            .col-sm-6.col-xs-12
+                            //.col-sm-6.col-xs-12
                                 .our-programs__pogram_wrap
                                     .our-programs__pogram
                                         .our-programs__date
@@ -132,7 +148,7 @@ block main
                                 .our-programs__pogram_wrap
                                     .our-programs__pogram
                                         .our-programs__date
-                                            span.our-programs__date-day 05
+                                            span.our-programs__date-day 01
                                             span.our-programs__date-month Ноября
                                         .our-programs__name
                                             p.our-programs__name-course IT Project management
@@ -197,100 +213,6 @@ block main
                                         button.button__type_2 К курсу
                             .our-programs__tabs-show-more
                                 button.button__type_3 Больше курсов
-
-
-
-        //section.course-designer#course-designer
-            .container
-                .row
-                    .col-sm-12
-                        h2.course-designer__title Конструктор курса
-                .row
-                    .col-lg-8
-                        p.course-designer__manual Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.
-            .container
-                form
-                    .row
-                        .course-designer__form.clearfix#form-file
-                            .col-sm-4.col-xs-6
-                                .course-designer__items
-                                    p.course-designer__courses-name Название курса
-                                    .course-designer__items-wrap
-                                        span.course-designer__cours-name.course-designer__cours-name_selected Project Managment (Online)
-                                            input(type="checkbox" value="Project Managment (Online)" id="managment-online")
-                                            label(for="managment-online")
-                                            i.fa.fa-long-arrow-right
-
-                                        span.course-designer__cours-name Project Managment (Offline)
-                                            input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
-                                            label(for="managment-offline")
-                                            i.fa.fa-long-arrow-right
-
-                            .col-sm-4.col-xs-6
-                                .course-designer__items
-                                    p.course-designer__courses-name Название блока
-                                    .course-designer__items-wrap
-                                        span.course-designer__cours-name.course-designer__cours-name_selected Полный курс
-                                            input(type="checkbox" value="Project Managment (Online)" id="full-course")
-                                            label(for="full-course")
-
-                                        span.course-designer__cours-name Управление проектами
-                                            input(type="checkbox" value="Project Managment (Offline)" id="project-management")
-                                            label(for="project-management")
-
-                                        span.course-designer__cours-name Управление командой
-                                                input(type="checkbox" value="Project Managment (Offline)" id="team-management")
-                                                label(for="team-management")
-
-                                        span.course-designer__cours-name Работа с клиентами
-                                            input(type="checkbox" value="Project Managment (Offline)" id="work-with-clients")
-                                            label(for="work-with-clients")
-
-                                        span.course-designer__cours-name Маркетинг
-                                            input(type="checkbox" value="Project Managment (Offline)" id="marketing")
-                                            label(for="marketing")
-
-                                        span.course-designer__cours-name Продажи
-                                            input(type="checkbox" value="Project Managment (Offline)" id="sales")
-                                            label(for="sales")
-                            .col-xs-6.hidden-lg.hidden-md
-                                .course-designer__items-chosed-adaptive
-                                    p.course-designer__courses-finish-adaptive Вы выбрали курс:
-                            .col-sm-4.col-xs-6
-                                .course-designer__items-chosed
-                                    p.course-designer__courses-finish Вы выбрали курс:
-                                    p.course-designer__courses-chosed IT Project Managment (Online)
-                                    .course-designer__items-wrap
-                                        ul
-                                            li
-                                                i.fa.fa-check
-                                                span Управление проектами
-                                            li
-                                                i.fa.fa-check
-                                                span Управление командой
-                                            li
-                                                i.fa.fa-check
-                                                span Работа с клиентами
-
-                    .row
-                        .col-lg-12
-                            .course-designer__form-contacts
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
-                                .intermediate_item
-                                    .input_wrap
-                                        i.fa.fa-check
-                                        input(name='email', type='text', placeholder='E-MAIL')
-                                input(type='hidden', name='form_name', value='baseForm')
-                                input(type='hidden', name='form_type', value='normal')
-                                .intermediate_item
-                                    input(type='submit', value='Записаться')
         section.course-designer#course-designer
             .container
                 .row
@@ -299,11 +221,6 @@ block main
                 .row
                     .col-lg-8
                         p.course-designer__manual Выбирите тип курса и его составляющие, для того что бы записаться и обучаться тому, чего хотите именно вы.
-                        //ul.course-designer__step
-                            li.active 01
-                            li 02
-                            li 03
-                            li 04
             .container
                 form
                     .course-designer__items
@@ -322,13 +239,18 @@ block main
                                         i.fa.fa-long-arrow-right
 
                             .course-designer__items-wrap#course-designer__name-block
-                                p.course-designer__courses-name Название блока
-                                a(href="#")
+                                p.course-designer__courses-name Название модуля
+
+                                .course-designer__up
                                     i.fa.fa-chevron-up
-                                a(href="#")
+                                .course-designer__down
                                     i.fa.fa-chevron-down
                                 .course-designer__scroll
-                                    span.course-designer__cours-name.course-designer__cours-name_selected.course-designer__cours-name_selected-all#course-designer__cours-name_selected-all Полный курс
+                                    span.course-designer__cours-name
+                                        .course-designer__cours-name_selected
+                                        .course-designer__cours-name_selected-all
+                                        #course-designer__cours-name_selected-all
+                                        | Полный курс
                                         input(type="checkbox" value="Полный курс" id="full-course")
                                         label(for="full-course")
 
@@ -366,28 +288,31 @@ block main
                                         a(href="#")
                                             i.fa.fa-chevron-down
                                         ul
-                                         //   li
-                                                i.fa.fa-check
-                                                span Управление проектами
-                                        //    li
-                                        //        i.fa.fa-check
-                                        //        span Управление командой
-                                        //    li
-                                        //        i.fa.fa-check
-                                        //        span Работа с клиентами
-                                        //    li
-                                        //        i.fa.fa-check
-                                        //        span Работа с клиентами
-                                        //    li
-                                        //        i.fa.fa-check
-                                        //        span Работа с клиентами
-
+                            .col-lg-12.col-xs-12.course-designer__form-slider
+                                .course-designer__form-contacts
+                                    span.course-designer__accept Подтвердить
+                                    .intermediate_item
+                                        .input_wrap
+                                            i.fa.fa-check
+                                            input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
+                                    .intermediate_item
+                                        .input_wrap
+                                            i.fa.fa-check
+                                            input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
+                                    .intermediate_item
+                                        .input_wrap
+                                            i.fa.fa-check
+                                            input(name='email', type='text', placeholder='E-MAIL')
+                                    input(type='hidden', name='form_name', value='baseForm')
+                                    input(type='hidden', name='form_type', value='normal')
+                                    .intermediate_item
+                                        input(type='submit', value='Записаться')
                         .slider-count
                             span.current-slide
                             //span.total-slide
                 .row
                     .col-lg-12.col-xs-12
-                        .course-designer__form-contacts
+                        .course-designer__form-contacts.course-designer__form-contacts-single
                             .intermediate_item
                                 .input_wrap
                                     i.fa.fa-check
@@ -411,10 +336,10 @@ block main
                     .col-sm-12.col-xs-12
                         .why-created__wrap
                             h2.why-created__title Почему создано сообщество?
-                            p.why-created__description Илон Маск, Стив Джобс, Джефф Безос, Билл Гейтс, Марк Цукерберг, Ларри Пейдж и Сергей Грин, Джордж Сорос
-                                span - это мировые лидеры мнений и технологий
-                                strong являются IT-управленцами.
-                            p.why-created__description_default Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира. Сомнение раскладывает на элементы неоднозначный структурализм. Смысл жизни профанирует принцип восприятия, отрицая очевидное.
+                            p.why-created__description Мировые лидеры технологий - Илон Маск, Стив Джобс, Билл Гейтс и Марк Цукерберг
+                                //span - это мировые лидеры мнений и технологий
+                                strong успешными IT-управленцами.
+                            p.why-created__description_default Лидерами не рождаются, а становятся - приобретая необходимые знания, опыт, и стимулируя объеденяя правильных людей вокруг себя.
 
         section#video.video
             .video__bg
@@ -426,9 +351,80 @@ block main
                     .col-sm-12.col-xs-12
                         .our-goal__wrap
                             h2.our-goal__title Какая наша цель?
-                            strong Наша главная цель
-                            p.our-goal__main-goal  - обучить людей мыслить так же масштабно, ведь только при глобальном и системном мышлении идеи изменят мир. И наши студенты должны достигать таких результатов.
+                            strong Наша главная цель -
+                            p.our-goal__main-goal обучить людей мыслить масштабно, ведь только при глобальном и системном мышлении можно достигнуть успеха в IT-управлении. И наши участники сообщества достигают таких результатов.
+                                |
         section.world-leaders
+            .world-leaders__tabs-wrap
+                .world-leaders__leaders
+                    .world-leaders__leaders-photo
+                        ul.world-leaders__tabs
+                            li.active
+                                a(href='#face-1', data-toggle='tab')
+                                    img(src="img/leader-1.png")
+                            li
+                                a(href='#face-2', data-toggle='tab')
+                                    img(src="img/leader-2.png")
+                            li
+                                a(href='#face-3', data-toggle='tab')
+                                    img(src="img/leader-3.png")
+                            li
+                                a(href='#face-4', data-toggle='tab')
+                                    img(src="img/leader-4.png")
+                            li
+                                a(href='#face-5', data-toggle='tab')
+                                    img(src="img/leader-5.png")
+                            li
+                                a(href='#face-6', data-toggle='tab')
+                                    img(src="img/leader-6.png")
+                            li
+                                a(href='#face-7', data-toggle='tab')
+                                    img(src="img/leader-7.png")
+                            li
+                                a(href='#face-8', data-toggle='tab')
+                                    img(src="img/leader-8.png")
+                            li
+                                a(href='#face-9', data-toggle='tab')
+                                    img(src="img/leader-10.png")
+                            li
+                                a(href='#face-10', data-toggle='tab')
+                                    img(src="img/leader-9.png")
+                            li
+                                a(href='#face-11', data-toggle='tab')
+                                    img(src="img/leader-11.png")
+                            li
+                                a(href='#face-12', data-toggle='tab')
+                                    img(src="img/leader-12.png")
+                .world-leaders__leaders-content
+                    .tab-content
+                        #face-1.tab-pane.active
+                            span.world-leaders__leaders-content-title Мировые IT управленцы
+                            span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
+                            span.world-leaders__leaders-content-name Марк Цукерберг
+                            span.world-leaders__leaders-content-who Основатель социальной сети Facebook
+                            img(src="img/quotes.png").world-leaders__quotes
+                        #face-2.tab-pane
+                            p lorem 2
+                        #face-3.tab-pane
+                            p lorem 3
+                        #face-4.tab-pane
+                            p lorem 4
+                        #face-5.tab-pane
+                            p lorem 5
+                        #face-6.tab-pane
+                            p lorem 6
+                        #face-7.tab-pane
+                            p lorem 7
+                        #face-8.tab-pane
+                            p lorem 8
+                        #face-9.tab-pane
+                            p lorem 9
+                        #face-10.tab-pane
+                            p lorem 10
+                        #face-11.tab-pane
+                            p lorem 11
+                        #face-12.tab-pane
+                            p lorem 12
 
 
         section.teachers#teachers
@@ -447,7 +443,8 @@ block main
                                         a(href="#").teachers__social
                                             i.fa.fa-linkedin
                                     p.teachers__name Богдан Густиков
-                                    span.teachers__position IT PM in Dizz Agency
+                                    span.teachers__position Богдан Густиков - IT PM Dizz Agency Работал в Scrum/Kanban Опыт в IT до 2 лет Опыт успешного управления командой до 10 человек Был разработан продукт – онлайн-трансляции проведения тренинга с возможностью общения с тренером
+
                             .teachers__item.col-sm-6.col-xs-12
                                     img(src="img/teacers_slide_2.jpg").teachers__photo
                                     .teachers__social_wrap
@@ -456,7 +453,8 @@ block main
                                         a(href="#").teachers__social
                                             i.fa.fa-linkedin
                                     p.teachers__name Владимир Озирный
-                                    span.teachers__position SEO Dizz Agency / Say-hi
+                                    span.teachers__position В IT и маркетинге, в продажах 11 дет. Опыт управление 20+ человек. Владелец Dizz Agency по созданию и эффективному продвижению бизнесов в интернете. Сооснователь издания Say-Hi. В месяц посещают 200 000 уникальных поситителей на сайт 100 000 подписчиков в соц.сетях. Разработано и продвинуто более 200 успешных проектов. Роботает с компаниями Америки, Канады, Европы и странами СНГ. Проходил обучение у лидеров маркетинг-индустрии – Игорь Манн, Александр Левитас, Фрэнк Керн
+
                         .item
                             .teachers__item.col-sm-6.col-xs-12
                                 img(src="img/teacers_slide_1.jpg").teachers__photo
@@ -466,7 +464,8 @@ block main
                                     a(href="#").teachers__social
                                         i.fa.fa-linkedin
                                 p.teachers__name Богдан Густиков
-                                span.teachers__position IT PM in Dizz Agency
+                                span.teachers__position Богдан Густиков - IT PM Dizz Agency Работал в Scrum/Kanban Опыт в IT до 2 лет Опыт успешного управления командой до 10 человек Был разработан продукт – онлайн-трансляции проведения тренинга с возможностью общения с тренером
+
                             .teachers__item.col-sm-6.col-xs-12
                                 img(src="img/teacers_slide_2.jpg").teachers__photo
                                 .teachers__social_wrap
@@ -475,9 +474,10 @@ block main
                                     a(href="#").teachers__social
                                         i.fa.fa-linkedin
                                 p.teachers__name Владимир Озирный
-                                span.teachers__position SEO Dizz Agency / Say-hi
+                                span.teachers__position В IT и маркетинге, в продажах 11 дет. Опыт управление 20+ человек. Владелец Dizz Agency по созданию и эффективному продвижению бизнесов в интернете. Сооснователь издания Say-Hi. В месяц посещают 200 000 уникальных поситителей на сайт 100 000 подписчиков в соц.сетях. Разработано и продвинуто более 200 успешных проектов. Роботает с компаниями Америки, Канады, Европы и странами СНГ. Проходил обучение у лидеров маркетинг-индустрии – Игорь Манн, Александр Левитас, Фрэнк Керн
 
-        section.reviews#reviews
+
+        //section.reviews#reviews
             .container
                 .row
                     .reviews__wrap.col-sm-12.col-xs-12
@@ -523,18 +523,18 @@ block main
                     .col-sm-4
                         img(src="img/news_1.jpg").news__photo
                         span.news__date 01 сентября 2017
-                        a(href="#").news__title Концепция ментально оспособляет закон
-                        p.news__description Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших ...
+                        a(href="#").news__title Новость 1
+                        p.news__description Наша история, почему мы запустили сообщество IT управленцев
                     .col-sm-4
                         img(src="img/news_2.jpg").news__photo
                         span.news__date 01 сентября 2017
-                        a(href="#").news__title Концепция ментально оспособляет закон
-                        p.news__description Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших ...
+                        a(href="#").news__title Новость 2
+                        p.news__description 7 качеств руководителя
                     .col-sm-4
                         img(src="img/news_3.jpg").news__photo
                         span.news__date 01 сентября 2017
-                        a(href="#").news__title Концепция ментально оспособляет закон
-                        p.news__description Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших ...
+                        a(href="#").news__title Новость 3
+                        p.news__description Навыки успешного IT PM
                 button.button__type_2 Все новости
         section.contacts#contacts
             .contacts__wrap
@@ -772,15 +772,16 @@ block main
                             ul
                                 li.contacts__detals-title Телефон:
                                 li.contacts__detals-info
-                                    a(href="tel:0939615484") (093) 961 54 84,
-                                    a(href="tel:0939615484") (093) 961 54 84
+                                    a(href="tel:0939615484") (063) 651 25 17,
+                                    a(href="tel:0939615484") (068) 949 84 70
                                 li.contacts__detals-info
-                                    a(href="tel:0939615484") (093) 961 54 84
+                                    a(href="tel:0939615484") (068) 949 84 70
                         .col-sm-3.col-xs-12
                             ul
                                 li.contacts__detals-title E-mail
                                 li.contacts__detals-info
-                                    a(href="mailto:school@gmail.com") school@gmail.com
-
-    a(href="#popup-subscription" style="display:none").notyfi.our-programs__notify-me test
-    a(href="#popup-success" style="display:none").notyfi.our-programs__notify-me test
+                                    a(href="mailto:Welcome@managers-it.com") Welcome@managers-it.com
+    //подписка
+    //a(href="#popup-subscription" style="").notyfi.our-programs__notify-me test,
+    //заявка отправлена
+    //a(href="#popup-success" style="").notyfi.our-programs__notify-me test

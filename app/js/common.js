@@ -1,4 +1,24 @@
 // validation
+
+(function($){
+    $(window).on("load",function(){
+
+
+        $(".mCustomScrollbar").mCustomScrollbar({
+
+            scrollButtons:{
+                enable: true
+            },
+
+            theme:"dark-3",
+
+        });
+
+    });
+})(jQuery);
+
+
+
 $(document).ready(function () {
     //  Отправка форм
     // initialize tooltipster on text input elements
@@ -513,15 +533,16 @@ $(document).ready(function () {
         smartSpeed: 500
     });
 
-    var vindWidth = $( window ).width();
+    var windowWidth = $( window ).width();
 
-    if(vindWidth <= 650){
+    if(windowWidth <= 650){
         course_designer.owlCarousel({
             loop: false,
             items: 1,
             dots: true,
             nav: true,
-            smartSpeed: 500
+            smartSpeed: 500,
+            navText: ["<a class=\"button__type_3\">Далее</a>","<a class=\"button__type_3\">Далее</a>"]
         });
     }
 
@@ -546,7 +567,7 @@ $(document).ready(function () {
 
     $('.course-designer__scroll').jScrollPane();
     $('.course-designer__items-list ul').jScrollPane();
-    // $('.popup-course-description form').jScrollPane();
+    $('.popup-course-description form').jScrollPane();
 
     $(".notyfi").magnificPopup({
         removalDelay: 300,
@@ -605,6 +626,7 @@ $(document).ready(function () {
         }
     }
 
+
     //все чекбоксы выбраны в секции КОНСТРУКТОР КУРСА "название блока"
     selectAllItems();
 
@@ -622,7 +644,6 @@ $(document).ready(function () {
             $(".course-designer__items-chosed .jspContainer .jspPane").append($("<li></li>").text(inputValues[i]))
         }
 
-        //console.log(inputValues)
 
         $('.course-designer__items-list ul').jScrollPane();
     }
@@ -651,7 +672,18 @@ $(document).ready(function () {
     });
 
     $('.nav-tabs').scrollingTabs();
+
+    //scroll arrows
+
+    // $('.course-designer__up').click(function(e){
+    //     $('span:last').detach().prependTo('div').css({'margin-top':'-=100px'})
+    //     $('span:first').stop().animate({'margin-top':'0px'},1000)
+    // })
+
+
 });
+
+
 
 
 

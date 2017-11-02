@@ -13,7 +13,7 @@
   &__content
     position: absolute
     top: calc(50% - 236px)
-    width: 406px
+    width: 520px
   &__title
     color: $text_black_color
     text-transform: uppercase
@@ -307,7 +307,7 @@
   &__items-wrap
     width: 33%
     background-color: #fff
-    .fa-chevron-up, .fa-chevron-down
+  &__up, .course-designer__down
       display: none
   &__cours-name
     display: block
@@ -348,6 +348,8 @@
     height: 280px
     left: 0
     outline: none
+  &__form-slider
+    display: none
   .jspVerticalBar
     left: 0
     width: 5px
@@ -424,6 +426,10 @@
       font-size: 10px
       content: "\f00c"
       font-family: "FontAwesome"
+  .jspVerticalBar
+    display: none
+.no-js .course-designer .owl-carousel
+  display: flex
 .why-created
   position: relative
   padding: 100px 0 80px 0
@@ -483,6 +489,7 @@
 .our-goal
   position: relative
   padding: 200px 0 25px 0
+  background-color: #fff
   &:before
     @include circle()
     left: -390px
@@ -499,8 +506,123 @@
   &__main-goal
     display: inline
     font-family: $ProximaNova-Light
+  .our-goal
 .world-leaders
-  padding: 25px 0 185px 0
+  padding: 225px 0 185px 0
+  position: relative
+  &__tabs
+    width: 80%
+    height: 540px
+    position: relative
+    margin: 0 auto
+  &__tabs-wrap
+    position: relative
+  &__leaders-photo
+    z-index: 9
+    position: relative
+    li
+      display: inline-block
+      position: absolute
+      &:focus, &:visited
+        outline: none
+        outline-color: transparent
+        outline-width: 0
+      a:hover
+        background-color: transparent
+      img
+        border-radius: 50%
+        border: 4px solid transparent
+        transition: border .3s
+    li.active
+      color: transparent
+      img
+        border-radius: 50%
+        border: 4px solid #ffec00
+        box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09)
+    li:nth-child(1)
+      top: 0
+      left: 0
+    li:nth-child(2)
+      top: 78px
+      left: 200px
+    li:nth-child(3)
+      top: 200px
+      left: 40px
+    li:nth-child(4)
+      top: 240px
+      left: 235px
+    li:nth-child(5)
+      top: 370px
+      left: 130px
+    li:nth-child(6)
+      top: 450px
+      left: 0
+    li:nth-child(7)
+      top: 0
+      right: 0
+    li:nth-child(8)
+      top: 78px
+      right: 200px
+    li:nth-child(9)
+      top: 200px
+      right: 40px
+    li:nth-child(10)
+      top: 240px
+      right: 235px
+    li:nth-child(11)
+      top: 370px
+      right: 130px
+    li:nth-child(12)
+      top: 450px
+      right: 0
+  .tab-pane
+    padding: 0 60px
+    text-align: center
+  &__leaders-content
+    position: absolute
+    left: 0
+    right: 0
+    top: -55px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    border-radius: 50%
+    width: 691px
+    height: 691px
+    background-color: white
+    box-shadow: 0 6px 133px rgba(115, 1, 243, 0.13)
+  &__leaders-content-title
+    display: block
+    text-align: center
+    font-family: $ProximaNova-Extrabold
+    margin-bottom: 65px
+    font-size: 36px
+  &__leaders-content-blockquote
+    text-align: center
+    color: #aaa
+    font-family: $ProximaNova-LightIt
+    font-size: 22px
+    margin-bottom: 35px
+  &__leaders-content-name
+    display: block
+    text-align: center
+    font-family: $ProximaNova-Bold
+    font-size: 15px
+    margin-top: 30px
+    margin-bottom: 15px
+  &__leaders-content-who
+    display: block
+    font-size: 15px
+    color: #a7a7a7
+    margin-bottom: 10px
+  &__quotes
+    display: block
+    margin: 0 auto
+
+
+
+
 .teachers
   padding: 185px 0 200px 0
   &__title

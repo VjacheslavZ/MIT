@@ -2,16 +2,17 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'run',
-1 verbose cli   'start dev' ]
+1 verbose cli   'start dev',
+1 verbose cli   '--scripts-prepend-node-path=auto' ]
 2 info using npm@3.10.10
-3 info using node@v6.11.4
+3 info using node@v6.11.2
 4 verbose run-script [ 'prestart dev', 'start dev', 'poststart dev' ]
 5 info lifecycle tamplate-gulp@1.0.0~prestart dev: tamplate-gulp@1.0.0
 6 silly lifecycle tamplate-gulp@1.0.0~prestart dev: no script for prestart dev, continuing
 7 info lifecycle tamplate-gulp@1.0.0~start dev: tamplate-gulp@1.0.0
 8 verbose lifecycle tamplate-gulp@1.0.0~start dev: unsafe-perm in lifecycle true
-9 verbose lifecycle tamplate-gulp@1.0.0~start dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;E:\Work\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone\;C:\Users\Вячеслав\AppData\Local\Microsoft\WindowsApps;C:\Users\Вячеслав\AppData\Roaming\npm
-10 verbose lifecycle tamplate-gulp@1.0.0~start dev: CWD: E:\Work
+9 verbose lifecycle tamplate-gulp@1.0.0~start dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\Work\MIT\node_modules\.bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\slavi\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+10 verbose lifecycle tamplate-gulp@1.0.0~start dev: CWD: D:\Work\MIT
 11 silly lifecycle tamplate-gulp@1.0.0~start dev: Args: [ '/d /s /c', 'gulp watch' ]
 12 silly lifecycle tamplate-gulp@1.0.0~start dev: Returned: code: 1  signal: null
 13 info lifecycle tamplate-gulp@1.0.0~start dev: Failed to exec start dev script
@@ -23,13 +24,13 @@
 14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:920:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+14 verbose stack     at maybeClose (internal/child_process.js:891:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid tamplate-gulp@1.0.0
-16 verbose cwd E:\Work
+16 verbose cwd D:\Work\MIT
 17 error Windows_NT 10.0.15063
-18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "start dev"
-19 error node v6.11.4
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "start dev" "--scripts-prepend-node-path=auto"
+19 error node v6.11.2
 20 error npm  v3.10.10
 21 error code ELIFECYCLE
 22 error tamplate-gulp@1.0.0 start dev: `gulp watch`
