@@ -45,24 +45,57 @@
         $("#course-designer__items-chosed .course-designer__down").on("click", function () {
             $(".course-designer__items-list ul").mCustomScrollbar('scrollTo','-=100');
         });
-    });
 
-    //section world-leaders
+        //init mCustomScrollbar course-schedule plugin section
+        $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar({
+            axis:"x",
+            scrollButtons:{
+                enable: true
+            },
+            theme:"dark-3",
+            advanced:{
+                updateOnContentResize: false,
+                updateOnImageLoad: false
+            },
+            // callbacks:{
+            //     onOverflowYNone:function(){
+            //       console.log("Vertical scrolling required");
+            //     }
+            // }
 
-    setRandomClass();
+        });
 
-    setInterval(function () {
+        //section course-schedule mCustomScrollbar custom btn
+        $(".course-schedule__nav .course-schedule__left").on("click", function () {
+            $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar('scrollTo','-=200');
+        });
+
+        $(".course-schedule__nav .course-schedule__right").on("click", function () {
+            $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar('scrollTo','+=200');
+        });
+
+        //change active class in course-schedule tabs
+        $(document).on("click", ".course-schedule .course-schedule__dates li", changeClass);
+
+        function changeClass () {
+            $(".course-schedule .course-schedule__dates li").removeClass("active")
+            $(this).addClass("active")
+        }
+
+         //section world-leaders
         setRandomClass();
-    }, 5000);
 
-    function setRandomClass() {
-        var items = $("ul.world-leaders__tabs li a");
+        setInterval(function () {
+            setRandomClass();
+        }, 5000);
 
-        var random = Math.floor((Math.random() * items.length));
+        function setRandomClass() {
+            var items = $("ul.world-leaders__tabs li a");
+            var random = Math.floor((Math.random() * items.length));
 
-        items.eq(random).trigger( "click" );
-    }
-
+            items.eq(random).trigger( "click" );
+        }
+    });
 })(jQuery);
 
 
@@ -425,7 +458,7 @@ $(document).ready(function () {
 
 
     // Инициализация маски в input
-    $(".mask").mask("+38(999) 999-99-99");
+    $(".mask").mask("+38(999)999-99-99");
 
     //hide preloader
     $(".loader_inner").fadeOut();
@@ -595,12 +628,12 @@ $(document).ready(function () {
     }
 
 
-
+    //scroll on links
     (function ($) {
 
-        $("body").on("click", ".header__nav a[href*='#'], .footer__scroll-top[href*='#'], #my-menu a[href*='#']", scroll_header_links);
+        $("body").on("click", ".header__nav a[href*='#'], a.footer__scroll-top[href*='#'], .footer__links a[href*='#']", scroll_links);
 
-        function scroll_header_links(e) {
+        function scroll_links(e) {
             e.preventDefault();
 
             var anchor =  $(this);

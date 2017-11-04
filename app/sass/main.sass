@@ -5,6 +5,7 @@
 @import "part"
 @import "header"
 
+
 .top-section
   padding: 140px 70px 0 70px
   height: calc(100vh - -107px)
@@ -898,7 +899,7 @@
   &__content
     position: absolute
     top: calc(50% - 236px)
-    width: 50%
+    width: 60%
   &__begin
     font-size: 22px
   &__begin-date
@@ -1048,16 +1049,21 @@
       box-shadow: 0 6px 16px rgba(255, 236, 0, 0.58)
       padding: 10px 30px
       background-color: $accent_color
+      // margin-bottom: 18px
   .nav-tabs
     border-bottom: transparent
   &__dates
+    white-space: nowrap
     display: flex
     flex-direction: row
     text-align: center
+    font-size: 0
     li
       border: 1px solid #dddddd
       border-top: 4px solid #dddddd
       padding: 15px 30px
+      display: inline-block
+      margin-bottom:  18px
     a
       display: block
       font-family: $ProximaNova-Semibold
@@ -1068,6 +1074,27 @@
       font-family: $ProximaNova-Regular
   &__dates-disabled
     pointer-events: none
+
+  #mCSB_4_scrollbar_horizontal
+    //visibility: hidden !important
+  &__nav
+    position: relative
+    text-align: center
+    i
+      color: #8c8b8c
+      line-height: 88px
+  &__left
+    position: absolute
+    left: -29px
+    width: 29px
+    height: 89px
+    background-color: #ebebeb
+  &__right
+    position: absolute
+    right: -29px
+    width: 29px
+    height: 89px
+    background-color: #ebebeb
   .scrtabs-tabs-fixed-container
     height: 116px
   .course-schedule__dates a

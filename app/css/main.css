@@ -200,6 +200,19 @@ html.mm-blocking, html.mm-blocking body {
   .intermediate_item input.tooltipstered.error:focus {
     border: 1px solid red; }
 
+.tooltipster-sidetip .tooltipster-box {
+  background: transparent;
+  border: 2px solid transparent; }
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
+  margin-top: 0; }
+
+.tooltipster-sidetip .tooltipster-content {
+  color: red; }
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+  display: none; }
+
 .header {
   width: 100%;
   background-color: #fff;
@@ -1781,7 +1794,7 @@ html.mm-blocking, html.mm-blocking body {
     position: absolute;
     top: -webkit-calc(50% - 236px);
     top: calc(50% - 236px);
-    width: 50%; }
+    width: 60%; }
   .next-course__begin {
     font-size: 22px; }
   .next-course__begin-date {
@@ -2078,6 +2091,7 @@ html.mm-blocking, html.mm-blocking body {
   .course-schedule .nav-tabs {
     border-bottom: transparent; }
   .course-schedule__dates {
+    white-space: nowrap;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2087,11 +2101,14 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    text-align: center; }
+    text-align: center;
+    font-size: 0; }
     .course-schedule__dates li {
       border: 1px solid #dddddd;
       border-top: 4px solid #dddddd;
-      padding: 15px 30px; }
+      padding: 15px 30px;
+      display: inline-block;
+      margin-bottom: 18px; }
     .course-schedule__dates a {
       display: block;
       font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -2102,6 +2119,24 @@ html.mm-blocking, html.mm-blocking body {
       font-family: "ProximaNova-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .course-schedule__dates-disabled {
     pointer-events: none; }
+  .course-schedule__nav {
+    position: relative;
+    text-align: center; }
+    .course-schedule__nav i {
+      color: #8c8b8c;
+      line-height: 88px; }
+  .course-schedule__left {
+    position: absolute;
+    left: -29px;
+    width: 29px;
+    height: 89px;
+    background-color: #ebebeb; }
+  .course-schedule__right {
+    position: absolute;
+    right: -29px;
+    width: 29px;
+    height: 89px;
+    background-color: #ebebeb; }
   .course-schedule .scrtabs-tabs-fixed-container {
     height: 116px; }
   .course-schedule .course-schedule__dates a {
@@ -3116,9 +3151,12 @@ html.mm-blocking, html.mm-blocking body {
   .contacts {
     padding: 50px 0 35px 0; }
   .next-course {
-    padding: 140px 15px 0 15px; }
+    padding: 140px 15px 0 15px;
+    background-position: 100% center; }
     .next-course__content {
       width: 80%; }
+    .next-course__info li {
+      display: block; }
   .what-get {
     padding: 60px 0 45px; }
     .what-get:before {
