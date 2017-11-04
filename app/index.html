@@ -213,7 +213,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 col-sm-12">
-                <h2 class="after-study__title">После прохождения обучения Вы сможете -  главный заголовок</h2>
+                <h2 class="after-study__title">После прохождения обучения Вы сможете</h2>
               </div>
               <div class="col-lg-5 col-md-5 hidden-sm">
                 <div></div>
@@ -341,9 +341,7 @@
                           <p class="our-programs__name-course">Старт в IT Business community</p><span class="our-programs__type our-programs__type_online">Online</span><span class="our-programs__type our-programs__type_offline">offline</span>
                         </div><img class="our-programs__bg" src="img/rocket.png">
                       </div>
-                      <div class="our-programs__notify"><a class="our-programs__notify-me" href="">Уведомить меня о начале<i class="fa fa-envelope-o"></i></a>
-                        <button class="button__type_2">К курсу</button>
-                      </div>
+                      <div class="our-programs__notify"><a class="notyfi our-programs__notify-me" href="#notyfi">Уведомить меня о начале<i class="fa fa-envelope-o"></i></a><a class="button__type_2 notyfi our-programs__notify-me" href="#popup-course-description"> Подробнее</a></div>
                     </div>
                   </div>
                   <div class="our-programs__tabs-show-more">
@@ -483,7 +481,7 @@
                       </div>
                       <div class="intermediate_item">
                         <div class="input_wrap"><i class="fa fa-check"></i>
-                          <input class="mask" name="phone" type="text" placeholder="ТЕЛЕФОН">
+                          <input name="phone" type="text" placeholder="ТЕЛЕФОН">
                         </div>
                       </div>
                       <div class="intermediate_item">
@@ -506,28 +504,30 @@
             </form>
             <div class="row">
               <div class="col-lg-12 col-xs-12">
-                <div class="course-designer__form-contacts course-designer__form-contacts-single">
-                  <div class="intermediate_item">
-                    <div class="input_wrap"><i class="fa fa-check"></i>
-                      <input name="name" type="text" placeholder="ИМЯ ФАМИЛИЯ">
+                <form>
+                  <div class="course-designer__form-contacts course-designer__form-contacts-single">
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input name="name" type="text" placeholder="ИМЯ ФАМИЛИЯ">
+                      </div>
+                    </div>
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input class="mask" name="phone" type="text" placeholder="ТЕЛЕФОН">
+                      </div>
+                    </div>
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input name="email" type="text" placeholder="E-MAIL">
+                      </div>
+                    </div>
+                    <input type="hidden" name="form_name" value="baseForm">
+                    <input type="hidden" name="form_type" value="normal">
+                    <div class="intermediate_item">
+                      <input type="submit" value="Записаться">
                     </div>
                   </div>
-                  <div class="intermediate_item">
-                    <div class="input_wrap"><i class="fa fa-check"></i>
-                      <input class="mask" name="phone" type="text" placeholder="ТЕЛЕФОН">
-                    </div>
-                  </div>
-                  <div class="intermediate_item">
-                    <div class="input_wrap"><i class="fa fa-check"></i>
-                      <input name="email" type="text" placeholder="E-MAIL">
-                    </div>
-                  </div>
-                  <input type="hidden" name="form_name" value="baseForm">
-                  <input type="hidden" name="form_type" value="normal">
-                  <div class="intermediate_item">
-                    <input type="submit" value="Записаться">
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

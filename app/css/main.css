@@ -177,7 +177,8 @@ input {
   .input_wrap i {
     display: none;
     position: absolute;
-    top: 15px;
+    top: -webkit-calc(50% - 7px);
+    top: calc(50% - 7px);
     right: 16px;
     font-size: 14px;
     color: #35be70; }
@@ -190,6 +191,14 @@ input {
 
 html.mm-blocking, html.mm-blocking body {
   overflow: inherit; }
+
+.mfp-bg, .mfp-wrap {
+  top: 56px; }
+
+.intermediate_item input.tooltipstered.error {
+  border: 1px solid red; }
+  .intermediate_item input.tooltipstered.error:focus {
+    border: 1px solid red; }
 
 .header {
   width: 100%;
@@ -3164,18 +3173,21 @@ html.mm-blocking, html.mm-blocking body {
     background: url(../img/top_section-bg-adaptive.png) no-repeat 100% 50%;
     -webkit-background-size: contain;
             background-size: contain; }
-  .top-section__content {
-    position: inherit;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto; }
-  .top-section__description {
-    margin: 70% 0 87px 0; }
-  .top-section__title {
-    font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 44px; }
+    .top-section__content {
+      position: inherit;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto; }
+    .top-section__description {
+      margin: 70% 0 87px 0; }
+    .top-section__title {
+      font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 44px; }
   .after-study {
-    background: none; }
+    background-position-x: right;
+    background-position-y: 3%; }
+    .after-study__title {
+      margin-top: 380px; }
   .our-programs__info + .our-programs__info {
     margin-left: 0; }
   .course-designer__builder {
@@ -3457,6 +3469,13 @@ html.mm-blocking, html.mm-blocking body {
 
 @media only screen and (max-width: 650px) {
   /**/
+  .after-study__advantages-list span {
+    margin: 0 auto;
+    display: block; }
+  .after-study__advantages-list p {
+    font-size: 15px;
+    text-align: center;
+    display: block; }
   .course-designer__items-wrap {
     width: 100%; }
   .course-designer__courses-name {
@@ -3640,6 +3659,8 @@ html.mm-blocking, html.mm-blocking body {
     width: 50%; } }
 
 @media only screen and (max-width: 480px) {
+  .after-study {
+    background-position-x: -270px; }
   .course-designer__text {
     width: 100%;
     margin-bottom: 50px; }

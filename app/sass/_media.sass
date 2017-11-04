@@ -22,8 +22,6 @@
         margin-left: 21px
     &___dropdown-language
       margin-right: 20px
-
-  //2.for-who
   .for-who
     padding: 20px 0 2px 0
     &__wrap
@@ -31,13 +29,9 @@
     &__wrap-bg
       &:before,  &:after
         display: none
-
-  //3.after-study
   .after-study
     padding: 35px 0 50px 0
     background-position: -50% 80%
-
-  //4 .our-programs
   .our-programs
     padding: 50px 0 50px 0
     &__title
@@ -48,7 +42,6 @@
     flex-direction: column
     .button__type_2
       margin-top: 15px
-  //5.course-designer
   .course-designer
     padding: 0 0 50px 0
     &:before, &:after
@@ -58,12 +51,10 @@
     &__form-contacts .intermediate_item input[type="submit"]
       width: 202px
       padding: 16px 0px 16px 0
-  //6 section .why-created
   .why-created
     padding: 50px 0 40px 0
     &:before
       display: none
-  //7 section our-goal
   .our-goal
     padding: 100px 0 25px 0
     &:before
@@ -84,10 +75,13 @@
       display: none
   .news
     padding: 50px 0 50px 0
-  //section .contacts
   .contacts
     padding: 50px 0 35px 0
+
+
   // second page start !!
+
+
   .next-course
     padding: 140px 15px 0 15px
     &__content
@@ -147,24 +141,25 @@
     position: inherit
     background: url(../img/top_section-bg-adaptive.png) no-repeat 100% 50%
     background-size: contain
-  .top-section__content
-    position: inherit
-    text-align: center
-    width: 80%
-    //height: 100%
-    margin:  0 auto
-  .top-section__description
-    margin: 70% 0 87px 0
-  .top-section__title
-    font-family: $ProximaNova-Light
-    font-size: 44px
-  //3.after-study
+    &__content
+      position: inherit
+      text-align: center
+      width: 80%
+      margin:  0 auto
+    &__description
+      margin: 70% 0 87px 0
+    &__title
+      font-family: $ProximaNova-Light
+      font-size: 44px
+
   .after-study
-    background: none
-  //4.our-programs
+    background-position-x: right;
+    background-position-y: 3%;
+    &__title
+      margin-top: 380px 
   .our-programs__info + .our-programs__info
     margin-left: 0
-  //5
+
   .course-designer
     &__builder
       flex-wrap: wrap
@@ -459,6 +454,15 @@
 @media only screen and (max-width : 650px)
 
   /**/
+  .after-study
+    &__advantages-list
+      span
+        margin: 0 auto
+        display: block
+      p
+        font-size: 15px
+        text-align: center
+        display: block
   .course-designer
     &__items-wrap
       width: 100%
@@ -641,6 +645,8 @@
         img
           width: 50%
 @media only screen and (max-width : 480px)
+  .after-study
+    background-position-x: -270px;
   .course-designer
     &__text
       width: 100%

@@ -4,7 +4,6 @@ block title
 
 block main
     main#my-content
-
         section.top-section#top-section
             .top-section__content
                 h1.top-section__title Сообщество IT-управленцев
@@ -43,12 +42,11 @@ block main
                             a(href="#").col-lg-3.col-md-3.col-sm-6.for-who__item
                                 p.for-who__item-title Стартаперы и компании
                                 p.for-who__item-description Для воплощения в жизнь идеи в условиях полной неопределенности
-
         section.after-study#after-study
             .container
                 .row
                     .col-md-12.col-sm-12
-                        h2.after-study__title После прохождения обучения Вы сможете -  главный заголовок
+                        h2.after-study__title После прохождения обучения Вы сможете
                     .col-lg-5.col-md-5.hidden-sm
                         div
                     .col-lg-7.col-md-7.col-sm-12
@@ -72,7 +70,6 @@ block main
                             li
                                 span 06
                                 p Создавать и проводить впечатляющие презентации
-
         section.our-programs#our-programs
             .container
                 .row
@@ -173,9 +170,9 @@ block main
                                             span.our-programs__type.our-programs__type_offline offline
                                         img(src="img/rocket.png").our-programs__bg
                                     .our-programs__notify
-                                        a(href="").our-programs__notify-me Уведомить меня о начале
+                                        a(href="#notyfi").notyfi.our-programs__notify-me Уведомить меня о начале
                                             i.fa.fa-envelope-o
-                                        button.button__type_2 К курсу
+                                        a(href="#popup-course-description").button__type_2.notyfi.our-programs__notify-me  Подробнее
                             .our-programs__tabs-show-more
                                 button.button__type_3 Больше курсов
                         #3.tab-pane
@@ -334,7 +331,7 @@ block main
                                     .intermediate_item
                                         .input_wrap
                                             i.fa.fa-check
-                                            input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
+                                            input(name='phone', type='text', placeholder='ТЕЛЕФОН')
                                     .intermediate_item
                                         .input_wrap
                                             i.fa.fa-check
@@ -348,24 +345,24 @@ block main
                             //span.total-slide
                 .row
                     .col-lg-12.col-xs-12
-                        .course-designer__form-contacts.course-designer__form-contacts-single
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
-                            .intermediate_item
-                                .input_wrap
-                                    i.fa.fa-check
-                                    input(name='email', type='text', placeholder='E-MAIL')
-                            input(type='hidden', name='form_name', value='baseForm')
-                            input(type='hidden', name='form_type', value='normal')
-                            .intermediate_item
-                                input(type='submit', value='Записаться')
-
+                        form
+                            .course-designer__form-contacts.course-designer__form-contacts-single
+                                .intermediate_item
+                                    .input_wrap
+                                        i.fa.fa-check
+                                        input(name='name', type='text', placeholder='ИМЯ ФАМИЛИЯ')
+                                .intermediate_item
+                                    .input_wrap
+                                        i.fa.fa-check
+                                        input(name='phone', type='text', placeholder='ТЕЛЕФОН').mask
+                                .intermediate_item
+                                    .input_wrap
+                                        i.fa.fa-check
+                                        input(name='email', type='text', placeholder='E-MAIL')
+                                input(type='hidden', name='form_name', value='baseForm')
+                                input(type='hidden', name='form_type', value='normal')
+                                .intermediate_item
+                                    input(type='submit', value='Записаться')
         section.why-created
             .container
                 .row
@@ -376,7 +373,6 @@ block main
                                 //span - это мировые лидеры мнений и технологий
                                 strong успешными IT-управленцами.
                             p.why-created__description_default Лидерами не рождаются, а становятся - приобретая необходимые знания, опыт, и стимулируя объеденяя правильных людей вокруг себя.
-
         section#video.video
             .video__bg
             video(src="video/video.mp4" width="100%" height="550")
@@ -507,8 +503,6 @@ block main
                             span.world-leaders__leaders-content-name Илон Маск
                             span.world-leaders__leaders-content-who Tesla/SpaceX
                             img(src="img/quotes.png").world-leaders__quotes
-
-
         section.teachers#teachers
             .container
                 .row
@@ -557,8 +551,6 @@ block main
                                         i.fa.fa-linkedin
                                 p.teachers__name Владимир Озирный
                                 span.teachers__position В IT и маркетинге, в продажах 11 дет. Опыт управление 20+ человек. Владелец Dizz Agency по созданию и эффективному продвижению бизнесов в интернете. Сооснователь издания Say-Hi. В месяц посещают 200 000 уникальных поситителей на сайт 100 000 подписчиков в соц.сетях. Разработано и продвинуто более 200 успешных проектов. Роботает с компаниями Америки, Канады, Европы и странами СНГ. Проходил обучение у лидеров маркетинг-индустрии – Игорь Манн, Александр Левитас, Фрэнк Керн
-
-
         //section.reviews#reviews
             .container
                 .row

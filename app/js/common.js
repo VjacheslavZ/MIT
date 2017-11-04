@@ -3,8 +3,8 @@
 (function($){
     $(window).on("load", function(){
 
-
-        $(".course-designer__scroll, #course-designer__name, .course-designer__items-list ul").mCustomScrollbar({
+        //init mCustomScrollbar plugin section course-designer
+        $(".course-designer__scroll, #course-designer__name-block .course-designer__scroll, .course-designer__items-list ul").mCustomScrollbar({
 
             scrollButtons:{
                 enable: true
@@ -19,7 +19,7 @@
 
         });
 
-
+        //custom scroll down/up btn in course-designer section 
         $("#course-designer__name .course-designer__up").on("click", function () {
             $("#course-designer__name .course-designer__scroll").mCustomScrollbar('scrollTo','+=100');
         });
@@ -45,16 +45,6 @@
         $("#course-designer__items-chosed .course-designer__down").on("click", function () {
             $(".course-designer__items-list ul").mCustomScrollbar('scrollTo','-=100');
         });
-
-
-
-
-        // (function($){
-        //     $(window).on("load",function(){
-        //         $(".content").mCustomScrollbar();
-        //     });
-        // })(jQuery);
-
     });
 
     //section world-leaders

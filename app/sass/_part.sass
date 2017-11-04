@@ -5,7 +5,7 @@
   i
     display: none
     position: absolute
-    top: 15px
+    top: calc(50% - 7px)
     right: 16px
     font-size: 14px
     color: #35be70
@@ -17,3 +17,11 @@
   bottom: -4px
 html.mm-blocking, html.mm-blocking body
   overflow: inherit
+
+.mfp-bg, .mfp-wrap
+  top: 56px
+.intermediate_item
+  input.tooltipstered.error
+    border: 1px solid red
+    &:focus
+      border: 1px solid red
