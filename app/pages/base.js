@@ -1,10 +1,10 @@
-// validation
+
 
 (function($){
-    $(window).on("load",function(){
+    $(window).on("load", function(){
 
 
-        $(".mCustomScrollbar").mCustomScrollbar({
+        $(".course-designer__scroll, #course-designer__name, .course-designer__items-list ul").mCustomScrollbar({
 
             scrollButtons:{
                 enable: true
@@ -12,13 +12,71 @@
 
             theme:"dark-3",
 
+            advanced:{
+                updateOnContentResize: false,
+                updateOnImageLoad: false
+            }
+
         });
 
+
+        $("#course-designer__name .course-designer__up").on("click", function () {
+            $("#course-designer__name .course-designer__scroll").mCustomScrollbar('scrollTo','+=100');
+        });
+
+        $("#course-designer__name .course-designer__down").on("click", function () {
+            $("#course-designer__name .course-designer__scroll").mCustomScrollbar('scrollTo','-=100');
+        });
+
+
+        $("#course-designer__name-block .course-designer__up").on("click", function () {
+            $("#course-designer__name-block .course-designer__scroll").mCustomScrollbar('scrollTo','+=100');
+        });
+
+        $("#course-designer__name-block .course-designer__down").on("click", function () {
+            $("#course-designer__name-block .course-designer__scroll").mCustomScrollbar('scrollTo','-=100');
+        });
+
+
+        $("#course-designer__items-chosed .course-designer__up").on("click", function () {
+            $(".course-designer__items-list ul").mCustomScrollbar('scrollTo','+=100');
+        });
+
+        $("#course-designer__items-chosed .course-designer__down").on("click", function () {
+            $(".course-designer__items-list ul").mCustomScrollbar('scrollTo','-=100');
+        });
+
+
+
+
+        // (function($){
+        //     $(window).on("load",function(){
+        //         $(".content").mCustomScrollbar();
+        //     });
+        // })(jQuery);
+
     });
+
+    //section world-leaders
+
+    setRandomClass();
+
+    setInterval(function () {
+        setRandomClass();
+    }, 5000);
+
+    function setRandomClass() {
+        var items = $("ul.world-leaders__tabs li a");
+
+        var random = Math.floor((Math.random() * items.length));
+
+        items.eq(random).trigger( "click" );
+    }
+
 })(jQuery);
 
 
-
+// validation
 $(document).ready(function () {
     //  Отправка форм
     // initialize tooltipster on text input elements
@@ -565,9 +623,9 @@ $(document).ready(function () {
         }
     })(jQuery);
 
-    $('.course-designer__scroll').jScrollPane();
-    $('.course-designer__items-list ul').jScrollPane();
-    $('.popup-course-description form').jScrollPane();
+    //$('.course-designer__scroll').jScrollPane();
+    //$('.course-designer__items-list ul').jScrollPane();
+    //$('.popup-course-description form').jScrollPane();
 
     $(".notyfi").magnificPopup({
         removalDelay: 300,
@@ -602,7 +660,6 @@ $(document).ready(function () {
 
         $(this).addClass("course-designer__cours-name_selected");
         finis_list_course_selected.text($(this).text())
-        // console.log($(this).text())
     };
 
     function find_selected_name_blcok() {
@@ -638,14 +695,22 @@ $(document).ready(function () {
             return $(this).val();
         }).toArray();
 
-        $(".course-designer__items-chosed .jspContainer .jspPane").empty()
+        $(".course-designer__items-chosed #mCSB_1_container").empty();
 
         for(var i = 0; i < inputValues.length; i++){
-            $(".course-designer__items-chosed .jspContainer .jspPane").append($("<li></li>").text(inputValues[i]))
+            $(".course-designer__items-chosed #mCSB_1_container").append($("<li></li>").text(inputValues[i]))
         }
 
 
-        $('.course-designer__items-list ul').jScrollPane();
+        $(".course-designer__items-list ul").mCustomScrollbar({
+
+            scrollButtons:{
+                enable: true
+            },
+
+            theme:"dark-3",
+
+        });
     }
 
     create_choosed_list()
@@ -679,6 +744,12 @@ $(document).ready(function () {
     //     $('span:last').detach().prependTo('div').css({'margin-top':'-=100px'})
     //     $('span:first').stop().animate({'margin-top':'0px'},1000)
     // })
+
+    //wordleared
+
+
+
+
 
 
 });

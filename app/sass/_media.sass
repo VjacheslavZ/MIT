@@ -184,7 +184,7 @@
       .course-designer__up
         display: block
         position: absolute
-        top: 35px
+        top: 137px
         left: 0
         right: 0
         text-align: center
@@ -198,16 +198,6 @@
         right: 0
         z-index: 9999
         text-align: center
-    .jspContainer
-      position: relative
-      &:after
-        content: ""
-        margin: 0 auto
-        display: block
-        position: absolute
-        bottom: -17px
-        width: 88%
-        border-top: 2px solid #f4f3f5
     &__courses-name
       position: relative
       margin-top: 100px
@@ -234,10 +224,6 @@
     &__items-list
       width: 50%
       position: relative
-      .fa-chevron-up
-        top: -40px
-      .fa-chevron-down
-        bottom: -40px
       &:before
         content: ""
         margin: 0 auto
@@ -258,6 +244,18 @@
         height: 185px
         li + li
           margin-top: 10px
+    #course-designer__name-block
+      .course-designer__down
+        bottom: 28px
+    &__items-chosed
+      .course-designer__up
+        top: 65px
+        left: inherit
+        right: 172px
+      .course-designer__down
+        bottom: 45px
+        left: inherit
+        right: 172px
     &__items-wrap span
       font-size: 12px
     &__form-contacts .intermediate_item input
@@ -266,6 +264,9 @@
     &__form-contacts .intermediate_item input[type="submit"]
       padding: 15px 20px
       width: 150px
+    .mCSB_draggerContainer
+      display: none
+
   .contacts
     &__detals-info
       a
@@ -505,6 +506,12 @@
           left: 25px
           top: 3px
           color: #d3d3d3
+    #course-designer__name-block
+      .course-designer__up
+        top: 35px
+    &__items-chosed
+      .course-designer__up
+        top: -40px
     .owl-dot.active
         color: #000
         &:before
@@ -633,8 +640,23 @@
       li
         img
           width: 50%
-
-
+@media only screen and (max-width : 480px)
+  .course-designer
+    &__text
+      width: 100%
+      margin-bottom: 50px
+    &__items-list
+      width: 100%
+    &__items-chosed
+      flex-direction: column
+      align-items: center
+      .course-designer__up
+        top: 90px
+        left: 0
+        right: 0
+      .course-designer__down
+        left: 0
+        right: 0
 @media only screen and (max-width : 320px)
   .world-leaders
     &__tabs

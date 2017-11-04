@@ -369,6 +369,8 @@ html.mm-blocking, html.mm-blocking body {
     color: #7f7f7f;
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 14px; }
+  .header .nav > li > a:focus, .header .nav > li > a:hover {
+    background-color: transparent; }
 
 .hamburger {
   position: fixed;
@@ -1089,18 +1091,26 @@ html.mm-blocking, html.mm-blocking body {
       text-transform: uppercase; }
   .course-designer__step {
     display: none; }
-  .course-designer__items-chosed .jspContainer .jspPane li {
+  .course-designer__items-chosed li {
     margin-left: 50px;
     position: relative; }
-  .course-designer__items-chosed .jspContainer .jspPane li:before {
+  .course-designer__items-chosed li:before {
     position: absolute;
     left: -20px;
     top: 3px;
     font-size: 10px;
     content: "\f00c";
     font-family: "FontAwesome"; }
-  .course-designer .jspVerticalBar {
-    display: none; }
+  .course-designer .mCSB_scrollTools {
+    right: inherit; }
+  .course-designer .mCSB_buttonUp, .course-designer .mCSB_buttonDown {
+    visibility: hidden; }
+  .course-designer .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .course-designer .mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 4px;
+    background-color: #c0c0c0; }
+  .course-designer .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail, .course-designer .mCS-light-3.mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+    background-color: #e1e1e1; }
 
 .no-js .course-designer .owl-carousel {
   display: -webkit-box;
@@ -2081,6 +2091,8 @@ html.mm-blocking, html.mm-blocking body {
       font-size: 12px;
       display: block;
       font-family: "ProximaNova-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .course-schedule__dates-disabled {
+    pointer-events: none; }
   .course-schedule .scrtabs-tabs-fixed-container {
     height: 116px; }
   .course-schedule .course-schedule__dates a {
@@ -3186,7 +3198,7 @@ html.mm-blocking, html.mm-blocking body {
     .course-designer__items-wrap .course-designer__up {
       display: block;
       position: absolute;
-      top: 35px;
+      top: 137px;
       left: 0;
       right: 0;
       text-align: center;
@@ -3200,16 +3212,6 @@ html.mm-blocking, html.mm-blocking body {
       right: 0;
       z-index: 9999;
       text-align: center; }
-  .course-designer .jspContainer {
-    position: relative; }
-    .course-designer .jspContainer:after {
-      content: "";
-      margin: 0 auto;
-      display: block;
-      position: absolute;
-      bottom: -17px;
-      width: 88%;
-      border-top: 2px solid #f4f3f5; }
   .course-designer__courses-name {
     position: relative;
     margin-top: 100px; }
@@ -3241,10 +3243,6 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-list {
     width: 50%;
     position: relative; }
-    .course-designer__items-list .fa-chevron-up {
-      top: -40px; }
-    .course-designer__items-list .fa-chevron-down {
-      bottom: -40px; }
     .course-designer__items-list:before {
       content: "";
       margin: 0 auto;
@@ -3265,6 +3263,16 @@ html.mm-blocking, html.mm-blocking body {
       height: 185px; }
       .course-designer__items-list ul li + li {
         margin-top: 10px; }
+  .course-designer #course-designer__name-block .course-designer__down {
+    bottom: 28px; }
+  .course-designer__items-chosed .course-designer__up {
+    top: 65px;
+    left: inherit;
+    right: 172px; }
+  .course-designer__items-chosed .course-designer__down {
+    bottom: 45px;
+    left: inherit;
+    right: 172px; }
   .course-designer__items-wrap span {
     font-size: 12px; }
   .course-designer__form-contacts .intermediate_item input {
@@ -3273,6 +3281,8 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__form-contacts .intermediate_item input[type="submit"] {
     padding: 15px 20px;
     width: 150px; }
+  .course-designer .mCSB_draggerContainer {
+    display: none; }
   .contacts__detals-info a {
     display: block; }
   .contacts__detals-info a + a {
@@ -3499,6 +3509,10 @@ html.mm-blocking, html.mm-blocking body {
       left: 25px;
       top: 3px;
       color: #d3d3d3; }
+  .course-designer #course-designer__name-block .course-designer__up {
+    top: 35px; }
+  .course-designer__items-chosed .course-designer__up {
+    top: -40px; }
   .course-designer .owl-dot.active {
     color: #000; }
     .course-designer .owl-dot.active:before {
@@ -3624,6 +3638,30 @@ html.mm-blocking, html.mm-blocking body {
             background-size: cover; }
   .world-leaders__leaders-photo li img {
     width: 50%; } }
+
+@media only screen and (max-width: 480px) {
+  .course-designer__text {
+    width: 100%;
+    margin-bottom: 50px; }
+  .course-designer__items-list {
+    width: 100%; }
+  .course-designer__items-chosed {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .course-designer__items-chosed .course-designer__up {
+      top: 90px;
+      left: 0;
+      right: 0; }
+    .course-designer__items-chosed .course-designer__down {
+      left: 0;
+      right: 0; } }
 
 @media only screen and (max-width: 320px) {
   .world-leaders__tabs {
