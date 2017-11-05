@@ -46,8 +46,14 @@
             $(".course-designer__items-list ul").mCustomScrollbar('scrollTo','-=100');
         });
 
-        //init mCustomScrollbar course-schedule plugin section
-        $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar({
+
+        $(".course-designer__up, .course-designer__down").on("click", function (e) {
+            e.preventDefault()
+        })
+
+
+        //init mCustomScrollbar (course-schedule online)
+        $("#Online ul.course-schedule__dates.nav-tabs").mCustomScrollbar({
             axis:"x",
             scrollButtons:{
                 enable: true
@@ -57,22 +63,41 @@
                 updateOnContentResize: false,
                 updateOnImageLoad: false
             },
-            // callbacks:{
-            //     onOverflowYNone:function(){
-            //       console.log("Vertical scrolling required");
-            //     }
-            // }
+            //onOverflowXNone
+            callbacks:{
+                onOverflowX: function(){
+                    // если айтемы не помещаються то показываем кнопки      
+                    var btn_scroll_left = $(".course-schedule__left"),
+                        btn_scroll_right = $(".course-schedule__right");
+                        tabs = $("#Online.tab-pane.active li")
+
+                    btn_scroll_left.css({"opacity": 1})
+                    btn_scroll_right.css({"opacity": 1})
+                }
+            }
 
         });
 
         //section course-schedule mCustomScrollbar custom btn
         $(".course-schedule__nav .course-schedule__left").on("click", function () {
-            $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar('scrollTo','-=200');
+            $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar('scrollTo','+=200');
         });
 
         $(".course-schedule__nav .course-schedule__right").on("click", function () {
-            $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar('scrollTo','+=200');
+            $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar('scrollTo','-=200');
         });
+
+        //show arrows in course-schedule tabs если больше 10 айтемов в табах
+        // (function show_arrows () {
+        //     var btn_scroll_left = $(".course-schedule__left"),
+        //         btn_scroll_right = $(".course-schedule__right");
+        //         tabs = $("#Online.tab-pane.active li")
+
+        //         if ( tabs.length >= 11) {
+        //             btn_scroll_left.css({"opacity": 1})
+        //             btn_scroll_right.css({"opacity": 1})
+        //         }
+        // })()
 
         //change active class in course-schedule tabs
         $(document).on("click", ".course-schedule .course-schedule__dates li", changeClass);
@@ -683,6 +708,8 @@ $(document).ready(function () {
 
         $(this).addClass("course-designer__cours-name_selected");
         finis_list_course_selected.text($(this).text())
+
+        show_vertical_aarrows()
     };
 
     function find_selected_name_blcok() {
@@ -690,6 +717,7 @@ $(document).ready(function () {
         var name_block_selected = $("#course-designer__name-block .course-designer__cours-name_selected");
 
         $(this).toggleClass("course-designer__cours-name_selected");
+
 
     }
 
@@ -734,7 +762,35 @@ $(document).ready(function () {
             theme:"dark-3",
 
         });
+
+        //провереем количество выбранных пунктов курся показа стрелок скролла
+        show_vertical_aarrows ()
     }
+
+    //стрелки скрола вверх/низ для моб устройств
+    function show_vertical_aarrows () {
+
+        var course_name_btn_arrows = $("#course-designer__name .course-designer__up, #course-designer__name .course-designer__down"),
+            course_block_name_arrows = $("#course-designer__name-block .course-designer__up, #course-designer__name-block .course-designer__down"),
+            course_items_chosed = $("#course-designer__items-chosed .course-designer__up, #course-designer__items-chosed .course-designer__down")
+
+            summ_items_course_name = $("#course-designer__name .course-designer__scroll span").length,
+            summ_items_course_block = $("#course-designer__name-block .course-designer__scroll span").length,
+            summ_items_chosed = $("#course-designer__items-chosed  .course-designer__items-list ul li").length;
+
+            if (summ_items_course_name > 6) course_name_btn_arrows.css({"opacity": 1})
+            if (summ_items_course_block > 6) course_block_name_arrows.css({"opacity": 1})
+            if (summ_items_chosed > 5){
+                course_items_chosed.css({"opacity": 1})
+            }  else {
+                course_items_chosed.css({"opacity": 0})
+            }
+
+
+            console.log(summ_items_chosed)
+    }
+
+    show_vertical_aarrows ()
 
     create_choosed_list()
 

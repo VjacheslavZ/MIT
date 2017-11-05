@@ -242,18 +242,25 @@
         height: 185px
         li + li
           margin-top: 10px
-    #course-designer__name-block
-      .course-designer__down
-        bottom: 28px
+    //#course-designer__name-block
+      //.course-designer__down
+        //bottom: 28px
     &__items-chosed
       .course-designer__up
         top: 65px
         left: inherit
         right: 172px
+        &:before
+          width: 180px
+          left: -90px
+
       .course-designer__down
         bottom: 45px
         left: inherit
         right: 172px
+        &:before
+          width: 180px
+          left: -90px
     &__items-wrap span
       font-size: 12px
     &__form-contacts .intermediate_item input
@@ -313,13 +320,13 @@
   //2.for-who
   .for-who__item
     text-align: center
-  .for-who__title
-    text-align: center
-    &:before
-      left: inherit
-  .for-who__wrap .col-lg-3
-    &:before
-      margin: 0 auto
+    &__title
+      text-align: center
+      &:before
+        left: inherit
+    &__wrap .col-lg-3
+      &:before
+        margin: 0 auto
 
   .world-leaders
     &__leaders-content
@@ -429,6 +436,12 @@
     &__speaker-info
       padding-bottom: 60px
       border-bottom: 2px solid #f4f3f5
+    &__left
+      left: -15px
+      z-index: 9
+    &__right
+      right: -15px
+      z-index: 9
   //popUp
   .form
     padding: 35px 60px 35px 60px
@@ -455,7 +468,6 @@
     margin-top: 10px
 
 @media only screen and (max-width : 650px)
-
   /**/
   .after-study
     &__advantages-list
@@ -469,6 +481,8 @@
   .course-designer
     &__items-wrap
       width: 100%
+      .course-designer__up
+        top: 40px
     &__courses-name
       text-align: center
     &__form-contacts
@@ -566,7 +580,16 @@
   //3.after-study
   .after-study__advantages-title
     font-size: 17px
-  //4.our-programs
+  
+  .course-designer__items-chosed
+    .course-designer__up:before
+      left: -50px
+      bottom: -8px
+  .course-designer__items-chosed 
+    .course-designer__down:before
+      left: -50px
+      top: -4px
+
   .our-programs
     .nav-tabs li + li
       margin-left: 20px
@@ -656,16 +679,24 @@
       margin-bottom: 50px
     &__items-list
       width: 100%
+      &:before, &:after 
+        width: 100% 
     &__items-chosed
       flex-direction: column
       align-items: center
       .course-designer__up
-        top: 90px
+        top: 137px
         left: 0
         right: 0
+        &:before
+          left: 0
+          bottom: 0
       .course-designer__down
         left: 0
         right: 0
+        &:before
+          left: 0
+          top: -4px
 @media only screen and (max-width : 320px)
   .world-leaders
     &__tabs

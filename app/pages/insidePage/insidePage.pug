@@ -87,9 +87,6 @@ block main
                                 |Риск-менеджмент;
                                 |Управление изменениями в проектах.
                                 |В онлайн-курсе также будут разобраны такие инструменты и методологии как Waterfall, SCRUM, XP, Kanban, Lean. После прохождения курса Вы без труда сможете реализовывать как собственные, так и менеджерские проекты вовремя, не выходя за рамки бюджета.
-
-
-
         section.who-wait
             .container
                 .who-wait__wrap
@@ -142,39 +139,39 @@ block main
                                     li.active(role='presentation')
                                         a(href='#home', aria-controls='home', role='tab', data-toggle='tab') 15
                                             span декабря
-                                    //- li(role='presentation')
-                                    //-     a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') 09
-                                    //-         span Ноября
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 14
-                                    //-         span Ноября
-                                    //- li(role='presentation')
-                                    //-     a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') 16
-                                    //-         span Ноября
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 21
-                                    //-         span Ноября
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 23
-                                    //-         span Ноября
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 28
-                                    //-         span Ноября
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 30
-                                    //-         span Ноября
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 05
-                                    //-         span Декабря
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
-                                    //-         span Декабря
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
-                                    //-         span Декабря
-                                    //- li(role='presentation')
-                                    //-     a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
-                                    //-         span Декабря
+                                    li(role='presentation')
+                                        a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') 09
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 14
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') 16
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 21
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 23
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 28
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 30
+                                            span Ноября
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 05
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
+                                    li(role='presentation')
+                                        a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
+                                            span Декабря
                                 // Tab panes
                                 .tab-content
                                     #home.tab-pane.active(role='tabpanel')
@@ -199,7 +196,12 @@ block main
                                         p 4
 
                         #Offline.tab-pane
-                            div
+                           div.course-schedule__nav
+                                .course-schedule__left
+                                    i.fa.fa-chevron-left
+                                .course-schedule__right
+                                    i.fa.fa-chevron-right
+
                                 ul(role='tablist').course-schedule__dates.nav-tabs
                                     li.active(role='presentation').course-schedule__dates-disabled
                                         a(href='#home', aria-controls='home', role='tab', data-toggle='tab') 11
@@ -574,7 +576,6 @@ block main
                             input(type='hidden', name='form_type', value='normal')
                             .intermediate_item
                                 input(type='submit', value='Записаться')
-
         section.training
             .container
                 .row
@@ -727,8 +728,6 @@ block main
                                         p
                                             span Ответ:
                                             | Наша программа рассчитана на новичков в проектном менеджменте. Но обязательным требованием является знание Английского языка не ниже Intermediate так как вся терминология проектного менеджмента на английском.
-
-
         section.have-questions
                 .container
                     .row
