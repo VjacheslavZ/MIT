@@ -152,9 +152,7 @@
 
         $('.our-programs').waypoint({
             handler: function() {
-                $(".our-programs").find('.our-programs__title').addClass('animated fadeInUp');
-                $(".our-programs").find('.our-programs__tabs').addClass('animated fadeInUp');
-                $(".our-programs").find('.tab-content').addClass('animated fadeInUp');
+                $(".our-programs").addClass('animated fadeInUp');
             this.destroy();
             },
             offset: '50%'
@@ -196,6 +194,142 @@
             },
             offset: '50%'
         });
+
+         $('.teachers').waypoint({
+            handler: function() {
+                $(".teachers").find('.teachers__title').addClass('animated fadeInUp');
+                $(".teachers").find('#teachesr__slider').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $('.reviews').waypoint({
+            handler: function() {
+                $(".reviews").find('.reviews__title').addClass('animated fadeInUp');
+                $(".reviews").find('#reviews-owl').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.news').waypoint({
+            handler: function() {
+                $(".news").addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.contacts').waypoint({
+            handler: function() {
+                $(".contacts").addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $('.next-course').waypoint({
+            handler: function() {
+                $(".next-course").find('.next-course__begin').addClass('animated fadeInUp');
+                $(".next-course").find('.next-course__title').addClass('animated fadeInUp');
+                $(".next-course").find('.next-course__info').addClass('animated fadeInUp');
+                $(".next-course").find('.button').addClass('animated fadeInUp');
+
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.what-get').waypoint({
+            handler: function() {
+                $(".what-get").find('.after-study__advantages-list').addClass('animated fadeInUp');
+                $(".next-course").find('.next-course__title').addClass('animated fadeInUp');
+
+
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.about-course').waypoint({
+            handler: function() {
+                $(".about-course").find('.about-course__title').addClass('animated fadeInUp');
+                $(".about-course").find('.about-course__description').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $('.who-wait').waypoint({
+            handler: function() {
+                $(".who-wait").find('.who-wait__title').addClass('animated fadeInUp');
+                $(".who-wait").find('.who-wait__wrap .col-md-4').addClass('animated fadeInUp');
+
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $(".course-schedule").waypoint({
+            handler: function() {
+                $(".course-schedule").addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $(".career").waypoint({
+            handler: function() {
+                $(".career").find('.career__title').addClass('animated fadeInUp');
+                $(".career").find('.career__item').addClass('animated fadeInUp');
+
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $(".course-program").waypoint({
+            handler: function() {
+                $(".course-program").addClass('animated fadeInUp');          
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $(".training").waypoint({
+            handler: function() {
+                $(".training").find('.training__title').addClass('animated fadeInUp');
+                $(".training").find('.training__stages').addClass('animated fadeInUp');
+
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $(".questions").waypoint({
+            handler: function() {
+                $(".questions").find('.questions__title').addClass('animated fadeInUp');
+                $(".questions").find('#accordionLeft.panel-group').addClass('animated fadeInUp');
+                $(".questions").find('#accordionRight.panel-group').addClass('animated fadeInUp');
+
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+         $(".have-questions").waypoint({
+            handler: function() {
+                $(".have-questions").find('.have-questions__title').addClass('animated fadeInUp');
+                $(".have-questions").find('.have-questions__wrap form').addClass('animated fadeInUp');
+
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+
+
 
 
 

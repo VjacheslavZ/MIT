@@ -82,7 +82,7 @@
 .after-study__title, .after-study__advantages-list {
   opacity: 0; }
 
-.our-programs__title, .our-programs__tabs, .tab-content {
+.our-programs {
   opacity: 0; }
 
 .course-designer__title, .course-designer__manual, .course-designer__items, .course-designer__form-contacts-single {
@@ -95,6 +95,42 @@
   opacity: 0; }
 
 .our-goal {
+  opacity: 0; }
+
+.teachers__title, #teachesr__slider {
+  opacity: 0; }
+
+.reviews__title, #reviews-owl {
+  opacity: 0; }
+
+.news {
+  opacity: 0; }
+
+.contacts {
+  opacity: 0; }
+
+.next-course__begin, .next-course__title, .next-course__info, .next-course .button {
+  opacity: 0; }
+
+.who-wait__title, .who-wait__wrap .col-md-4 {
+  opacity: 0; }
+
+.course-schedule {
+  opacity: 0; }
+
+.career__title, .career__item {
+  opacity: 0; }
+
+.course-program {
+  opacity: 0; }
+
+.training__title, .training__stages {
+  opacity: 0; }
+
+.questions__title, #accordionLeft.panel-group, #accordionRight.panel-group {
+  opacity: 0; }
+
+.have-questions__title, .have-questions__wrap form {
   opacity: 0; }
 
 body {
