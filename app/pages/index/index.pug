@@ -96,7 +96,7 @@ block main
                                         .our-programs__name
                                             p.our-programs__name-course IT Project management
                                             span.our-programs__type.our-programs__type_online Online
-                                        img(src="img/fingerprint.png").our-programs__bg
+                                        img(src="img/fingerprint.png" alt="IT Project management").our-programs__bg
                                     .our-programs__contract
                                         ul
                                             li.our-programs__info Цена:
@@ -114,7 +114,7 @@ block main
                                             p.our-programs__name-course IT Project management
                                             span.our-programs__type.our-programs__type_online Online
                                             span.our-programs__type.our-programs__type_offline offline
-                                        img(src="img/fingerprint.png").our-programs__bg
+                                        img(src="img/fingerprint.png" alt="IT Project management").our-programs__bg
                                     .our-programs__contract
                                         ul
                                             li.our-programs__info Цена:
@@ -150,7 +150,7 @@ block main
                                         .our-programs__name
                                             p.our-programs__name-course IT Project management
                                             span.our-programs__type.our-programs__type_online Online
-                                        img(src="img/fingerprint.png").our-programs__bg
+                                        img(src="img/fingerprint.png" alt="IT Project management").our-programs__bg
                                     .our-programs__contract
                                         ul
                                             li.our-programs__info Цена:
@@ -168,7 +168,7 @@ block main
                                             p.our-programs__name-course Старт в IT Business community
                                             span.our-programs__type.our-programs__type_online Online
                                             span.our-programs__type.our-programs__type_offline offline
-                                        img(src="img/rocket.png").our-programs__bg
+                                        img(src="img/rocket.png" alt="IT Project management").our-programs__bg
                                     .our-programs__notify
                                         a(href="#notyfi").notyfi.our-programs__notify-me Уведомить меня о начале
                                             i.fa.fa-envelope-o
@@ -185,7 +185,7 @@ block main
                                         .our-programs__name
                                             p.our-programs__name-course IT Project management
                                             span.our-programs__type.our-programs__type_online Online
-                                        img(src="img/fingerprint.png").our-programs__bg
+                                        img(src="img/fingerprint.png" alt="IT Project management").our-programs__bg
                                     .our-programs__contract
                                         ul
                                             li.our-programs__info Цена:
@@ -203,7 +203,7 @@ block main
                                             p.our-programs__name-course Старт в IT Business community
                                             span.our-programs__type.our-programs__type_online Online
                                             span.our-programs__type.our-programs__type_offline offline
-                                        img(src="img/rocket.png").our-programs__bg
+                                        img(src="img/rocket.png" alt="IT Business community").our-programs__bg
                                     .our-programs__notify
                                         a(href="").our-programs__notify-me Уведомить меня о начале
                                             i.fa.fa-envelope-o
@@ -238,10 +238,10 @@ block main
                                         input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
                                         label(for="managment-offline")
                                         i.fa.fa-long-arrow-right
-                                    span.course-designer__cours-name Project Managment (Offline)
-                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
-                                        label(for="managment-offline")
-                                        i.fa.fa-long-arrow-right
+                                    //span.course-designer__cours-name Project Managment (Offline)
+                                    //    input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                    //   label(for="managment-offline")
+                                    //    i.fa.fa-long-arrow-right
                                     //- span.course-designer__cours-name Project Managment (Offline)
                                     //-     input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
                                     //-     label(for="managment-offline")
@@ -271,40 +271,37 @@ block main
                                     i.fa.fa-chevron-down
                                 .course-designer__scroll
                                     //.mCustomScrollbar(data-mcs-theme="dark-3")
-                                    span.course-designer__cours-name
-                                        .course-designer__cours-name_selected
-                                        .course-designer__cours-name_selected-all
-                                        #course-designer__cours-name_selected-all
+                                    span.course-designer__cours-name.course-designer__cours-name_selected.course-designer__cours-name_selected-all#course-designer__cours-name_selected-all
                                         | Полный курс
                                         input(type="checkbox" value="Полный курс" id="full-course")
                                         label(for="full-course")
                                     span.course-designer__cours-name Управление проектами
-                                        input(type="checkbox" value="Управление проектами" id="item 1")
-                                        label(for="item 1")
+                                        input(type="checkbox" value="Управление проектами" id="item1")
+                                        label(for="item1")
                                     span.course-designer__cours-name Управление командой
-                                        input(type="checkbox" value="Управление командой" id="item 2")
-                                        label(for="item 2")
+                                        input(type="checkbox" value="Управление командой" id="item2")
+                                        label(for="item2")
                                     span.course-designer__cours-name Работа с клиентами
-                                        input(type="checkbox" value="Работа с клиентами" id="item 3")
-                                        label(for="item 3")
+                                        input(type="checkbox" value="Работа с клиентами" id="item3")
+                                        label(for="item3")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 4")
-                                        label(for="item 4")
+                                        input(type="checkbox" value="Маркетинг" id="item4")
+                                        label(for="item4")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 5")
-                                        label(for="item 5")
+                                        input(type="checkbox" value="Маркетинг" id="item5")
+                                        label(for="item5")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 6")
-                                        label(for="item 6")
+                                        input(type="checkbox" value="Маркетинг" id="item6")
+                                        label(for="item6")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 8")
-                                        label(for="item 8")
+                                        input(type="checkbox" value="Маркетинг" id="item8")
+                                        label(for="item8")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 9")
-                                        label(for="item 9")
+                                        input(type="checkbox" value="Маркетинг" id="item9")
+                                        label(for="item9")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 10")
-                                        label(for="item 10")
+                                        input(type="checkbox" value="Маркетинг" id="item10")
+                                        label(for="item10")
                             .course-designer__items-wrap.course-designer__items-wrap_width
                                 .course-designer__items-chosed#course-designer__items-chosed
                                     a(href="#").course-designer__up
@@ -364,7 +361,7 @@ block main
                                 input(type='hidden', name='form_type', value='normal')
                                 .intermediate_item
                                     input(type='submit', value='Записаться')
-        section.why-created
+        section.why-created#why-created
             .container
                 .row
                     .col-sm-12.col-xs-12
@@ -376,9 +373,9 @@ block main
                             p.why-created__description_default Лидерами не рождаются, а становятся - приобретая необходимые знания, опыт, и стимулируя объеденяя правильных людей вокруг себя.
         section#video.video
             .video__bg
-            video(src="video/video.mp4" width="100%" height="550")
-            a.video__play-pause(type="button" id="play-pause")
-        section.our-goal
+            video(src="video/video.mp4" width="" height="550")
+            a.video__play-pause(id="play-pause")
+        section.our-goal#our-goal
             .container
                 .row
                     .col-sm-12.col-xs-12
@@ -387,49 +384,47 @@ block main
                             strong Наша главная цель -
                             p.our-goal__main-goal обучить людей мыслить масштабно, ведь только при глобальном и системном мышлении можно достигнуть успеха в IT-управлении. И наши участники сообщества достигают таких результатов.
                                 |
-        section.world-leaders
+        section.world-leaders#world-leaders
             .world-leaders__tabs-wrap
                 .world-leaders__leaders
                     .world-leaders__leaders-photo
                         ul.world-leaders__tabs
                             li.active
                                 a(href='#face-6', data-toggle='tab')
-                                    img(src="img/Jeffrey-preston.png")
+                                    img(src="img/Jeffrey-preston.png" alt="Джефф Безос")
                             li
                                 a(href='#face-12', data-toggle='tab')
-                                    img(src="img/ilon-max.png")
+                                    img(src="img/ilon-max.png" alt="Илон Маск")
                             li
                                 a(href='#face-3', data-toggle='tab')
-                                    img(src="img/bill-gates.png")
+                                    img(src="img/bill-gates.png" alt="Билл Гейтс")
                             li
                                 a(href='#face-5', data-toggle='tab')
-                                    img(src="img/larry-page.png")
+                                    img(src="img/larry-page.png" alt="Ларри Пейдж")
                             li
                                 a(href='#face-1', data-toggle='tab')
-                                    img(src="img/mark-cuckerberg.png")
+                                    img(src="img/mark-cuckerberg.png" alt="Марк Цукерберг")
                             li
                                 a(href='#face-7', data-toggle='tab')
-                                    img(src="img/mike-krieger.png")
+                                    img(src="img/mike-krieger.png" alt="Майк Кригер")
                             li
                                 a(href='#face-11', data-toggle='tab')
-                                    img(src="img/yan-borisovich.png")
+                                    img(src="img/yan-borisovich.png" alt="Ян Борисович")
                             li
                                 a(href='#face-8', data-toggle='tab')
-                                    img(src="img/george-soros.png")
+                                    img(src="img/george-soros.png" alt="Джордж Сорос")
                             li
                                 a(href='#face-4', data-toggle='tab')
-                                    img(src="img/sergey-brin.png")
-
+                                    img(src="img/sergey-brin.png" alt="Сергей Брин")
                             li
                                 a(href='#face-10', data-toggle='tab')
-                                    img(src="img/max-levchin.png")
+                                    img(src="img/max-levchin.png" alt="Макс Левчин")
                             li
                                 a(href='#face-2', data-toggle='tab')
                                     img(src="img/steve-jobs.png")
                             li
                                 a(href='#face-9', data-toggle='tab')
-
-                                    img(src="img/yang-jerry.png")
+                                    img(src="img/yang-jerry.png" alt="Джерри Янг")
                 .world-leaders__leaders-content
                     .tab-content
                         #face-1.tab-pane.active
@@ -437,73 +432,73 @@ block main
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Марк Цукерберг
                             span.world-leaders__leaders-content-who Основатель социальной сети Facebook
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-2.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Стив Джобс
                             span.world-leaders__leaders-content-who Основатель Apple
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-3.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Билл Гейтс
                             span.world-leaders__leaders-content-who Основатель Microsoft
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-4.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Сергей Брин
                             span.world-leaders__leaders-content-who Основатель Google
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-5.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Ларри Пейдж
                             span.world-leaders__leaders-content-who Основатель Google
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-6.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Джефф Безос
                             span.world-leaders__leaders-content-who Основатель Амазон
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-7.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Майк Кригер
                             span.world-leaders__leaders-content-who Сооснователь Instagram
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-8.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Джордж Сорос
                             span.world-leaders__leaders-content-who Основатель Ebay
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-9.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Джерри Янг
                             span.world-leaders__leaders-content-who Сооснователь яху
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-10.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Макс Левчин
                             span.world-leaders__leaders-content-who Основатель paypal
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-11.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Ян Борисович
                             span.world-leaders__leaders-content-who Кум основатель whats up
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
                         #face-12.tab-pane
                             span.world-leaders__leaders-content-title Мировые IT управленцы
                             span.world-leaders__leaders-content-blockquote Все просто: мы не создаем сервисы, чтобы зарабатывать деньги. Мы зарабатываем деньги, чтобы создавать лучшие сервисы
                             span.world-leaders__leaders-content-name Илон Маск
                             span.world-leaders__leaders-content-who Tesla/SpaceX
-                            img(src="img/quotes.png").world-leaders__quotes
+                            img(src="img/quotes.png" alt="quotes").world-leaders__quotes
         section.teachers#teachers
             .container
                 .row
@@ -513,7 +508,7 @@ block main
                     #teachesr__slider.owl-carousel.owl-theme
                         .item
                             .teachers__item.col-sm-6.col-xs-12
-                                    img(src="img/teacers_slide_1.jpg").teachers__photo
+                                    img(src="img/teacers_slide_1.jpg" alt="Богдан Густиков").teachers__photo
                                     .teachers__social_wrap
                                         a(href="#").teachers__social
                                             i.fa.fa-facebook
@@ -523,7 +518,7 @@ block main
                                     span.teachers__position Богдан Густиков - IT PM Dizz Agency Работал в Scrum/Kanban Опыт в IT до 2 лет Опыт успешного управления командой до 10 человек Был разработан продукт – онлайн-трансляции проведения тренинга с возможностью общения с тренером
 
                             .teachers__item.col-sm-6.col-xs-12
-                                    img(src="img/teacers_slide_2.jpg").teachers__photo
+                                    img(src="img/teacers_slide_2.jpg" alt="Владимир Озирный").teachers__photo
                                     .teachers__social_wrap
                                         a(href="#").teachers__social
                                             i.fa.fa-facebook
@@ -534,7 +529,7 @@ block main
 
                         .item
                             .teachers__item.col-sm-6.col-xs-12
-                                img(src="img/teacers_slide_1.jpg").teachers__photo
+                                img(src="img/teacers_slide_1.jpg" alt="Богдан Густиков").teachers__photo
                                 .teachers__social_wrap
                                     a(href="#").teachers__social
                                         i.fa.fa-facebook
@@ -544,7 +539,7 @@ block main
                                 span.teachers__position Богдан Густиков - IT PM Dizz Agency Работал в Scrum/Kanban Опыт в IT до 2 лет Опыт успешного управления командой до 10 человек Был разработан продукт – онлайн-трансляции проведения тренинга с возможностью общения с тренером
 
                             .teachers__item.col-sm-6.col-xs-12
-                                img(src="img/teacers_slide_2.jpg").teachers__photo
+                                img(src="img/teacers_slide_2.jpg" alt="Владимир Озирный").teachers__photo
                                 .teachers__social_wrap
                                     a(href="#").teachers__social
                                         i.fa.fa-facebook
@@ -558,19 +553,19 @@ block main
                     .reviews__wrap.col-sm-12.col-xs-12
                         h2.reviews__title Отзывы
                 .row
-                    #reviews.owl-carousel.owl-theme
+                    #reviews-owl.owl-carousel.owl-theme
                         .item
                             .col-sm-6.col-xs-12.reviews__wrap
                                 .reviews__item
                                     .reviews__photo_wrap
-                                         img(src="img/reviews_photo_1.png").reviews__photo
+                                         img(src="img/reviews_photo_1.png" alt="Татьяна Шевченко").reviews__photo
                                     span.reviews__autor Татьяна Шевченко
                                     span.reviews__age 36 лет
                                     p.reviews__text Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
                             .col-sm-6.col-xs-12
                                 .reviews__item
                                     .reviews__photo_wrap
-                                        img(src="img/reviews_photo_2.png").reviews__photo
+                                        img(src="img/reviews_photo_2.png" alt="Татьяна Шевченко").reviews__photo
                                     span.reviews__autor Татьяна Шевченко
                                     span.reviews__age 36 лет
                                     p.reviews__text Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
@@ -578,14 +573,14 @@ block main
                             .col-sm-6.col-xs-12.reviews__wrap
                                 .reviews__item
                                     .reviews__photo_wrap
-                                        img(src="img/reviews_photo_1.png").reviews__photo
+                                        img(src="img/reviews_photo_1.png" alt="Татьяна Шевченко").reviews__photo
                                     span.reviews__autor Татьяна Шевченко
                                     span.reviews__age 36 лет
                                     p.reviews__text Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
                             .col-sm-6.col-xs-12
                                 .reviews__item
                                     .reviews__photo_wrap
-                                        img(src="img/reviews_photo_2.png").reviews__photo
+                                        img(src="img/reviews_photo_2.png" alt="Татьяна Шевченко").reviews__photo
                                     span.reviews__autor Татьяна Шевченко
                                     span.reviews__age 36 лет
                                     p.reviews__text Задача организации, в особенности же рамки и место обучения кадров требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
@@ -596,17 +591,17 @@ block main
                         h2.news__section-title Новости
                 .row
                     .col-sm-4
-                        img(src="img/news_1.jpg").news__photo
+                        img(src="img/news_1.jpg" alt="Новость 1").news__photo
                         span.news__date 01 сентября 2017
                         a(href="#").news__title Новость 1
                         p.news__description Наша история, почему мы запустили сообщество IT управленцев
                     .col-sm-4
-                        img(src="img/news_2.jpg").news__photo
+                        img(src="img/news_2.jpg" alt="Новость 2").news__photo
                         span.news__date 01 сентября 2017
                         a(href="#").news__title Новость 2
                         p.news__description 7 качеств руководителя
                     .col-sm-4
-                        img(src="img/news_3.jpg").news__photo
+                        img(src="img/news_3.jpg" alt="Новость 3").news__photo
                         span.news__date 01 сентября 2017
                         a(href="#").news__title Новость 3
                         p.news__description Навыки успешного IT PM

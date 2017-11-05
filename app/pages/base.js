@@ -120,6 +120,85 @@
 
             items.eq(random).trigger( "click" );
         }
+
+
+        //animation
+
+        $('.top-section').waypoint({
+            handler: function() {
+                $(".top-section").find('.top-section__content').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '0%'
+        });
+
+        $('.for-who').waypoint({
+            handler: function() {
+                $(".for-who").find('.for-who__title').addClass('animated fadeInUp');
+                $(".for-who").find('.for-who__item').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.after-study').waypoint({
+            handler: function() {
+                $(".after-study").find('.after-study__title').addClass('animated fadeInUp');
+                $(".after-study").find('.after-study__advantages-list').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.our-programs').waypoint({
+            handler: function() {
+                $(".our-programs").find('.our-programs__title').addClass('animated fadeInUp');
+                $(".our-programs").find('.our-programs__tabs').addClass('animated fadeInUp');
+                $(".our-programs").find('.tab-content').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.course-designer').waypoint({
+            handler: function() {
+                $(".course-designer").find('.course-designer__title').addClass('animated fadeInUp');
+                $(".course-designer").find('.course-designer__manual').addClass('animated fadeInUp');
+                $(".course-designer").find('.course-designer__items').addClass('animated fadeInUp');
+                $(".course-designer").find('.course-designer__form-contacts-single').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.why-created').waypoint({
+            handler: function() {
+                $(".why-created").find('.why-created__title').addClass('animated fadeInUp');
+                $(".why-created").find('.why-created__description').addClass('animated fadeInUp');
+                $(".why-created").find('.why-created__description_default').addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.video').waypoint({
+            handler: function() {
+                $(".video").addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+        $('.our-goal').waypoint({
+            handler: function() {
+                $(".our-goal").addClass('animated fadeInUp');
+            this.destroy();
+            },
+            offset: '50%'
+        });
+
+
+
     });
 })(jQuery);
 
@@ -628,7 +707,7 @@ $(document).ready(function () {
         smartSpeed: 500
     });
 
-    var reviews = $("#reviews.owl-carousel"),
+    var reviews = $("#reviews-owl.owl-carousel"),
         course_designer = $("#course-designer__slider.owl-carousel");
 
     reviews.owlCarousel({
@@ -825,6 +904,9 @@ $(document).ready(function () {
     // })
 
     //wordleared
+
+
+    
 
 
 

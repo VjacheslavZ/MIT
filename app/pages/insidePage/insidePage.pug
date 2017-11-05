@@ -3,7 +3,7 @@ block title
     | внутренняя страница
 block main
     main#my-content
-        section.next-course
+        section.next-course#next-course
             .next-course__content
                 p.next-course__begin cтарт курса:
                     span.next-course__begin-date 15 декабря
@@ -14,7 +14,7 @@ block main
                     li Вт, Чт \ 2 часа вечером
                     li Онлайн или офлайн
                 button.button Записаться на курс
-        section.what-get
+        section.what-get#what-get
             .container
                 .row
                     .col-md-12.col-sm-12
@@ -59,7 +59,7 @@ block main
                             li
                                 span 12
                                 p Способы самомотивации и мотивации команды
-        section.about-course
+        section.about-course#about-course
             .container
                 .row
                     .col-md-12.col-sm-12
@@ -70,8 +70,8 @@ block main
                     .col-md-10.col-sm-12.col-md-offset-1
                         #video.video
                             .video__bg
-                            video(src="video/video.mp4" width="100%" height="526")
-                            a.video__play-pause(type="button" id="play-pause")
+                            video(src="video/video.mp4" height="526")
+                            a.video__play-pause(id="play-pause")
                         .col-lg-7.col-md-10.col-sm-12.col-lg-offset-4.col-md-offset-2
                             p.about-course__description
                                 | MIT представляет онлайн-курс
@@ -87,7 +87,7 @@ block main
                                 |Риск-менеджмент;
                                 |Управление изменениями в проектах.
                                 |В онлайн-курсе также будут разобраны такие инструменты и методологии как Waterfall, SCRUM, XP, Kanban, Lean. После прохождения курса Вы без труда сможете реализовывать как собственные, так и менеджерские проекты вовремя, не выходя за рамки бюджета.
-        section.who-wait
+        section.who-wait#who-wait
             .container
                 .who-wait__wrap
                     .row
@@ -96,26 +96,26 @@ block main
                     .row
                         .who-wait__items-wrap
                             .col-md-4
-                                img.who-wait__item-ic(src="img/project_manager_ic.png")
+                                img.who-wait__item-ic(src="img/project_manager_ic.png" alt="project_manager_ic")
                                 p.who-wait__item-text Для начинающих менеджеров проектов
                             .col-md-4
-                                img.who-wait__item-ic(src="img/product_owners_ic.png")
+                                img.who-wait__item-ic(src="img/product_owners_ic.png" alt="product_owners_ic")
                                 p.who-wait__item-text Для IT специалистов, которые хотят вырасти до менеджера проектов
                             .col-md-4
-                                img.who-wait__item-ic(src="img/it_specialist_ic.png")
+                                img.who-wait__item-ic(src="img/it_specialist_ic.png" alt="it_specialist_ic")
                                 p.who-wait__item-text Будущих продуктовых менеджеров
                     .row
                         .who-wait__items-wrap
                             .col-md-4
-                                img.who-wait__item-ic(src="img/starters_companies_ic.png")
+                                img.who-wait__item-ic(src="img/starters_companies_ic.png" alt="starters_companies_ic")
                                 p.who-wait__item-text Руководителей команд
                             .col-md-4
-                                img.who-wait__item-ic(src="img/managers_ic.png")
+                                img.who-wait__item-ic(src="img/managers_ic.png" alt="managers_ic")
                                 p.who-wait__item-text Бизнес аналитиков
                             .col-md-4
-                                img.who-wait__item-ic(src="img/it_entrepreneurs_ic.png")
+                                img.who-wait__item-ic(src="img/it_entrepreneurs_ic.png" alt="it_entrepreneurs_ic")
                                 p.who-wait__item-text Стартаперов
-        section.course-schedule
+        section.course-schedule#course-schedule
             .container
                 .row
                     .col-md-12.col-sm-12
@@ -181,7 +181,7 @@ block main
                                                     p.course-schedule__name Старт модуля Управление командой
                                                     p.course-schedule__name-descriprion Концепция ментально оспособляет закон внешнего мира. Сомнение раскладывает на элементы неоднозначный структурализм.
                                                     .course-schedule__speaker-info
-                                                        img(src="img/speacer.png").course-schedule__speaker-photo
+                                                        img(src="img/speacer.png" alt="Владими Озирный").course-schedule__speaker-photo
                                                         p.speaker-name Спикер:
                                                             span Владими Озирный
                                             .course-schedule__date-info.col-lg-3
@@ -239,7 +239,7 @@ block main
                                     li(role='presentation').course-schedule__dates-disabled
                                         a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') 07
                                             span Декабря
-        section.career
+        section.career#career
             .container
                 .row
                     .col-md-12.col-sm-12
@@ -261,7 +261,7 @@ block main
                         .career__item-wrap
                             span.career__step 04
                             p.career__position ТОП менеджмент
-        section.teachers
+        section.teachers#teachers
             .container
                 .row
                     .col-sm-12.col-xs-12
@@ -270,7 +270,7 @@ block main
                     #teachesr__slider.owl-carousel.owl-theme
                         .item
                             .teachers__item.col-sm-6.col-xs-12
-                                img(src="img/teacers_slide_1.jpg").teachers__photo
+                                img(src="img/teacers_slide_1.jpg" alt="Владими Озирный").teachers__photo
                                 .teachers__social_wrap
                                     a(href="#").teachers__social
                                         i.fa.fa-facebook
@@ -281,7 +281,7 @@ block main
                                 p.teachers__position В IT и маркетинге, в продажах 11 дет. Опыт управление 20+ человек. Владелец Dizz Agency по созданию и эффективному продвижению бизнесов в интернете. Сооснователь издания Say-Hi. В месяц посещают 200 000 уникальных поситителей на сайт 100 000 подписчиков в соц.сетях. Разработано и продвинуто более 200 успешных проектов. Роботает с компаниями Америки, Канады, Европы и странами СНГ. Проходил обучение у лидеров маркетинг-индустрии – Игорь Манн, Александр Левитас, Фрэнк Керн
 
                             .teachers__item.col-sm-6.col-xs-12
-                                img(src="img/teacers_slide_2.jpg").teachers__photo
+                                img(src="img/teacers_slide_2.jpg" alt="Владими Озирный").teachers__photo
                                 .teachers__social_wrap
                                     a(href="#").teachers__social
                                         i.fa.fa-facebook
@@ -292,7 +292,7 @@ block main
                                 span.teachers__position Работал в Scrum/Kanban Опыт в IT до 2 лет  Опыт успешного управления командой до 10 человек Был разработан продукт – онлайн-трансляции проведения тренинга с возможностью общения с тренером
                         .item
                             .teachers__item.col-sm-6.col-xs-12
-                                img(src="img/teacers_slide_1.jpg").teachers__photo
+                                img(src="img/teacers_slide_1.jpg" alt="Богдан Густиков").teachers__photo
                                 .teachers__social_wrap
                                     a(href="#").teachers__social
                                         i.fa.fa-facebook
@@ -301,7 +301,7 @@ block main
                                 p.teachers__name Богдан Густиков
                                 span.teachers__position IT PM in Dizz Agency
                             .teachers__item.col-sm-6.col-xs-12
-                                img(src="img/teacers_slide_2.jpg").teachers__photo
+                                img(src="img/teacers_slide_2.jpg" alt="Владимир Озирный").teachers__photo
                                 .teachers__social_wrap
                                     a(href="#").teachers__social
                                         i.fa.fa-facebook
@@ -309,7 +309,7 @@ block main
                                         i.fa.fa-linkedin
                                 p.teachers__name Владимир Озирный
                                 span.teachers__position SEO Dizz Agency / Say-hi
-        section.course-program
+        section.course-program#course-program
             .container
                 .row
                     .col-sm-12.col-xs-12
@@ -493,37 +493,32 @@ block main
                                 .course-designer__down
                                     i.fa.fa-chevron-down
                                 .course-designer__scroll
-                                    span.course-designer__cours-name
-                                        .course-designer__cours-name_selected
-                                        .course-designer__cours-name_selected-all
-                                        #course-designer__cours-name_selected-all
+                                    span.course-designer__cours-name.course-designer__cours-name_selected.course-designer__cours-name_selected-all#course-designer__cours-name_selected-all
                                         | Полный курс
                                         input(type="checkbox" value="Полный курс" id="full-course")
                                         label(for="full-course")
 
                                     span.course-designer__cours-name Управление проектами
-                                        input(type="checkbox" value="Управление проектами" id="item 1")
-                                        label(for="item 1")
-
+                                        input(type="checkbox" value="Управление проектами" id="item1")
+                                        label(for="item1")
                                     span.course-designer__cours-name Управление командой
-                                        input(type="checkbox" value="Управление командой" id="item 2")
-                                        label(for="item 2")
-
+                                        input(type="checkbox" value="Управление командой" id="item2")
+                                        label(for="item2")
                                     span.course-designer__cours-name Работа с клиентами
-                                        input(type="checkbox" value="Работа с клиентами" id="item 3")
-                                        label(for="item 3")
+                                        input(type="checkbox" value="Работа с клиентами" id="item3")
+                                        label(for="item3")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 4")
-                                        label(for="item 4")
+                                        input(type="checkbox" value="Маркетинг" id="item4")
+                                        label(for="item4")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 5")
-                                        label(for="item 5")
+                                        input(type="checkbox" value="Маркетинг" id="item5")
+                                        label(for="item5")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 6")
-                                        label(for="item 6")
+                                        input(type="checkbox" value="Маркетинг" id="item6")
+                                        label(for="item6")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item 7")
-                                        label(for="item 7")
+                                        input(type="checkbox" value="Маркетинг" id="item7")
+                                        label(for="item7")
                             .course-designer__items-wrap.course-designer__items-wrap_width
                                 .course-designer__items-chosed
                                     .course-designer__text
@@ -576,7 +571,7 @@ block main
                             input(type='hidden', name='form_type', value='normal')
                             .intermediate_item
                                 input(type='submit', value='Записаться')
-        section.training
+        section.training#training
             .container
                 .row
                     .col-sm-12
@@ -609,7 +604,7 @@ block main
                             .training__stages-info
                                 p.training__stages-name Защита проектов
                                 p.__stages-description Каждый студент защищает свой проект, и после сдачи - получает диплом и рекомендации по трудоустройству.
-        section.questions
+        section.questions#questions
             .container
                 .row
                     .col-sm-12
@@ -728,7 +723,7 @@ block main
                                         p
                                             span Ответ:
                                             | Наша программа рассчитана на новичков в проектном менеджменте. Но обязательным требованием является знание Английского языка не ниже Intermediate так как вся терминология проектного менеджмента на английском.
-        section.have-questions
+        section.have-questions#have-questions
                 .container
                     .row
                         .have-questions__wrap
