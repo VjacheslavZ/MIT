@@ -2498,7 +2498,8 @@ html.mm-blocking, html.mm-blocking body {
             align-items: center;
     top: -webkit-calc(50% - 50px);
     top: calc(50% - 50px);
-    left: -55px; }
+    left: -55px;
+    z-index: 1; }
 
 .course-program {
   padding: 200px 0 100px 0;

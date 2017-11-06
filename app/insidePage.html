@@ -175,7 +175,7 @@
         </div>
       </header>
       <main id="my-content">
-        <section class="next-course" id="next-course">
+        <section class="next-course" id="top-section">
           <div class="next-course__content">
             <p class="next-course__begin">cтарт курса:<span class="next-course__begin-date">15 декабря</span></p>
             <h1 class="next-course__title">IT Project Management</h1>
@@ -683,18 +683,22 @@
               <div class="course-designer__items">
                 <div class="course-designer__builder owl-carousel owl-theme" id="course-designer__slider">
                   <div class="course-designer__items-wrap" id="course-designer__name">
-                    <p class="course-designer__courses-name">Название курса</p>
+                    <p class="course-designer__courses-name">Название курса</p><a class="course-designer__up" href="#"><i class="fa fa-chevron-up"></i></a><a class="course-designer__down" href="#"><i class="fa fa-chevron-down"></i></a>
                     <div class="course-designer__scroll"><span class="course-designer__cours-name">Project Managment (Online)
                         <input type="checkbox" value="Project Managment (Online)" id="managment-online">
                         <label for="managment-online"></label><i class="fa fa-long-arrow-right"></i></span><span class="course-designer__cours-name">Project Managment (Offline)
                         <input type="checkbox" value="Project Managment (Offline)" id="managment-offline">
-                        <label for="managment-offline"></label><i class="fa fa-long-arrow-right"></i></span></div>
+                        <label for="managment-offline"></label><i class="fa fa-long-arrow-right"></i></span>
+                      <!--span.course-designer__cours-name Project Managment (Offline)-->
+                      <!--    input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")-->
+                      <!--   label(for="managment-offline")-->
+                      <!--    i.fa.fa-long-arrow-right-->
+                    </div>
                   </div>
                   <div class="course-designer__items-wrap" id="course-designer__name-block">
-                    <p class="course-designer__courses-name">Название блока</p>
-                    <div class="course-designer__up"><i class="fa fa-chevron-up"></i></div>
-                    <div class="course-designer__down"><i class="fa fa-chevron-down"></i></div>
-                    <div class="course-designer__scroll"><span class="course-designer__cours-name course-designer__cours-name_selected course-designer__cours-name_selected-all" id="course-designer__cours-name_selected-all">Полный курс
+                    <p class="course-designer__courses-name">Название модуля</p><a class="course-designer__up" href="#"><i class="fa fa-chevron-up"></i></a><a class="course-designer__down" href="#"><i class="fa fa-chevron-down"></i></a>
+                    <div class="course-designer__scroll">
+                      <!--.mCustomScrollbar(data-mcs-theme="dark-3")--><span class="course-designer__cours-name course-designer__cours-name_selected course-designer__cours-name_selected-all" id="course-designer__cours-name_selected-all">Полный курс
                         <input type="checkbox" value="Полный курс" id="full-course">
                         <label for="full-course"></label></span><span class="course-designer__cours-name">Управление проектами
                         <input type="checkbox" value="Управление проектами" id="item1">
@@ -709,17 +713,28 @@
                         <label for="item5"></label></span><span class="course-designer__cours-name">Маркетинг
                         <input type="checkbox" value="Маркетинг" id="item6">
                         <label for="item6"></label></span><span class="course-designer__cours-name">Маркетинг
-                        <input type="checkbox" value="Маркетинг" id="item7">
-                        <label for="item7"></label></span></div>
+                        <input type="checkbox" value="Маркетинг" id="item8">
+                        <label for="item8"></label></span><span class="course-designer__cours-name">Маркетинг
+                        <input type="checkbox" value="Маркетинг" id="item9">
+                        <label for="item9"></label></span><span class="course-designer__cours-name">Маркетинг
+                        <input type="checkbox" value="Маркетинг" id="item10">
+                        <label for="item10"></label></span>
+                    </div>
                   </div>
                   <div class="course-designer__items-wrap course-designer__items-wrap_width">
-                    <div class="course-designer__items-chosed">
+                    <div class="course-designer__items-chosed" id="course-designer__items-chosed"><a class="course-designer__up" href="#"><i class="fa fa-chevron-up"></i></a><a class="course-designer__down" href="#"><i class="fa fa-chevron-down"></i></a>
                       <div class="course-designer__text">
                         <p class="course-designer__courses-finish">Вы выбрали курс:</p>
                         <p class="course-designer__courses-chosed">IT Project Managment (Online)</p>
                       </div>
-                      <div class="course-designer__items-list"><a href="#"><i class="fa fa-chevron-up"></i></a><a href="#"><i class="fa fa-chevron-down"></i></a>
-                        <ul></ul>
+                      <div class="course-designer__items-list">
+                        <!--a(href="#")i.fa.fa-chevron-up
+                        -->
+                        <!--a(href="#")i.fa.fa-chevron-down
+                        -->
+                        <ul>
+                          <li>Полный курс</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -755,28 +770,30 @@
             </form>
             <div class="row">
               <div class="col-lg-12 col-xs-12">
-                <div class="course-designer__form-contacts course-designer__form-contacts-single">
-                  <div class="intermediate_item">
-                    <div class="input_wrap"><i class="fa fa-check"></i>
-                      <input name="name" type="text" placeholder="ИМЯ ФАМИЛИЯ">
+                <form>
+                  <div class="course-designer__form-contacts course-designer__form-contacts-single">
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input name="name" type="text" placeholder="ИМЯ ФАМИЛИЯ">
+                      </div>
+                    </div>
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input class="mask" name="phone" type="text" placeholder="ТЕЛЕФОН">
+                      </div>
+                    </div>
+                    <div class="intermediate_item">
+                      <div class="input_wrap"><i class="fa fa-check"></i>
+                        <input name="email" type="text" placeholder="E-MAIL">
+                      </div>
+                    </div>
+                    <input type="hidden" name="form_name" value="baseForm">
+                    <input type="hidden" name="form_type" value="normal">
+                    <div class="intermediate_item">
+                      <input type="submit" value="Записаться">
                     </div>
                   </div>
-                  <div class="intermediate_item">
-                    <div class="input_wrap"><i class="fa fa-check"></i>
-                      <input class="mask" name="phone" type="text" placeholder="ТЕЛЕФОН">
-                    </div>
-                  </div>
-                  <div class="intermediate_item">
-                    <div class="input_wrap"><i class="fa fa-check"></i>
-                      <input name="email" type="text" placeholder="E-MAIL">
-                    </div>
-                  </div>
-                  <input type="hidden" name="form_name" value="baseForm">
-                  <input type="hidden" name="form_type" value="normal">
-                  <div class="intermediate_item">
-                    <input type="submit" value="Записаться">
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
