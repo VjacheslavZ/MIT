@@ -698,9 +698,7 @@ $(document).ready(function () {
     // Инициализация маски в input
     $(".mask").mask("+38(999)999-99-99");
 
-    //hide preloader
-    $(".loader_inner").fadeOut();
-    $(".loader").fadeOut("slow");
+    
 });
 
 $(document).ready(function () {
@@ -777,26 +775,6 @@ $(document).ready(function () {
         /* Предотвращаем обычное поведение ссылки при клике */
         return false;
     });
-
-    //mob menu
-    // $("#my-menu").mmenu({
-    //     extensions: ["theme-black", "effect-menu-slide", "pagedim-black"],
-    //     offCanvas: {
-    //         position: "right"
-    //     }
-    // });
-    //
-    // //   Get the API
-    // var api = $("#my-menu").data("mmenu");
-    //
-    // //   Hook into methods
-    // api.bind("open:finish", function() {
-    //     $(".hamburger").addClass("is-active")
-    // }).bind("close:finish", function () {
-    //     $(".hamburger").removeClass("is-active")
-    // })
-
-    //equal height
 
     $('.for-who__wrap .for-who__item-title').equalHeights();
     $(".our-programs__pogram_wrap").equalHeights();
@@ -999,13 +977,18 @@ $(document).ready(function () {
                 course_items_chosed.css({"opacity": 0})
             }
 
-
             console.log(summ_items_chosed)
     }
 
     show_vertical_aarrows ()
 
     create_choosed_list()
+
+    //hide preloader
+    setTimeout(function () {
+        $(".loader_inner").fadeOut();
+        $(".loader").fadeOut("fast");
+    }, 500);
 
     // total slides count
     var i = 1, total = $('.owl-dots div').length;
@@ -1016,7 +999,6 @@ $(document).ready(function () {
     $('.total-slide').text(total);
 
     // current slide find
-
     owl.on('changed.owl.carousel', function(event) {
         var current =  $('.owl-dot.active').text();
         $('.current-slide').text(current);
@@ -1038,6 +1020,8 @@ $(document).ready(function () {
     // })
 
     //wordleared
+
+
 
 
     

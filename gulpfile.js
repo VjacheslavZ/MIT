@@ -63,6 +63,9 @@ gulp.task("scripts-libs", function () {
       "app/libs/jquery.scrollbar-gh-pages/jquery.scrollbar.js",
       "app/libs/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js",
       "app/libs/imakewebthings-waypoints/lib/jquery.waypoints.min.js",
+      "app/libs/preloader/js/snap.svg-min.js",
+      "app/libs/preloader/js/classie.js",
+      "app/libs/preloader/js/svgLoader.js",
    ])
        .pipe(concat("libs.min.js"))
        .pipe(uglyfi())

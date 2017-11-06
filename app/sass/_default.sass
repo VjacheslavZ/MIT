@@ -99,6 +99,36 @@ input
     color: $text_white_color
     background-color: #000
 
-
+.pageload-overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 99999
+  visibility: hidden
+  &.show
+    visibility: visible
+  svg
+    position: absolute
+    top: 0
+    left: 0
+    path
+      fill: #fff
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  visibility: hidden
+  &.show
+    visibility: visible
+  svg
+    position: absolute
+    top: 0
+    left: 0
+    path
+      fill: $accent_color
+    
 
 

@@ -234,6 +234,37 @@ input {
     color: #fff;
     background-color: #000; }
 
+.pageload-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden; }
+  .pageload-overlay.show {
+    visibility: visible; }
+  .pageload-overlay svg {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .pageload-overlay svg path {
+      fill: #fff; }
+  .pageload-overlay.show {
+    visibility: visible; }
+  .pageload-overlay svg {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .pageload-overlay svg path {
+      fill: #ffec00; }
+
 .input_wrap {
   position: relative;
   display: block; }
@@ -1389,7 +1420,7 @@ html.mm-blocking, html.mm-blocking body {
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .world-leaders {
-  padding: 225px 0 185px 0;
+  padding: 90px 0 185px 0;
   position: relative; }
   .world-leaders__tabs {
     width: 80%;
@@ -1567,7 +1598,7 @@ html.mm-blocking, html.mm-blocking body {
     background: #ffec00; }
 
 .reviews {
-  padding: 200px 0 200px 0;
+  padding: 200px 0 150px 0;
   position: relative; }
   .reviews:before {
     content: "";
@@ -1728,7 +1759,9 @@ html.mm-blocking, html.mm-blocking body {
 
 .contacts {
   background: #fff;
-  padding: 200px 0 175px 0; }
+  position: relative;
+  z-index: 9999;
+  padding: 150px 0 175px 0; }
   .contacts__title {
     margin-bottom: 120px;
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -1753,7 +1786,7 @@ html.mm-blocking, html.mm-blocking body {
     padding: 65px 0 180px 0;
     position: relative;
     background: #fff;
-    z-index: 1; }
+    z-index: 999; }
     .contacts__detals-wrap:before {
       content: "";
       position: absolute;
@@ -3274,12 +3307,18 @@ html.mm-blocking, html.mm-blocking body {
     .world-leaders__leaders-photo li:nth-child(10) {
       top: 240px;
       right: 235px; }
-  .reviews:before, .reviews:after {
-    display: none; }
+  .reviews {
+    padding: 50px 0 35px 0; }
+    .reviews:before, .reviews:after {
+      display: none; }
+    .reviews__title {
+      margin-bottom: 35px; }
   .news {
     padding: 50px 0 50px 0; }
   .contacts {
     padding: 50px 0 35px 0; }
+  .teachers {
+    padding: 50px 0 50px 0; }
   .next-course {
     padding: 140px 15px 0 15px;
     background-position: 100% center; }
@@ -3515,6 +3554,8 @@ html.mm-blocking, html.mm-blocking body {
     padding: 0; }
   .for-who__item {
     text-align: center; }
+    .for-who__item:before {
+      margin: 0 about-course; }
     .for-who__item__title {
       text-align: center; }
       .for-who__item__title:before {
@@ -3916,4 +3957,6 @@ html.mm-blocking, html.mm-blocking body {
     right: 120px; }
   .world-leaders__leaders-photo li:nth-child(12) {
     top: 115px;
-    right: 19px; } }
+    right: 19px; }
+  .course-designer__items-chosed {
+    margin-top: 70px; } }

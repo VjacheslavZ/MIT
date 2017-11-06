@@ -1,0 +1,145 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html, body, .pagewrap {
+	height: 100%;
+}
+
+body {
+	background: #4fc3f7;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.25;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	min-height: 100%;
+}
+
+a {
+	color: rgba(0,0,0,0.25);
+	font-weight: bold;
+	text-shadow: 0 0 rgba(0,0,0,0);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: rgba(0,0,0,0.6);
+}
+
+.codrops-header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 0.6em;
+	opacity: 0.7;
+}
+
+
+section {
+	padding: 3em 1em 10em;
+	text-align: center;
+	clear: both;
+}
+
+section h2 {
+	font-size: 2.6em;
+	font-weight: 300;
+	padding: 4em 0 0.4em;
+}
+
+section p {
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+.columns {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.column {
+	width: 50%;
+	padding: 0 2em;
+	float: left;
+}
+
+/* Демо кнопки */
+.codrops-demos {
+	text-align: right;
+}
+
+.codrops-demos a {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 15px;
+	padding: 0 0 5px;
+	display: inline-block;
+	border-bottom: 3px solid rgba(0,0,0,0.25);
+}
+
+.codrops-demos a:hover,
+.codrops-demos a:focus,
+.codrops-demos a.current-demo {
+	color: #fff;
+	border-color: #fff;
+}
+
+.pageload-link {
+	padding: 13px 20px;
+	color: #fff;
+	background: rgba(0,0,0,0.25);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.6em;
+	white-space: nowrap;
+}
+
+.pageload-link:hover {
+	color: #fff;
+	background: rgba(0,0,0,0.2);
+}
+
+#page-2 {
+	background: #6cc88a;
+}
+
+@media screen and (max-width: 40em) {
+
+	.column {
+		width: 100%;
+		float: none;
+		padding: 2em;
+		text-align: center;
+	}
+
+	.codrops-demos {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
