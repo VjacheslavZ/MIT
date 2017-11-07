@@ -3392,6 +3392,10 @@ html.mm-blocking, html.mm-blocking body {
     padding: 50px 0 35px 0; }
   .teachers {
     padding: 50px 0 50px 0; }
+  .have-questions {
+    padding: 50px 0 35px 0; }
+    .have-questions__wrap:before, .have-questions__wrap:after {
+      display: none; }
   .next-course {
     padding: 140px 15px 0 15px;
     background-position: 100% center; }
@@ -3428,6 +3432,8 @@ html.mm-blocking, html.mm-blocking body {
     padding: 50px 0 25px 0; }
   .course-schedule {
     padding: 50px 0 50px 0; }
+  .have-questions:before, .have-questions:after {
+    display: none; }
   .form {
     padding: 75px 115px 75px 115px; }
   .popup-course-description {
@@ -3589,6 +3595,8 @@ html.mm-blocking, html.mm-blocking body {
     width: 150px; }
   .course-designer .mCSB_draggerContainer {
     display: none; }
+  .have-questions .intermediate_item .input_wrap input {
+    width: 45%; }
   .contacts__detals-info a {
     display: block; }
   .contacts__detals-info a + a {
@@ -3852,8 +3860,6 @@ html.mm-blocking, html.mm-blocking body {
     -o-transition: opacity .3s;
     transition: opacity .3s;
     opacity: 0; }
-  .course-schedule__dates li {
-    padding: 15px 11px; }
   .course-schedule__course-info {
     padding: 55px 40px 40px 40px; }
   .course-schedule__speaker-info p {
@@ -3969,7 +3975,13 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-background-size: cover;
             background-size: cover; }
   .world-leaders__leaders-photo li img {
-    width: 50%; } }
+    width: 50%; }
+  .about-course .about-course__description {
+    padding: 10px 10px 10px 10px; }
+  .about-course .about-course__description-right {
+    padding: 10px 10px 10px 10px; }
+  .have-questions .intermediate_item .input_wrap input, .have-questions .intermediate_item .input_wrap textarea {
+    width: 90%; } }
 
 @media only screen and (max-width: 480px) {
   .after-study {
