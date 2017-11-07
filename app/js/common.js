@@ -281,8 +281,8 @@
 
          $(".career").waypoint({
             handler: function() {
-                $(".career").find('.career__title').addClass('animated fadeInUp');
-                $(".career").find('.career__item').addClass('animated fadeInUp');
+                $(".career").addClass('animated fadeInUp');
+                // $(".career").find('.career__item').addClass('animated fadeInUp');
 
             this.destroy();
             },
@@ -325,14 +325,8 @@
 
             this.destroy();
             },
-            offset: '50%'
+            offset: '100%'
         });
-
-
-
-
-
-
     });
 })(jQuery);
 
@@ -781,6 +775,24 @@ $(document).ready(function () {
     $(".our-programs__name").equalHeights();
     $(".our-programs__name-course").equalHeights();
     $(".training__stages-info").equalHeights();
+
+
+    //пересчитываем высоту элементов в каждом табе что-бы все было ровно 
+    $(".our-programs li a").on("click", function(){
+
+        var current_tab_wrap = $(".our-programs .tab-content").find($(this).attr("href")).find(".our-programs__pogram_wrap")
+        var current_tab_programs_name = $(".our-programs .tab-content").find($(this).attr("href")).find(".our-programs__name")
+        var current_tab_our_course = $(".our-programs .tab-content").find($(this).attr("href")).find(".our-programs__name-course")
+
+
+
+        current_tab_wrap.equalHeights();
+        current_tab_programs_name.equalHeights();
+        current_tab_our_course.equalHeights();
+
+    })
+
+
     // $(".course-designer__items-wrap").equalHeights();
 
     //video

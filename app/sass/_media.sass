@@ -10,8 +10,16 @@
       li:nth-child(10)
         top: 240px
         right: 180px
+@media only screen and (max-width : 1400px)
+  /**/
+  .container__custom-padding
+    width: 1130px
+    // padding: 0 65px
 @media only screen and (max-width : 1199px)
   /**/
+  .container__custom-padding
+    width: 1000px
+    padding: 0 65px
   //header
   .header
     &__wrap
@@ -84,7 +92,7 @@
     padding: 50px 0 50px 0
 
 
-  // second page start !!
+  // inside page start !!
 
 
   .next-course
@@ -105,6 +113,8 @@
     &__title
       margin-bottom: 35px
   .who-wait
+    &:before, &:after
+      display: none
     &__wrap
       padding: 20px 0 35px 0
     &__item-text
@@ -127,8 +137,15 @@
     padding: 75px 115px 75px 115px
   .popup-course-description
     width: 85%
+@media only screen and (max-width : 1030px)
+  .container__custom-padding
+    width: 960px
+    padding: 0 30px
 @media only screen and (max-width : 991px)
   /**/
+  .container__custom-padding
+    width: 750px
+    padding: 0 15px
   //header
   .hamburger
     display: block
@@ -316,6 +333,9 @@
     padding: 25px 25px 40px 30px
 @media only screen and (max-width : 768px)
   /**/
+  .container__custom-padding
+    width: 100%
+    padding: 0 15px
   .top-section
     height: 950px
     background-position: 100% 47%
@@ -326,7 +346,7 @@
   .for-who__item
     text-align: center
     &:before
-      margin: 0 about-course
+      margin: 0 auto
     &__title
       text-align: center
       &:before
@@ -473,7 +493,6 @@
     margin: 10px 0 8px 0
   .popup-course-description__process-stages li + li
     margin-top: 10px
-
 @media only screen and (max-width : 650px)
   /**/
   .after-study

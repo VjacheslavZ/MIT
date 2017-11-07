@@ -5,21 +5,21 @@ block main
     main#my-content
         section.next-course#top-section
             .next-course__content
-                p.next-course__begin cтарт курса:
-                    span.next-course__begin-date 15 декабря
+                p.next-course__begin Старт курса:
+                    span.next-course__begin-date 15 Декабря
                 h1.next-course__title IT Project Management
                 ul.next-course__info
                     li 40 часов
                     li 3000 грн – 110$
                     li Вт, Чт \ 2 часа вечером
                     li Онлайн или офлайн
-                button.button Записаться на курс
+                button.button__type_2 Записаться на курс
         section.what-get#what-get
             .container
                 .row
                     .col-md-12.col-sm-12
                         h2.what-get__title Что вы получите?
-                    .col-md-6.col-sm-12
+                    .col-md-7.col-sm-12
                         ul.after-study__advantages-list
                             li
                                 span 01
@@ -39,7 +39,7 @@ block main
                             li
                                 span 06
                                 p Навыки успешных переговоров
-                    .col-md-6.col-sm-12.col-md-offset-6.col-sm-offset-0
+                    .col-md-7.col-sm-12.col-md-offset-5.col-sm-offset-0
                         ul.after-study__advantages-list.what-get__advantages-list_mt
                             li
                                 span 07
@@ -64,7 +64,7 @@ block main
                 .row
                     .col-md-12.col-sm-12
                         h2.about-course__title О курсе
-                    .col-lg-7.col-md-10.col-sm-12
+                    .col-lg-7.col-md-10.col-sm-12.clearfix
                         .about-course__description
                             p Проектный менеджер – это не только умелое планирование, постановка задач и контроль сроков и качества работы. Вместе с тем, в первую очередь, – это продажа самой идеи. От эффективности проджект-менеджера напрямую зависит судьба компании на рынке: ее репутация, успехи и  будущее.
                     .col-md-10.col-sm-12.col-md-offset-1
@@ -72,8 +72,8 @@ block main
                             .video__bg
                             video(src="video/video.mp4" height="526")
                             a.video__play-pause(id="play-pause")
-                        .col-lg-7.col-md-10.col-sm-12.col-lg-offset-4.col-md-offset-2
-                            p.about-course__description
+                        .col-lg-8.col-md-10.col-sm-12.col-lg-offset-4.col-md-offset-2.about-course__description-right-bg
+                            p.about-course__description-right
                                 | MIT представляет онлайн-курс
                                 span.about-course__description_accent IT Project Management.
                                 |В нем было собрано все, что нужно знать успешному управленцу:
@@ -88,7 +88,7 @@ block main
                                 |Управление изменениями в проектах.
                                 |В онлайн-курсе также будут разобраны такие инструменты и методологии как Waterfall, SCRUM, XP, Kanban, Lean. После прохождения курса Вы без труда сможете реализовывать как собственные, так и менеджерские проекты вовремя, не выходя за рамки бюджета.
         section.who-wait#who-wait
-            .container
+            .container.container__custom-padding
                 .who-wait__wrap
                     .row
                         .col-md-12.col-sm-12
@@ -309,157 +309,6 @@ block main
                                         i.fa.fa-linkedin
                                 p.teachers__name Владимир Озирный
                                 span.teachers__position SEO Dizz Agency / Say-hi
-        section.course-program#course-program
-            .container
-                .row
-                    .col-sm-12.col-xs-12
-                        h2.course-program__title Программа курса
-                        p.course-program__name Курс:
-                            span.course-program__name_accent IT Project manager
-                .row
-                    .col-sm-12.col-xs-12
-                        ul.course-program__swich-type
-                            li.active
-                                a(href='#all-course', data-toggle='tab') Вся программа
-                            li
-                                a(href='#project-management-course', data-toggle='tab') Управление проектами
-                            li
-                                a(href='#team-management-course', data-toggle='tab') Управление командой
-                            li
-                                a(href='#working-client-course', data-toggle='tab') Работа с клиентом
-                            li
-                                a(href='#marketing-course', data-toggle='tab') Маркетинг
-                            li
-                                a(href='#sales-course', data-toggle='tab') Продажи
-
-                .row
-                    .tab-content
-                        #all-course.tab-pane.active
-                            .course-program__info_wrap
-                                .course-program__info.course-program__price
-                                    p Стоимость модуля:
-                                    span 3 000 грн
-                                .course-program__info.course-program__length
-                                    P Длительность модуля:
-                                    span 40 часов
-                            .course-program__steps_wrap
-                                .course-program__steps
-                                    ul
-                                        li.course-program__item 01. Введение в профессию IT Project manager
-                                            ul.course-program__item-info
-                                                li Терминология PM
-                                                li Методологии в управлении проектами
-                                                li Навыки и качества для ПМ
-                                                li Методика постановки целей SMART
-                                                li Профессии в IT
-                                                li О профессии. Примеры
-                                                li Виды ПМ и их задачи
-                                        li.course-program__item 02. Инициация проекта (реальный или тестовый)
-                                            ul.course-program__item-info
-                                                li Реальный от нас
-                                                li Реальный от себя
-                                                li Работа с Веб-студиями, Агенциями, Фрилансерами
-                                        li.course-program__item 03. Процесс разработки It проекта (веб сайт, моб.приложение, продукт)
-                                            ul.course-program__item-info
-                                                li Анализ и исследование рынка
-                                                li Структура
-                                                li Прототип
-                                                li Дизайн
-                                                li Верстка
-                                                li Программирование
-                                                li Тестирование
-                                                li Наполнение
-                                                li Поддержка
-                                        li.course-program__item 04. Работа с методологиями и инструментами
-                                            ul.course-program__item-info
-                                                li Waterfall, Agile: Scrum, Kanban, XP,  Lean
-                                                li Trello, Asana, Jira, MS Project, Telegram
-                                        li.course-program__item 05. Работа с документацией
-                                            ul.course-program__item-info
-                                                li Написание коммерческого предложения
-                                                li Юридические документы - договора
-                                                li Технические документы - ТЗ, брифы
-                                        li.course-program__item 06. Работа с командой (+удаленка)
-                                            ul.course-program__item-info
-                                                li Управление командой разработки
-                                                li Управление удаленной командой
-                                        li.course-program__item 07. Работа с клиентами
-                                            ul.course-program__item-info
-                                                li Работа с требованиями
-                                                li Телефонная связь с клиентом
-                                                li Общение в электронной почте
-                                                li Работа в мессенджерах
-                                                li Работа с пожеланиями
-                                                li Работа с негативом (с жидами)
-                                        li.course-program__item 08. Работа с продажами и презентацией
-                                            ul.course-program__item-info
-                                                li Подготовка презентации
-                                                li Холодные, теплые и горячие продажи
-                                                li Up sale, Cross sale и Down sale
-                                .course-program__steps
-                                    ul
-                                        li.course-program__item 09. Мотивация и коучинг
-                                            ul.course-program__item-info
-                                                li Разработка модели мотивации
-                                                li Коучинг - как основа выживания в IT
-                                                li Модель коммуникации в команде
-                                        li.course-program__item 10. Риск менеджмент
-                                            ul.course-program__item-info
-                                                li Реестр рисков
-                                                li Работа с рисками
-                                        li.course-program__item 11. Аналитика и аудит
-                                            ul.course-program__item-info
-                                                li Маркетинговое исследование
-                                                li Техническое исследование
-                                                li Обработка данных анализа
-                                        li.course-program__item 12. Введение в маркетинг
-                                            ul.course-program__item-info
-                                                li Виды маркетинга и терминология (основы SEO, SMM, Контекста, Ремаркетинг)
-                                        li.course-program__item 13. Послепроектная поддержка
-                                            ul.course-program__item-info
-                                                li Техническая поддержка
-                                                li Веб-консалтинг
-                                        li.course-program__item 14. Ценообразование
-                                            ul.course-program__item-info
-                                                li Справедливое ценообразование
-                                                li Обоснование цены клиенту
-                                                li Мультипликатор цен
-                                                li Работа со скидках
-                                        li.course-program__item 15. Психология (команда, клиенты, стейкхолдеры)
-                                            ul.course-program__item-info
-                                                li Психология клиента
-                                                li Психология команды
-                                                li Психология заинтересованных лиц
-                                                li 5 способов выйти из битвы победителем
-                                                li Риторика
-                                                li Личностное развитие
-                                                li Защита от профессионального выгорания
-                                                li Креатив
-                                                li Литература, фильмы, книги
-                                        li.course-program__item 16. Факапы и разбор кейсов
-                                            ul.course-program__item-info
-                                                li Факапы Юмилашес, Чехов, Лавриновичей, Виртуоз, Эстетика, НЛП
-                                        li.course-program__item 17. Уникальные методики по работе с командой и клиентами
-                                            ul.course-program__item-info
-                                        li.course-program__item 18. Трудоустройство PM
-                                            ul.course-program__item-info
-                                                li Подготовка презентации
-                                                li Холодные, теплые и горячие продажи
-                                                li Up sale, Cross sale и Down sale
-                                        li.course-program__item 19. Закрытие проекта
-                                            ul.course-program__item-info
-                                                li Передача всех прав клиенту
-                                                li Подписание всех документов
-                        #project-management-course.tab-pane
-                            p 2
-                        #team-management-course.tab-pane
-                            p 3
-                        #working-client-course.tab-pane
-                            p 4
-                        #marketing-course.tab-pane
-                            p 5
-                        #sales-course.tab-pane
-                            p 6
         section.course-designer#course-designer
             .container
                 .row
@@ -488,26 +337,26 @@ block main
                                         input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
                                         label(for="managment-offline")
                                         i.fa.fa-long-arrow-right
-                                    //span.course-designer__cours-name Project Managment (Offline)
-                                    //    input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
-                                    //   label(for="managment-offline")
-                                    //    i.fa.fa-long-arrow-right
-                                    //- span.course-designer__cours-name Project Managment (Offline)
-                                    //-     input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
-                                    //-     label(for="managment-offline")
-                                    //-     i.fa.fa-long-arrow-right
-                                    //- span.course-designer__cours-name Project Managment (Offline)
-                                    //-     input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
-                                    //-     label(for="managment-offline")
-                                    //-     i.fa.fa-long-arrow-right
-                                    //- span.course-designer__cours-name Project Managment (Offline)
-                                    //-     input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
-                                    //-     label(for="managment-offline")
-                                    //-     i.fa.fa-long-arrow-right
-                                    //- span.course-designer__cours-name Project Managment (Offline)
-                                    //-     input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
-                                    //-     label(for="managment-offline")
-                                    //-     i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                         i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
                                     //- span.course-designer__cours-name Project Managment (Offline)
                                     //-     input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
                                     //-     label(for="managment-offline")
@@ -622,7 +471,7 @@ block main
                             span.training__stages-number 01
                             .training__stages-info
                                 p.training__stages-name Два лектора закрепленных за группой
-                                p.training-description В каждой группе студентов будет два лектора, с помощью которых усвоение материала будет качественным и профессиональным.
+                                p.training__stages-description В каждой группе студентов будет два лектора, с помощью которых усвоение материала будет качественным и профессиональным.
                         .training__stages
                             span.training__stages-number 02
                             .training__stages-info
@@ -632,7 +481,7 @@ block main
                             span.training__stages-number 03
                             .training__stages-info
                                 p.training__stages-name Домашние задания
-                                p.training-description Студент будет выполнять домашние задания, для закрепления и усвоения знаний. После каждого тренинга будет предоставляться видео-запись, чтобы студент еще раз повторил материал и успешно выполнил домашнее задание.
+                                p.training__stages-description Студент будет выполнять домашние задания, для закрепления и усвоения знаний. После каждого тренинга будет предоставляться видео-запись, чтобы студент еще раз повторил материал и успешно выполнил домашнее задание.
                     .col-lg-6
                         .training__stages
                             span.training__stages-number 04
@@ -643,7 +492,7 @@ block main
                             span.training__stages-number 05
                             .training__stages-info
                                 p.training__stages-name Защита проектов
-                                p.__stages-description Каждый студент защищает свой проект, и после сдачи - получает диплом и рекомендации по трудоустройству.
+                                p.training__stages-description Каждый студент защищает свой проект, и после сдачи - получает диплом и рекомендации по трудоустройству.
         section.questions#questions
             .container
                 .row
@@ -657,7 +506,7 @@ block main
                                     p
                                         a(role='button', data-toggle='collapse', data-parent='#accordionLeft', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
                                             | Как записаться на курс ?
-                                #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                                #collapseOne.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
                                     .panel-body
                                         p
                                             span Ответ:
@@ -707,7 +556,6 @@ block main
                                             span Ответ:
                                             | Да, предоставляем.После каждого тренинга высылаем на почту презентацию и другие материалы с занятия.
 
-
                     .col-lg-6
                         #accordionRight.panel-group(role='tablist', aria-multiselectable='true')
                             .panel.panel-default
@@ -715,7 +563,7 @@ block main
                                     p
                                         a(role='button', data-toggle='collapse', data-parent='#accordionRight', href='#collapseRightOne', aria-expanded='true', aria-controls='collapseRightOne')
                                             | Будут ли записи видео с лекций?
-                                #collapseRightOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingRightOne')
+                                #collapseRightOne.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingRightOne')
                                     .panel-body
                                         p
                                             span Ответ:

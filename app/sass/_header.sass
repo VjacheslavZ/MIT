@@ -46,7 +46,7 @@
           color: $text_light-gray_color
           text-decoration: none
           transition: .2s
-          font-size: 14px
+          font-size: 13px
           font-weight: 700
           &:before
             @include hover_link
@@ -111,14 +111,14 @@
   &___dropdown-language
     position: relative
     margin-right: 40px
-    .fa-angle-right
+    .fa-angle-down
       transition: all .3s
     &:hover
       .header__swich-language
         opacity: 1
         z-index: 1
-      .fa-angle-right
-        transform: rotate(90deg)
+      .fa-angle-down
+        transform: rotate(-180deg)
   &__curent-language
     padding: 0 30px 30px 30px
     color: $text_light-gray_color
