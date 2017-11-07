@@ -53,7 +53,35 @@
 
 
         //init mCustomScrollbar (course-schedule online)
-        $("#Online ul.course-schedule__dates.nav-tabs").mCustomScrollbar({
+            $("#Online ul.course-schedule__dates.nav-tabs").mCustomScrollbar({
+                axis:"x",
+                scrollButtons:{
+                    enable: true
+                },
+                theme:"dark-3",
+                advanced:{
+                    updateOnContentResize: false,
+                    updateOnImageLoad: false
+                },
+                //onOverflowXNone
+                callbacks:{
+                    onOverflowX: function(){
+                        // если айтемы не помещаються то показываем кнопки      
+                        var btn_scroll_left = $(".course-schedule__left"),
+                            btn_scroll_right = $(".course-schedule__right");
+                            tabs = $("#Online.tab-pane.active li")
+
+                        btn_scroll_left.css({"opacity": 1})
+                        btn_scroll_right.css({"opacity": 1})
+                    }
+                }
+
+            });
+
+        
+
+        $(".course-schedule__swich-type li a").on("click", function  () {
+            $("#Offline ul.course-schedule__dates.nav-tabs").mCustomScrollbar({
             axis:"x",
             scrollButtons:{
                 enable: true
@@ -69,17 +97,24 @@
                     // если айтемы не помещаються то показываем кнопки      
                     var btn_scroll_left = $(".course-schedule__left"),
                         btn_scroll_right = $(".course-schedule__right");
-                        tabs = $("#Online.tab-pane.active li")
+                        tabs = $("#Offline.tab-pane.active li")
 
                     btn_scroll_left.css({"opacity": 1})
                     btn_scroll_right.css({"opacity": 1})
                 }
             }
 
+            });
         });
 
+        
+        (function change_active_class() {
+            $(".course-schedule__swich-type li.test a").trigger("click")
+        })()
+
+
         //section course-schedule mCustomScrollbar custom btn
-        $(".course-schedule__nav .course-schedule__left").on("click", function () {
+        $(".course-schedule__nav .course-schedule__left, .course-schedule__swich-type li a").on("click", function () {
             $("ul.course-schedule__dates.nav-tabs").mCustomScrollbar('scrollTo','+=200');
         });
 

@@ -2311,10 +2311,10 @@ html.mm-blocking, html.mm-blocking body {
     .course-schedule__dates li {
       border: 1px solid #dddddd;
       border-top: 4px solid #dddddd;
-      padding: 15px 34px;
       display: inline-block;
       margin-bottom: 18px; }
     .course-schedule__dates a {
+      padding: 15px 34px;
       display: block;
       font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 22px; }
@@ -2324,7 +2324,7 @@ html.mm-blocking, html.mm-blocking body {
       font-family: "ProximaNova-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .course-schedule__dates-disabled {
     pointer-events: none; }
-  .course-schedule #mCSB_4_scrollbar_horizontal {
+  .course-schedule #mCSB_4_scrollbar_horizontal, .course-schedule #mCSB_5_scrollbar_horizontal {
     visibility: hidden !important; }
   .course-schedule__nav {
     position: relative; }
