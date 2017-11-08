@@ -230,9 +230,29 @@ block main
                                 a(href="#").course-designer__down
                                     i.fa.fa-chevron-down
                                 .course-designer__scroll
-                                    span.course-designer__cours-name Project Managment (Online)
+                                    span.course-designer__cours-name.course-designer__cours-name_selected Project Managment (Online)
                                         input(type="checkbox" value="Project Managment (Online)" id="managment-online")
                                         label(for="managment-online")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
+                                        i.fa.fa-long-arrow-right
+                                    span.course-designer__cours-name Project Managment (Offline)
+                                        input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
+                                        label(for="managment-offline")
                                         i.fa.fa-long-arrow-right
                                     span.course-designer__cours-name Project Managment (Offline)
                                         input(type="checkbox" value="Project Managment (Offline)" id="managment-offline")
@@ -270,14 +290,11 @@ block main
                                         input(type="checkbox" value="Маркетинг" id="item6")
                                         label(for="item6")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item8")
-                                        label(for="item8")
+                                        input(type="checkbox" value="Маркетинг" id="item6")
+                                        label(for="item6")
                                     span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item9")
-                                        label(for="item9")
-                                    span.course-designer__cours-name Маркетинг
-                                        input(type="checkbox" value="Маркетинг" id="item10")
-                                        label(for="item10")
+                                        input(type="checkbox" value="Маркетинг" id="item6")
+                                        label(for="item6")
                             .course-designer__items-wrap.course-designer__items-wrap_width
                                 .course-designer__items-chosed#course-designer__items-chosed
                                     a(href="#").course-designer__up
@@ -349,7 +366,7 @@ block main
                             p.why-created__description_default Лидерами не рождаются, а становятся - приобретая необходимые знания, опыт, и стимулируя объеденяя правильных людей вокруг себя.
         section#video.video
             .video__bg
-            video(src="video/video.mp4" width="100%" height="auto")
+            video(src="video/video.mp4" width="120%" height="auto")
             a.video__play-pause(id="play-pause")
         section.our-goal#our-goal
             .container
@@ -568,17 +585,23 @@ block main
                 .row
                     .col-sm-4
                         img(src="img/news_1.jpg" alt="Новость 1").news__photo
-                        span.news__date 01 сентября 2017
+                        .news__info
+                            span.news__date 01 сентября 2017
+                            span.news__type Бизнесс
                         a(href="#").news__title Новость 1
                         p.news__description Наша история, почему мы запустили сообщество IT управленцев
                     .col-sm-4
                         img(src="img/news_2.jpg" alt="Новость 2").news__photo
-                        span.news__date 01 сентября 2017
+                        .news__info
+                            span.news__date 01 сентября 2017
+                            span.news__type Бизнесс
                         a(href="#").news__title Новость 2
                         p.news__description 7 качеств руководителя
                     .col-sm-4
                         img(src="img/news_3.jpg" alt="Новость 3").news__photo
-                        span.news__date 01 сентября 2017
+                        .news__info
+                            span.news__date 01 сентября 2017
+                            span.news__type Бизнесс
                         a(href="#").news__title Новость 3
                         p.news__description Навыки успешного IT PM
                 button.button__type_2 Все новости

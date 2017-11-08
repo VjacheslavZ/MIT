@@ -133,6 +133,9 @@
 .have-questions__title, .have-questions__wrap form {
   opacity: 0; }
 
+.about-course {
+  opacity: 0; }
+
 body {
   font-size: 16px;
   font-family: "ProximaNova-Regular", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -173,7 +176,7 @@ input {
   color: #000;
   background-color: #ffec00;
   text-decoration: none;
-  padding: 24px 50px;
+  padding: 19px 50px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
@@ -195,7 +198,7 @@ input {
   color: #000;
   background-color: #ffec00;
   text-decoration: none;
-  padding: 15px 45px;
+  padding: 19px 45px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
@@ -217,9 +220,9 @@ input {
   display: inline-block;
   color: #000;
   background-color: transparent;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #d1d1d1;
   text-decoration: none;
-  padding: 15px 45px;
+  padding: 18px 45px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
@@ -284,7 +287,7 @@ input {
     position: absolute;
     top: -webkit-calc(50% - 7px);
     top: calc(50% - 7px);
-    right: 16px;
+    right: 26px;
     font-size: 14px;
     color: #ffec00; }
 
@@ -351,7 +354,7 @@ html.mm-blocking, html.mm-blocking body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 70px;
+    padding: 0 180px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -617,7 +620,7 @@ html.mm-blocking, html.mm-blocking body {
     margin-left: 25px; }
 
 .top-section {
-  padding: 140px 70px 0 70px;
+  padding: 140px 180px 0 180px;
   height: -webkit-calc(100vh - -107px);
   height: calc(100vh - -107px);
   background: url(../img/top_section-bg.png) no-repeat 100% center;
@@ -646,7 +649,7 @@ html.mm-blocking, html.mm-blocking body {
   padding: 70px 0 75px 0; }
   .for-who__wrap {
     margin-top: 20px;
-    padding: 150px 0 140px 0;
+    padding: 130px 0 125px 0;
     position: relative;
     background-color: #fff; }
   .for-who__wrap-bg:before {
@@ -687,7 +690,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin: 0 0 90px 0; }
+    margin: 0 0 20px 0; }
     .for-who__title:before {
       content: "";
       position: absolute;
@@ -697,8 +700,8 @@ html.mm-blocking, html.mm-blocking body {
       height: 3px;
       background-color: #ffec00; }
   .for-who__item {
-    padding-top: 55px;
-    padding-bottom: 75px;
+    padding-top: 45px;
+    padding-bottom: 20px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
@@ -806,7 +809,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 90px; }
+    margin-bottom: 75px; }
     .after-study__title:before {
       content: "";
       position: absolute;
@@ -866,7 +869,8 @@ html.mm-blocking, html.mm-blocking body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 7px;
-    position: relative; }
+    position: relative;
+    margin-bottom: 20px; }
     .our-programs__title:before {
       content: "";
       position: absolute;
@@ -883,7 +887,8 @@ html.mm-blocking, html.mm-blocking body {
       margin-left: 80px; }
   .our-programs .nav-tabs > li.active > a {
     border-bottom: 2px solid #000;
-    color: #000; }
+    color: #000;
+    background-color: transparent; }
   .our-programs .nav > li > a {
     border: 2px solid transparent;
     padding: 0 0 10px 0; }
@@ -986,6 +991,7 @@ html.mm-blocking, html.mm-blocking body {
             align-items: center; }
   .our-programs__info {
     display: inline-block;
+    font-size: 14px;
     font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .our-programs__info + .our-programs__info {
       margin-left: 20px; }
@@ -1015,12 +1021,14 @@ html.mm-blocking, html.mm-blocking body {
     display: inline-block;
     position: relative;
     margin-left: 30px;
+    font-size: 14px;
     font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .our-programs__notify-me i {
       color: #7f7f7f;
       position: absolute;
       left: -30px;
-      top: 6px; }
+      font-size: 17px;
+      top: 3px; }
   .our-programs .button__type_3 {
     margin: 50px auto 0; }
   .our-programs__tabs-show-more {
@@ -1042,7 +1050,7 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-background-size: 18px 18px;
             background-size: 18px 18px;
     z-index: -1;
-    left: -375px;
+    left: -450px;
     bottom: 0px; }
   .course-designer:after {
     content: "";
@@ -1057,8 +1065,8 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-background-size: 18px 18px;
             background-size: 18px 18px;
     z-index: -1;
-    right: -375px;
-    top: 0px; }
+    right: -435px;
+    top: 0; }
   .course-designer__items {
     position: relative; }
   .course-designer__title {
@@ -1152,13 +1160,24 @@ html.mm-blocking, html.mm-blocking body {
     .course-designer__down:active:before {
       height: 20px; }
   .course-designer__cours-name {
-    display: block;
+    display: inline-table;
     position: relative;
     color: #9e9e9e;
     cursor: pointer;
     padding-left: 70px;
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 17px; }
+    .course-designer__cours-name:after {
+      content: "";
+      border-bottom: 2px solid transparent;
+      display: block;
+      width: 100%;
+      height: 2px;
+      -webkit-transition: border-bottom .3s;
+      -o-transition: border-bottom .3s;
+      transition: border-bottom .3s; }
+    .course-designer__cours-name:hover:after {
+      border-bottom: 2px solid #9e9e9e; }
     .course-designer__cours-name input {
       visibility: hidden;
       display: none;
@@ -1193,7 +1212,7 @@ html.mm-blocking, html.mm-blocking body {
         .course-designer__cours-name label:after:hover::after {
           opacity: 0.3; }
     .course-designer__cours-name + .course-designer__cours-name {
-      margin-top: 25px; }
+      margin-top: 35px; }
     .course-designer__cours-name i {
       opacity: 0; }
   .course-designer__scroll {
@@ -1214,6 +1233,17 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__cours-name_selected {
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #000; }
+    .course-designer__cours-name_selected:after {
+      content: "";
+      border-bottom: 2px solid transparent;
+      display: block;
+      width: 100%;
+      height: 2px;
+      -webkit-transition: border-bottom .3s;
+      -o-transition: border-bottom .3s;
+      transition: border-bottom .3s; }
+    .course-designer__cours-name_selected:hover:after {
+      border-bottom: 2px solid #000; }
     .course-designer__cours-name_selected label {
       border: 2px solid #ffec00; }
       .course-designer__cours-name_selected label:after {
@@ -1223,7 +1253,7 @@ html.mm-blocking, html.mm-blocking body {
   .course-designer__items-chosed {
     background: #fff;
     margin-top: 100px;
-    padding: 10px 30px 60px 30px;
+    padding: 60px 30px 60px 60px;
     -webkit-box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09);
             box-shadow: 0 14px 35px rgba(88, 54, 126, 0.09); }
   .course-designer__courses-finish {
@@ -1258,11 +1288,13 @@ html.mm-blocking, html.mm-blocking body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .course-designer__form-contacts .intermediate_item input {
-      padding: 16px 48px 16px 40px;
-      border: 1px solid #616161;
+      padding: 19px 48px 19px 40px;
+      border: 1px solid #d0d0d0;
       -webkit-border-radius: 30px;
               border-radius: 30px;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #c2c2c2;
+      font-size: 12px; }
       .course-designer__form-contacts .intermediate_item input:focus {
         border: 1px solid #000; }
     .course-designer__form-contacts .intermediate_item input[type="submit"] {
@@ -1272,7 +1304,9 @@ html.mm-blocking, html.mm-blocking body {
       background: #ffec00;
       font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       text-transform: uppercase;
-      font-size: 14px; }
+      font-size: 12px;
+      padding: 21px 0px;
+      color: #000; }
   .course-designer__step {
     display: none; }
   .course-designer__items-chosed li {
@@ -1285,6 +1319,16 @@ html.mm-blocking, html.mm-blocking body {
     font-size: 10px;
     content: "\f00c";
     font-family: "FontAwesome"; }
+  .course-designer .mCSB_container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .course-designer .mCSB_scrollTools {
     right: inherit; }
   .course-designer .mCSB_buttonUp, .course-designer .mCSB_buttonDown {
@@ -1328,7 +1372,8 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-background-size: 18px 18px;
             background-size: 18px 18px;
     z-index: -1;
-    top: 70px; }
+    top: 70px;
+    left: -110px; }
   .why-created__wrap {
     background-color: #fff; }
   .why-created__title {
@@ -1338,7 +1383,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 55px; }
+    margin-bottom: 65px; }
     .why-created__title:before {
       content: "";
       position: absolute;
@@ -1358,7 +1403,7 @@ html.mm-blocking, html.mm-blocking body {
       color: #000;
       font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .why-created__description_default {
-    margin-top: 35px;
+    margin-top: 25px;
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 20px;
     color: #6f6f6f; }
@@ -1371,7 +1416,9 @@ html.mm-blocking, html.mm-blocking body {
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
-  height: 730px; }
+  height: 900px; }
+  .video video {
+    width: 100%; }
   .video .video__bg {
     background: url("../img/video_bg.jpg") no-repeat;
     position: absolute;
@@ -1381,7 +1428,9 @@ html.mm-blocking, html.mm-blocking body {
     bottom: 0;
     -webkit-transition: .5s;
     -o-transition: .5s;
-    transition: .5s; }
+    transition: .5s;
+    -webkit-background-size: cover;
+            background-size: cover; }
     .video .video__bg:before {
       content: "";
       position: absolute;
@@ -1403,7 +1452,16 @@ html.mm-blocking, html.mm-blocking body {
     width: 124px;
     height: 124px;
     display: inline-block;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s; }
+    .video__play-pause:hover {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
 
 .our-goal {
   position: relative;
@@ -1422,8 +1480,24 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-background-size: 18px 18px;
             background-size: 18px 18px;
     z-index: -1;
-    left: -390px;
+    left: -460px;
     top: -45px; }
+  .our-goal:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 246px;
+    height: 246px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    bottom: -770px;
+    right: -100px; }
   .our-goal__wrap {
     background-color: #fff;
     font-size: 20px; }
@@ -1604,8 +1678,8 @@ html.mm-blocking, html.mm-blocking body {
     display: inline-block; }
   .teachers__social_wrap {
     position: absolute;
-    top: 32px;
-    left: 32px; }
+    top: 37px;
+    left: 57px; }
   .teachers__social {
     font-size: 20px;
     color: #8e8e8e;
@@ -1622,14 +1696,18 @@ html.mm-blocking, html.mm-blocking body {
     font-size: 24px;
     font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .teachers__position {
-    margin-top: 15px;
-    font-size: 17px;
-    color: #6f6f6f; }
+    margin-top: 20px;
+    font-size: 15px;
+    color: #6f6f6f;
+    display: block;
+    line-height: 30px; }
   .teachers .owl-theme .owl-dots .owl-dot.active span, .teachers .owl-theme .owl-dots .owl-dot:hover span {
     background: #ffec00; }
+  .teachers .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 70px; }
 
 .reviews {
-  padding: 200px 0 150px 0;
+  padding: 60px 0 150px 0;
   position: relative; }
   .reviews:before {
     content: "";
@@ -1675,7 +1753,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 155px; }
+    margin-bottom: 50px; }
     .reviews__title:before {
       content: "";
       position: absolute;
@@ -1703,12 +1781,24 @@ html.mm-blocking, html.mm-blocking body {
       height: 87px;
       -webkit-border-radius: 50%;
               border-radius: 50%;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffec00), to(#fff9b2));
-      background-image: -webkit-linear-gradient(top, #ffec00 40%, #fff9b2 100%);
-      background-image: -o-linear-gradient(top, #ffec00 40%, #fff9b2 100%);
-      background-image: linear-gradient(to bottom, #ffec00 40%, #fff9b2 100%); }
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #ffec00), to(#fff9b2));
+      background-image: -webkit-linear-gradient(top, #ffec00 70%, #fff9b2 100%);
+      background-image: -o-linear-gradient(top, #ffec00 70%, #fff9b2 100%);
+      background-image: linear-gradient(to bottom, #ffec00 70%, #fff9b2 100%); }
+    .reviews__photo_wrap:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      left: -36px;
+      width: 87px;
+      height: 87px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #fbfbfb; }
   .reviews__item {
-    padding: 70px 20px 130px 20px;
+    padding: 90px 80px 80px 80px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1746,9 +1836,21 @@ html.mm-blocking, html.mm-blocking body {
   .news__photo {
     width: 100%;
     height: auto; }
+  .news__info {
+    margin: 40px 0 30px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
   .news__date {
-    margin: 25px 0 25px 0;
-    display: block;
     color: #727272;
     font-size: 15px; }
   .news__section-title {
@@ -1758,7 +1860,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 110px; }
+    margin-bottom: 70px; }
     .news__section-title:before {
       content: "";
       position: absolute;
@@ -1780,7 +1882,7 @@ html.mm-blocking, html.mm-blocking body {
     .news__title:hover {
       border-bottom: 3px solid #ffec00; }
   .news__description {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #727272;
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 17px; }
@@ -1797,9 +1899,25 @@ html.mm-blocking, html.mm-blocking body {
   background: #fff;
   position: relative;
   z-index: 9999;
-  padding: 150px 0 175px 0; }
+  padding: 110px 0 175px 0;
+  overflow: hidden; }
+  .contacts:after {
+    content: "";
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 635px;
+    height: 635px;
+    background-image: -webkit-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, #7f7f7f, #7f7f7f 2px, transparent 2px, transparent 100%);
+    -webkit-background-size: 18px 18px;
+            background-size: 18px 18px;
+    z-index: -1;
+    right: -460px;
+    top: -208px; }
   .contacts__title {
-    margin-bottom: 120px;
+    margin-bottom: 75px;
     font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 32px;
     font-weight: 300;
@@ -1841,7 +1959,7 @@ html.mm-blocking, html.mm-blocking body {
       left: -370px; }
     .contacts__detals-wrap:after {
       display: block;
-      width: 400px;
+      width: 480px;
       height: 288px;
       content: "";
       position: absolute;
@@ -1899,7 +2017,7 @@ html.mm-blocking, html.mm-blocking body {
     font-size: 12px;
     color: #c2c2c2; }
   .footer .intermediate_item input[type="submit"] {
-    padding: 19px 35px 18px 35px;
+    padding: 19px 50px 18px 50px;
     position: absolute;
     top: 0;
     right: 0; }
@@ -1952,7 +2070,7 @@ html.mm-blocking, html.mm-blocking body {
       margin-left: 20px; }
 
 .next-course {
-  padding: 140px 70px 0 70px;
+  padding: 140px 180px 0 180px;
   height: -webkit-calc(100vh - -107px);
   height: calc(100vh - -107px);
   background: url(../img/next-course_bg.png) no-repeat 75% center;
@@ -2056,7 +2174,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 60px; }
+    margin-bottom: 70px; }
     .what-get__title:before {
       content: "";
       position: absolute;
@@ -2119,7 +2237,7 @@ html.mm-blocking, html.mm-blocking body {
             background-size: 18px 18px;
     z-index: -1;
     bottom: 25%;
-    left: -10%; }
+    left: -242px; }
   .about-course:after {
     content: "";
     position: absolute;
@@ -2143,7 +2261,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 170px; }
+    margin-bottom: 20px; }
     .about-course__title:before {
       content: "";
       position: absolute;
@@ -2163,7 +2281,7 @@ html.mm-blocking, html.mm-blocking body {
     font-size: 20px; }
   .about-course .about-course__description {
     margin-top: 0;
-    padding: 70px 140px 0 70px;
+    padding: 45px 140px 80px 70px;
     background-color: #fbfbfb;
     position: relative; }
     .about-course .about-course__description:before {
@@ -2181,7 +2299,7 @@ html.mm-blocking, html.mm-blocking body {
     background-color: #fbfbfb; }
   .about-course .about-course__description-right {
     margin-top: 0;
-    padding: 80px 0 70px 70px;
+    padding: 74px 65px 80px 60px;
     background-color: #fbfbfb;
     position: relative; }
 
@@ -2237,7 +2355,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 50px; }
+    margin-bottom: 25px; }
     .who-wait__title:before {
       content: "";
       position: absolute;
@@ -2278,7 +2396,7 @@ html.mm-blocking, html.mm-blocking body {
   .course-schedule__swich-type_wrap {
     text-align: center; }
   .course-schedule__swich-type {
-    margin: 100px 0 80px 0;
+    margin: 60px 0 80px 0;
     border: 1px solid #e1e1e1;
     -webkit-border-radius: 33px;
             border-radius: 33px;
@@ -2292,7 +2410,7 @@ html.mm-blocking, html.mm-blocking body {
               border-radius: 20px;
       -webkit-box-shadow: 0 6px 16px rgba(255, 236, 0, 0.58);
               box-shadow: 0 6px 16px rgba(255, 236, 0, 0.58);
-      padding: 10px 30px;
+      padding: 9px 30px;
       background-color: #ffec00; }
   .course-schedule .nav-tabs {
     border-bottom: transparent; }
@@ -2312,6 +2430,7 @@ html.mm-blocking, html.mm-blocking body {
     .course-schedule__dates li {
       border: 1px solid #dddddd;
       border-top: 4px solid #dddddd;
+      background-color: #fff;
       display: inline-block;
       margin-bottom: 18px; }
     .course-schedule__dates a {
@@ -2402,7 +2521,7 @@ html.mm-blocking, html.mm-blocking body {
     font-size: 22px;
     color: #000; }
   .course-schedule__name-descriprion {
-    color: #b0b0b0;
+    color: #6f6f6f;
     font-size: 17px;
     line-height: 32px;
     margin-top: 10px; }
@@ -2437,14 +2556,15 @@ html.mm-blocking, html.mm-blocking body {
     position: relative; }
   .course-schedule__date {
     font-family: "ProximaNova-Extrabold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 22px; }
+    font-size: 22px;
+    color: #000; }
   .course-schedule__duration {
-    font-size: 15px;
+    font-size: 17px;
     color: #6f6f6f; }
 
 .career {
   padding: 200px 0 200px 0;
-  background-color: #fbfbfb;
+  background-color: #fff;
   position: relative; }
   .career:before {
     content: "";
@@ -2477,7 +2597,7 @@ html.mm-blocking, html.mm-blocking body {
             background-size: 18px 18px;
     z-index: -1;
     top: 153px;
-    right: -33px;
+    right: -70px;
     z-index: 0; }
   .career__title {
     margin-bottom: 80px;
@@ -2608,7 +2728,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 100px; }
+    margin-bottom: 60px; }
     .course-program__title:before {
       content: "";
       position: absolute;
@@ -2795,7 +2915,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 100px; }
+    margin-bottom: 70px; }
     .training__title:before {
       content: "";
       position: absolute;
@@ -2836,7 +2956,7 @@ html.mm-blocking, html.mm-blocking body {
   .training__stages-info {
     margin-left: 40px; }
   .training__stages-name {
-    font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "ProximaNova-Extrabold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 19px;
     margin-bottom: 10px; }
   .training__stages-description {
@@ -2854,7 +2974,7 @@ html.mm-blocking, html.mm-blocking body {
     text-transform: uppercase;
     letter-spacing: 7px;
     position: relative;
-    margin-bottom: 100px; }
+    margin-bottom: 70px; }
     .questions__title:before {
       content: "";
       position: absolute;
@@ -2874,14 +2994,14 @@ html.mm-blocking, html.mm-blocking body {
     -webkit-transition: color .3s;
     -o-transition: color .3s;
     transition: color .3s; }
-  .questions .questions__panel-heading.collapsed a {
-    color: #6f6f6f;
+  .questions .questions__panel-heading a {
+    color: #000;
     font-size: 17px;
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     -webkit-transition: color .3s;
     -o-transition: color .3s;
     transition: color .3s; }
-    .questions .questions__panel-heading.collapsed a:after {
+    .questions .questions__panel-heading a:after {
       color: #000;
       -webkit-transition: -webkit-transform .3s;
       transition: -webkit-transform .3s;
@@ -2902,6 +3022,8 @@ html.mm-blocking, html.mm-blocking body {
       -webkit-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
               transform: rotate(0deg); }
+    .questions .questions__panel-heading a.collapsed[aria-expanded="false"] {
+      color: #6f6f6f; }
   .questions .panel-body {
     padding: 35px 50px 50px 50px;
     position: relative; }
@@ -2913,6 +3035,7 @@ html.mm-blocking, html.mm-blocking body {
     .questions .panel-body p {
       display: inline-block;
       color: #6f6f6f;
+      font-size: 17px;
       font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .questions .panel-body:before {
       position: absolute;
@@ -3003,15 +3126,25 @@ html.mm-blocking, html.mm-blocking body {
   .have-questions .input_wrap {
     display: inline; }
     .have-questions .input_wrap input {
+      text-transform: uppercase;
+      color: #000;
       font-family: "ProximaNova-Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
       .have-questions .input_wrap input::-webkit-input-placeholder {
-        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        color: #c2c2c2; }
       .have-questions .input_wrap input::-moz-placeholder {
-        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        color: #c2c2c2; }
       .have-questions .input_wrap input:-moz-placeholder {
-        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        color: #c2c2c2; }
       .have-questions .input_wrap input:-ms-input-placeholder {
-        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        font-family: "ProximaNova-Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        color: #c2c2c2; }
   .have-questions .course-designer__form-contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3877,7 +4010,9 @@ html.mm-blocking, html.mm-blocking body {
   .form:after {
     right: -200px; }
   .form:before {
-    left: -200px; } }
+    left: -200px; }
+  .reviews__item {
+    padding: 25px 20px 20px 20px; } }
 
 @media only screen and (max-width: 520px) {
   /**/

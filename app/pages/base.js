@@ -289,8 +289,7 @@
 
         $('.about-course').waypoint({
             handler: function() {
-                $(".about-course").find('.about-course__title').addClass('animated fadeInUp');
-                $(".about-course").find('.about-course__description').addClass('animated fadeInUp');
+                $(".about-course").addClass('animated fadeInUp');
             this.destroy();
             },
             offset: '50%'
@@ -956,14 +955,13 @@ $(document).ready(function () {
 
         $(this).toggleClass("course-designer__cours-name_selected");
 
-
     }
 
     function  selectAllItems() {
         var items =  $("#course-designer__name-block .course-designer__cours-name")
 
         //Чек Полный курс  переключатель активного класса
-        $(this).toggleClass("course-designer__cours-name_selected-all")
+        //$(this).toggleClass("course-designer__cours-name_selected-all")
 
         if($("#course-designer__name-block .course-designer__cours-name_selected-all").hasClass("course-designer__cours-name_selected-all")){
             items.addClass("course-designer__cours-name_selected")
@@ -974,7 +972,7 @@ $(document).ready(function () {
 
 
     //все чекбоксы выбраны в секции КОНСТРУКТОР КУРСА "название блока"
-    selectAllItems();
+    //selectAllItems();
 
     function create_choosed_list() {
 
@@ -1058,25 +1056,5 @@ $(document).ready(function () {
     });
 
     $('.nav-tabs').scrollingTabs();
-
-    //scroll arrows
-
-    // $('.course-designer__up').click(function(e){
-    //     $('span:last').detach().prependTo('div').css({'margin-top':'-=100px'})
-    //     $('span:first').stop().animate({'margin-top':'0px'},1000)
-    // })
-
-    //wordleared
-
-
-
-
-    
-
-
-
-
-
-
 });
 
