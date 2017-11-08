@@ -1156,18 +1156,19 @@ html.mm-blocking, html.mm-blocking body {
     position: relative;
     color: #9e9e9e;
     cursor: pointer;
-    margin-left: 70px;
+    padding-left: 70px;
     font-family: "ProximaNova-Semibold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 17px; }
     .course-designer__cours-name input {
       visibility: hidden;
-      display: none; }
+      display: none;
+      cursor: inherit; }
     .course-designer__cours-name label {
       width: 22px;
       height: 22px;
       cursor: pointer;
       position: absolute;
-      left: -44px;
+      left: 28px;
       top: 4px;
       border: 2px solid #d3d3d3;
       background: #fff;
@@ -2540,7 +2541,7 @@ html.mm-blocking, html.mm-blocking body {
     background-image: -o-linear-gradient(top, #ffec00 40%, #fff9b2 100%);
     background-image: linear-gradient(to bottom, #ffec00 40%, #fff9b2 100%);
     position: absolute;
-    content: "\f178";
+    content: "\f061";
     font-family: "FontAwesome";
     -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -3437,7 +3438,9 @@ html.mm-blocking, html.mm-blocking body {
   .form {
     padding: 75px 115px 75px 115px; }
   .popup-course-description {
-    width: 85%; } }
+    width: 85%; }
+  .course-program:before, .course-program:after {
+    display: none; } }
 
 @media only screen and (max-width: 1030px) {
   .container__custom-padding {

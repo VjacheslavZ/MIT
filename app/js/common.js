@@ -963,7 +963,7 @@ $(document).ready(function () {
         var items =  $("#course-designer__name-block .course-designer__cours-name")
 
         //Чек Полный курс  переключатель активного класса
-        //$(this).toggleClass("course-designer__cours-name_selected-all")
+        $(this).toggleClass("course-designer__cours-name_selected-all")
 
         if($("#course-designer__name-block .course-designer__cours-name_selected-all").hasClass("course-designer__cours-name_selected-all")){
             items.addClass("course-designer__cours-name_selected")
